@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Bài 52 : HTML5 Local Storage and Session Storage</title>
+</head>
+<body>
+	<script>
+		// Local Storage có thể lưu trữ thông tin đến 5MB dữ liệu
+		// Local Storage không gửi thông tin lên server như Cookie
+		// Local Storage and Cookie không ảnh hưởng đến hiệu suất của trang web
+
+	  // Chúng ta có 2 loại local storage đó là:
+
+	  //   window.localStorage: Lưu trữ dữ liệu vô thời hạn, dữ liệu sẽ được lưu trữ cho tới khi người dùng clear history.
+	  //   window.sessionStorage: Lưu trữ dữ liệu cho mội phiên làm việc, có nghĩa dữ liệu sẽ bị mất khi bạn tắt browser.
+	  if (typeof(Storage) !== 'undefined') {
+	  	document.write('Support');
+	  }else{
+	  	document.write('Not Support');
+	  }
+
+	  if (typeof(Storage) !== "undefined") {
+	  	let domain = 'freetuts.net';
+	  	localStorage.setItem('domain' , domain);
+	  } else {
+	  	document.write('Not Support HTML5');
+	  }
+
+	  if (typeof(Storage) !== 'undefined') {
+	  	sessionStorage.dm = 'google.com';
+	  	// var dm = sessionStorage.dm; // google.com
+	  } else {
+	  	document.write('Not Support HTML5');
+	  }
+
+
+
+	</script>
+</body>
+</html>

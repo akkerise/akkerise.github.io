@@ -1,0 +1,100 @@
+﻿<HTML>
+	<BODY>
+
+
+		<form name="Form" method="post">
+						
+														
+<TABLE id="Table1" cellSpacing="0" cellPadding="0" width="100%" border="0">
+	<TR>
+		<TD>
+			<TABLE class="QH_Table" id="Table2" cellSpacing="1" cellPadding="2" width="100%" border="0">
+				<TR>
+					<TD>
+						<TABLE class="QH_Table" id="Table3" cellSpacing="0" cellPadding="0" width="100%" border="0">
+							<TR>
+								<TD>
+									<TABLE class="QH_Table" id="Table5" cellSpacing="0" cellPadding="0" width="100%" border="0">
+										
+										<TR>
+											<TD width="100%">
+											<table cellspacing="0" rules="all" border="1" id="grdTienDoDenBu" style="border-collapse:collapse;">
+
+												<tr style="color:DarkBlue;font-weight:bold;">
+													<td align="Center">Tháng</td>
+													<td align="Center">Năm</td>
+													<td align="Center">Kinh phí (HD)</td>
+												</tr>
+												<tr>
+													<td align="Right" style="width:5%;">
+																<input name="txtThang" type="text" id="txtThang" class="QH_textbox" style="width:100%;" />
+													  </td>
+													<td align="Right" style="width:5%;">
+																<input name="txtNam" type="text" id="txtNam" class="QH_textbox" style="width:100%;" />
+															</td>
+													<td align="Right" style="width:10%;">
+																<input name="txtKinhPhiHoDan" type="text" id="txtKinhPhiHoDan" class="QH_textbox" style="width:100%;" />
+															</td>
+												</tr>
+									</table>
+								</TD>
+											<TD width="20"></TD>
+										</TR>
+									</TABLE>
+								</TD>
+							</TR>
+							<TR>
+							  <TD>&nbsp;							  </TD>
+							</TR>
+						</TABLE>
+					</TD>
+				</TR>
+			</TABLE>
+		</TD>
+	</TR>
+</TABLE>
+</TD>
+		</TR>
+	  </TABLE>
+								
+</TD>
+	</TR>
+						</TABLE>
+					</TD>
+				</TR>
+			</TABLE>
+		</TD>
+	</TR>
+</TABLE>
+<a href="#" onClick="addRow('grdTienDoDenBu');return false;">Add row</a>
+
+        </form>      
+
+<script language="JavaScript" type="text/javascript">
+	function addRow(id){
+		var tbody = document.getElementById(id).getElementsByTagName("TBODY")[0];
+		var row = document.createElement("TR")
+		var oRow, oCell;
+	
+
+		var td1 = document.createElement("TD")
+
+		strTextBox = "<input name='txtThang' type='text' style='width:100%;'>"
+		td1.innerHTML = strTextBox
+
+		var td2 = document.createElement("TD")
+		td2.appendChild (document.createTextNode("5678"))
+	
+		var td3 = document.createElement("TD")
+		td3.appendChild (document.createTextNode("5678"))
+
+		row.appendChild(td1);
+		row.appendChild(td2);
+		row.appendChild(td3);
+		tbody.appendChild(row);
+	}
+
+</script>
+
+	</BODY>
+</HTML>

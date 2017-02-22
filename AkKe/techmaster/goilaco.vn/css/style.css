@@ -1,0 +1,123 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    font-family: "Sans Comic MS", "Helvetica", "Helvetica Neue", "Tahoma", monospace, sans-serif;
+}
+
+#container {
+    background-color: #ddd;
+    width: 1000px;
+    margin: 0px auto;
+}
+
+#container #nav {
+    position: relative;
+}
+
+#banner {
+    width: 100%;
+}
+
+#container #nav #banner a img {
+    padding: 10px auto;
+    width: 100%;
+}
+
+#container #nav #logo a img {
+    width: 88px;
+    position: absolute;
+    top: 225px;
+    left: 68px;
+    border: 2px solid white;
+    border-radius: 50%;
+}
+
+#main-nav {}
+
+#main-nav ul {
+    margin: 10px auto;
+    padding-left: 20px;
+    float: left;
+    width: 100%;
+    border-radius: 5px;
+}
+
+#main-nav ul li {
+    list-style-position: inside;
+    list-style-type: none;
+    float: left;
+    padding: 8px 10px;
+    width: 100px;
+    text-align: center;
+    transition: all 1.5s linear;
+    border-radius: 5px;
+}
+
+#main-nav ul li a {
+    text-decoration: none;
+}
+
+#main-nav ul li a:link,
+#main-nav ul li a:visited {
+    color: grey;
+}
+
+#main-nav ul li:hover {
+    background-color: grey;
+    border-radius: 5px;
+}
+
+#main-nav ul li a:hover {
+    color: white;
+}
+
+#container #nav h1 {
+    color: hsla(165, 96%, 10%, 0.30);
+    font-family: "Helvetica", monospace, sans-serif;
+    position: absolute;
+    top: 40px;
+    right: 20px;
+    font-size: 100%;
+}
+
+
+/*
+	* 
+		End #nav
+	*
+*/
+
+
+
+/*
+    *
+        Start #content
+    *
+ */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

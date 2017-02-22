@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lession 01</title>
+    <script language="javascript" src="../node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="script.js"></script>
+</head>
+<body>
+<style>
+    /*#content {*/
+        /*color: red;*/
+    /*}*/
+</style>
+    <div id="content">
+        <h1>Content h1</h1>
+    </div>
+<script>
+//    $('#content').css('color' , 'red');
+//    $('#content').css('background', 'blue');
+    var content = $('#content').text();
+    var content_html = $('#content').html();
+    document.write(content);
+    document.write(content_html);
+</script>
+</body>
+</html>

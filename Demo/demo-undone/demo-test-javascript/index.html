@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Test JavaScript</title>
+    <link rel="stylesheet" href="">
+</head>
+<body>
+    <button id="textChanger">Click Me</button>
+    <div id="firstDiv">
+        This is some more text
+    </div>
+
+    <button id="textAppender">
+        Click Appender Button
+    </button>
+
+    <div id="secondDiv">
+        JavaScript is ....
+    </div>
+    <p id="pChanged">
+        This is tag pChanged !!!!
+    </p>
+
+    <button id="buttonforP">Click on Changed P</button>
+    <script type="text/javascript">
+       document.getElementById('textChanger').onclick = function(){
+        document.getElementById("firstDiv").innerHTML = "This is awesome text";
+       }
+
+       document.getElementById("textAppender").onclick = function(){
+        document.getElementById("secondDiv").innerHTML = document.getElementById("secondDiv").innerHTML + "great!!!";
+       }
+       document.getElementById("buttonforP").onclick = function() {
+         document.getElementById("pChanged").innerHTML = "Fuck all text !!! ";
+       }
+
+    </script>
+
+</body>
+</html>

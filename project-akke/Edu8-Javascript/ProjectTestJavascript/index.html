@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Test Javascript</title>
+</head>
+
+<body>
+    <script type="text/javascript">
+    /*var even = {
+	    			name: "Thanh",
+	    			level: 26,
+	    			say: function(){
+	    				alert("Toi la : " + this.name + " .Nam nay toi " + this.level + " tuoi");
+	    			}
+	    		}*/
+    // End function and scope
+    /*document.write("<h1>Chep phat</h1>");
+    document.write("<p>Tu nay toi se cham chi lam bai tap</p>");
+    for (var i = 1; i <10; i++) // (Khoi tao , dieu kien , thay doi )
+    {
+        document.write("<p>" + i + ".Tu nay toi se cham chi lam bai tap</p>");
+    }*/
+    //End vong lap for
+    var student = {
+    	firstName: "Nguyen Van",
+    	lastName: "Thanh",
+    	age: 27
+    };
+
+    // Đây gọi là vòng lặp for in . Trong đó biến i sẽ đóng vai trò là khóa key cho object
+    for (var i in student) {
+    	document.write("<p>" +i+ " : " +student[i]+ "</p>"); // Lưu ý ở đây ta không được sử dụng "student.i" vì khi đó vòng lặp sẽ hiểu nhầm là thuộc tính i của Object: student !!! Vì ở đây Object mà ta khai báo không có thuộc tính này nên bắt buộc ta phải khai báo bằng mảng !!!
+    };
+    </script>
+</body>
+
+</html>

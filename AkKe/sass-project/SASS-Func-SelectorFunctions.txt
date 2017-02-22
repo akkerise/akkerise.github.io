@@ -1,0 +1,60 @@
+/*Selector Functions*/
+
+Selector functions are very liberal in the formats they support for selector arguments. They can take a plain string, a list of lists as returned by & or anything in between:
+
+    A plain string, such as ".foo .bar, .baz .bang".
+    A space-separated list of strings such as (".foo" ".bar").
+    A comma-separated list of strings such as (".foo .bar", ".baz .bang").
+    A comma-separated list of space-separated lists of strings such as ((".foo" ".bar"), (".baz" ".bang")).
+
+In general, selector functions allow placeholder selectors (%foo) but disallow parent-reference selectors (&).
+
+selector-nest($selectors…)
+    Nests selector beneath one another like they would be nested in the stylesheet.
+selector-append($selectors…)
+    Appends selectors to one another without spaces in between.
+selector-extend($selector, $extendee, $extender)
+    Extends $extendee with $extender within $selector.
+selector-replace($selector, $original, $replacement)
+    Replaces $original with $replacement within $selector.
+selector-unify($selector1, $selector2)
+    Unifies two selectors to produce a selector that matches elements matched by both.
+is-superselector($super, $sub)
+    Returns whether $super matches all the elements $sub does, and possibly more.
+simple-selectors($selector)
+    Returns the simple selectors that comprise a compound selector.
+selector-parse($selector)
+    Parses a selector into the format returned by &. 
+
+
+/*Introspection Functions*/
+
+feature-exists($feature)
+    Returns whether a feature exists in the current Sass runtime.
+variable-exists($name)
+    Returns whether a variable with the given name exists in the current scope.
+global-variable-exists($name)
+    Returns whether a variable with the given name exists in the global scope.
+function-exists($name)
+    Returns whether a function with the given name exists.
+mixin-exists($name)
+    Returns whether a mixin with the given name exists.
+inspect($value)
+    Returns the string representation of a value as it would be represented in Sass.
+type-of($value)
+    Returns the type of a value.
+unit($number)
+    Returns the unit(s) associated with a number.
+unitless($number)
+    Returns whether a number has units.
+comparable($number1, $number2)
+    Returns whether two numbers can be added, subtracted, or compared.
+call($name, $args…)
+    Dynamically calls a Sass function.
+
+/*Miscellaneous Functions*/
+
+if($condition, $if-true, $if-false)
+    Returns one of two values, depending on whether or not $condition is true.
+unique-id()
+    Returns a unique CSS identifier. 

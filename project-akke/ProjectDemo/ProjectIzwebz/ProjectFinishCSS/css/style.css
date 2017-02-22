@@ -1,0 +1,176 @@
+/* RESET SETTING */
+* {
+	box-sizing: border-box;
+}
+html,body,div,span,h1,h2,h3,h4,h5,h6,a,em,blockquote,font,img,small,strike,strong,b,u,i,center {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	background: transparent;
+}
+
+body {
+	font-family: helvetica , tahoma , arial , sans-serif;
+	font-size: 62.5%;
+	line-height: 1;
+	background: #bdc3c7;
+	
+}
+
+ol , ul {
+	list-style: none;
+}
+
+/* remember to define focus style !*/
+:focus {
+	outline: 0;
+}
+
+a img {
+	border: none;
+}
+
+#container {
+	background: #16a085;
+	margin: 10px auto;
+	width: 960px;
+}
+
+/* END RESET */
+
+/* MAIN SETTING*/
+
+#logo {
+	overflow: hidden;
+}
+
+#logo img {
+	float: left;
+}
+
+#logo form {
+	float: right;
+	margin: 30px;
+	padding-left: 3px;
+	display: inline;
+}
+#logo input {
+	width: 200px;
+}
+
+#login {
+	margin-left: 50px;
+	clear: both;
+	float: left;
+	width: 200px;
+}
+#login input {
+	border: 1px solid grey;
+	border-radius: 5px;
+	margin-bottom: 5px;
+	padding: 10px 0px 10px 10px;
+}
+.button {
+	width: 100px;
+	font-weight: bold;
+}
+/** MAIN NAVIGATION **/
+
+#main-nav {
+margin: 5px 0px 0px 0px;
+font-size: 1.4em;
+background: #96D18D;
+font-family: 'Tahoma' , sans-serif;
+font-weight: bold;
+}
+
+#main-nav ul {
+width: 960px;
+background: #96D18D;
+float:left;
+margin: 5px 0 0 0;
+
+}
+#main-nav ul li {
+float: left;
+padding:15px 40px 15px 15px;
+
+}
+#main-nav ul li a {
+text-decoration: none;
+color: #191919;
+transition: color 2s , backround 2s;
+}
+#main-nav ul li a:hover {
+border: 0.5px solid grey;
+border-radius: 8px 0 8px 0;
+background: #42BEC2;
+color: white;
+padding: 5px;
+}
+#banner img {
+display:block;
+}
+#content {
+margin: 15px 15px;
+font-size: 1.2em;
+line-height: 1.4em;
+overflow: hidden;
+}
+#primary {
+width: 630px;
+border: 2px double #2B2B2B;
+margin-right:15px;
+padding: 20px 5px 5px 5px;
+float: left;
+border-radius: 8px;
+-moz-border-radius: 8px;
+-webkit-border-radius: 8px;
+}
+#primary h2 {
+font-size: 1.5em;
+font-family: 'Georgia';
+}
+#primary p {
+color: #2C3E50;
+padding-left: 10px;
+}
+#footer {
+font-size: 1.2em;
+background:#2980b9;
+}
+#copyright {
+padding: 2px 0px 2px 0px;
+background-color: #3498db;
+padding-right: 15px;
+font-weight: bold;
+letter-spacing: 0.12em;
+overflow:hidden;
+}
+#copyright p {
+float: right;
+}
+#footer-info {
+padding: 10px;
+overflow:hidden;
+}
+.division {
+width: 300px;
+float:left;
+margin-right:10px;
+}
+.division h3 {
+border-bottom: 1px dotted white;
+padding: 0px 0px 5px 5px;
+font-size: 1.3em;
+color: #ffffff;
+}
+.division p {
+font-size: 13px;
+font-family: 'Tahoma';
+font-weight: 300;
+padding: 5px;
+}

@@ -1,0 +1,36 @@
+﻿Học để trở thành Web developer.
+Các kỹ năng sẽ có sau khi học:
+- HTML/CSS
+- Javascript/Jquery
+- Wordpress
+- PHP/MySQL.
+Vì sao cần phải học?
+Câu hỏi này có những câu trả lời khác nhau, tuỳ theo mục đích của mỗi người muốn đạt được là gì. Có thể là:
+- Học để biết các kiến thức về website trong thời đại IoT (Internet of Things)
+- Biết HTML/CSS bạn có thể viết email đẹp hơn đấy, kiến thức HTML/CSS cũng khá là hữu ích và dễ học.
+- Bạn có thể dễ dàng tạo một blog hoặc một website bán hàng cho riêng mình.
+Nội dung khoá học: Đây KHÔNG phải là khoá học do mình tạo ra, mình chỉ tổng hợp lại các nội dung hữu ích trên internet, và tất cả đều là MIỄN PHÍ. Cứ học theo thứ tự từ trên xuống dưới là được.
+Nếu thấy hay hãy like và chia sẻ cho bạn bè Biểu tượng cảm xúc grin
+Khoá học Wordpress cơ bản của Thạch Phạm http://thachpham.com/…/word…/serie-hoc-wordpress-co-ban.html Khoá học này sẽ hướng dẫn sử dụng Wordpress như 1 người dùng thông thường. Trước khi làm 1 thứ thì cần phải biết thứ đó hoạt động như thế nào đã.
+Khoá học về WooCommerce (đây là 1 plugins rất phổ biến của Wordpress, dùng để tạo website bán hàng) http://thachpham.com/series/hoc-woocommerce
+Sau khi học khoá Wordpress cơ bản thì cần phải học các kiến thức cơ bản về HTML/CSS, Javascript/JQuery. Thạch Phạm cũng có khá nhiều khoá học về những thứ này. Có thể học theo thứ tự như sau:
+- Khoá Học HTML cơ bản http://thachpham.com/series/html-co-ban
+- Khoá học CSS cơ bản http://thachpham.com/series/css-co-ban
+- Tương tự thì bên CodeCademy có khóa học này khá là hay (hầu như khoá nào bên Codecademy cũng rất là hay, trực quan vì có thể code luôn trên trình duyệt). Khoá này sẽ học cả 2 kỹ năng là HTML và CSS cùng trong 1 khoáhttps://www.codecademy.com/learn/web
+- Khoá học Javascript của CodeCademyhttps://www.codecademy.com/learn/javascript
+- Khoá học Jquery của CodeCademy (Jquery là 1 thư viện của Javascript và cực kỳ phổ biến ở thời điểm hiện tại) https://www.codecademy.com/learn/jquery
+- Khoá học PHP dành cho Wordpress Developer của Thạch Phạmhttp://thachpham.com/series/php-co-ban-cho-wordpress
+- Hướng dẫn sử dụng VPS cơ bản (kiến thức này cần biết cho tất cả các lập trình viên web http://thachpham.com/series/hoc-su-dung-vps-co-ban
+- Khoá học Wordpress nâng cao http://thachpham.com/series/wordpress-nang-cao
+- Lập trình theme Wordpress http://thachpham.com/series/lap-trinh-theme-wordpress
+- Hướng dẫn sử dụng Stater theme để tạo theme Wordpresshttp://thachpham.com/series/huong-dan-starter-theme
+- Lập trình plugin Wordpress http://thachpham.com/series/lap-trinh-plugin-wordpress
+- Học PHP https://www.codecademy.com/learn/php
+- Học SQL https://www.codecademy.com/learn/learn-sql
+Trong quá trình học nếu có gì không hỏi thì cứ tra google, và kết quả thường đều được tìm thấy ở những trang sau:
+- http://w3schools.com (rảnh rỗi cũng nên vào trang này đọc các bài viết của nó, hầu như tất cả kiến thức liên quan đến lập trình web đều có ở đó
+- http://stackoverflow.com Diễn đàn
+- http://stackexchange.com Diễn đàn
+- https://google.com Biểu tượng cảm xúc pacman tất nhiên
+
+

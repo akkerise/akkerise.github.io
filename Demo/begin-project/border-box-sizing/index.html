@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Border and Box-Sizing</title>
+    <style rel="stylesheet" type="text/css">
+
+        * {box-sizing: border-box}
+        body {
+          background-color: #ddd;
+        }
+
+        div {
+          width: 150px;
+          height: 150px;
+          float: left;
+          margin: 50px 0 0 50px;
+        }
+
+        #red {
+          background-color: red;
+          border-width: 5px;
+          border-color: black;
+          border-style: solid;
+        }
+        #blue {
+          background-color: blue;
+        }
+        #green {
+          background-color: green;
+        }
+
+        .clear {
+          clear: both;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="red"></div>
+    <div id="blue"></div>
+    <div id="green"></div>
+    <div class="clear">
+        <p> This is some more text .................................... The thing they done</p>
+    </div>
+</body>
+</html>

@@ -1,0 +1,10 @@
+http://null-byte.wonderhowto.com/forum/add-official-kali-linux-rolling-repositories-0169582/
+http://kalitut.blogspot.com/2014/06/fix-kali-linux-sourceslist-repositories.html
+
+## Regular repositories 
+deb http://http.kali.org/kali kali main non-free contrib 
+deb http://security.kali.org/kali-security kali/updates main contrib non-free 
+## Source repositories 
+deb-src http://http.kali.org/kali kali main non-free contrib 
+deb-src http://security.kali.org/kali-security kali/updates main contrib non-free
+

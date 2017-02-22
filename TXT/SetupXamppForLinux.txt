@@ -1,0 +1,20 @@
+Install File :
+chmod +x xampp-linux-1.8.2-0-installer.run
+./xampp-linux-1.8.2-0-installer.run
+
+Restart XAMPP :
+/opt/lampp/lampp restart
+Start XAMPP :
+/opt/lampp/lampp start
+
+Always Start XAMPP :
+gedit /etc/init.d/lampp
+
+
+Add : 
+	#!/bin/bash
+	/opt/lampp/lampp start
+Ctrl + Save and Close
+Cấp quyền chạy mặc định Xampp trên Ubuntu thông qua lệnh sau:
+chmod +x /etc/init.d/lampp
+update-rc.d lampp defaults

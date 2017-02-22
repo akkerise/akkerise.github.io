@@ -1,0 +1,47 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Kiem tra Email</title>
+
+<script language="javascript">
+function validateEmail ( emailField, errorMsg ) {
+ alert('Dang kiem tra');
+ emailpat = /^([a-zA-Z0-9])+([\.a-zA-Z0-9_-])*@([a-zA-Z0-9])+(\.[a-zA-Z0-9_-]+)+$/;
+ if( !emailpat.test( emailField.value ) ) {
+  alert( errorMsg);
+  emailField.focus();
+  emailField.select();
+  return false;
+ }
+ return true;
+}
+
+
+</script>
+</head>
+
+<body>
+<form name="frmEmail" method="post" action="">
+  <table width="200" border="1">
+    <tr>
+      <td colspan="2">Kiem tra Email </td>
+    </tr>
+    <tr>
+      <td>Email</td>
+      <td><label>
+        <input name="txtEmail" type="text" />
+      </label></td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td><label>
+        <input onclick="validateEmail(this.txtEmail, ‘Please enter a valid email address’ )" name="btnOk" type="button" value="OK" />
+      </label></td>
+    </tr>
+  </table>
+</form>
+
+
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <!-- <script src="js/function.js"></script> -->
+    <!-- <script src="js/loop.js"></script> -->
+    <!-- <script src="js/dkrn1.js"></script> -->
+    <script src="js/dkrn2.js"></script>
+    <script type="text/javascript">
+        var outer = document.getElementById('outer');
+
+        function changeLink() {
+            console.log(outer.innerHTML);
+        }
+    </script>
+
+    <script type="text/javascript">
+        function testSoXanhDo() {
+            // for (var i = 0; i <= 100; i++) {
+            //   if (i%2 == 0) {
+            //     document.write('Xanh.' + i + '<br>');
+            //   }else{
+            //     document.write('Do' + i +'<br>');
+            //   }
+            // }
+
+
+            for (var i = 0; i <= 100; i++) {
+                if (i % 2 == 0) {
+                    document.write("Xanh: " + i + "<br>");
+                } else {
+                    document.write("Do: " + i + "<br>");
+                }
+            }
+            // 
+            // hinh nhu do config thang xampp anh a
+            // chay btg thi dc
+
+        }
+    </script>
+</head>
+
+<body>
+    <div class="cd">
+        <div id="outer"><a href="#">Leech Outer</a></div>
+        <button>Where</button>
+    </div>
+    <button type='button' class='btn btn-lg btn-default ' onclick="changeLink()">Change</button>
+
+</body>
+
+</html>

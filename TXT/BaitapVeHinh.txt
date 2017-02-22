@@ -1,0 +1,82 @@
+Bài tập nâng cao dành cho những ai muốn luyện tập khả năng tư duy logic cũng như sử dụng các lệnh vòng lặp, điều kiện một cách thuần thục. Các bài tập này sẽ làm theo phong cách của C/C++, dùng các lệnh điều kiện, vòng lặp để in ra màn hình các hình vẽ theo tham số bất kỳ.
+
+Ví dụ: Viết function printSquare() có tác dụng in ra màn hình 1 hình vuông được tạo bởi các dấu * , với tham số truyền vào là 1 số integer > 0 biểu thị kích thước của hình vuông 
+
+function printSquare(n) {
+  var str = '';
+
+  for (var i = 0; i < n; i ++) {
+    for (var j = 0; j < n; j++) {
+      // In ra n dấu *
+      str += ' * ';
+    }
+
+    // In ra dấu xuống dòng
+    str += '<br/>';
+  }
+
+
+      document.write(*);
+      // In ra n dấu *
+      str += ' * ';
+    }
+      document.write("<br>");
+    // In ra dấu xuống dòng
+    str += '<br/>';
+  } 
+  return str;
+}
+
+Gọi hàm 
+
+document.write(printSquare(3));
+
+// Kết quả
+* * * 
+* * * 
+* * * 
+
+document.write(printSquare(5));
+
+// Kết quả
+* * * * *
+* * * * *
+* * * * *
+* * * * *
+
+Bài tập:
+Bài 1. Viết funciton printTrigangle(n), với n là số integer > 2, in ra màn hình 1 hình tam giác vuông cân có kích thước n. Ví dụ: 
+
+// Với n = 4
+*
+* *
+* * *
+* * * *
+Bài 2. Viết function printEmptyRectangle(a, b), với a và b là 2 số integer > 3, in ra một hình chữ nhật rỗng có kích thước a x b. Ví dụ: 
+
+// Với a = 5, b = 3
+* * * * *
+*       *
+* * * * *
+Bài 3. Viết function printSpecialTrigangle(n), với n là số integer > 1, in ra hình tam giác cân ngược với chiều cao bằng n. Ví dụ: 
+
+// Với n = 3
+* * * * *
+  * * *
+    *
+Bài 4. Viết function printX(n), với n là số integer > 3 và là số lẻ, in ra hình chữ X có chiều cao bằng n. Ví dụ: 
+
+// Với n = 5
+*   *
+ * *
+  *
+ * *
+*   *
+Bài 5. Viết function printButterfly(n), với n là số integer > 3 và là số lẻ, in ra hình con bướm có chiều cao bằng n. Ví dụ: 
+
+// Với n = 5
+*       *
+* *   * *
+* * * * *
+* *   * *
+*       *

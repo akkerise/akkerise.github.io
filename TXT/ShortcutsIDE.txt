@@ -1,0 +1,5 @@
+Atom 			: Ctrl  + Alt   + B
+WebStorm 		: Ctrl  + Alt   + L
+Sublime Text 	: Ctrl  + Shift + H
+Brackets        : Ctrl  + Shift + L
+VS Code         : Ctrl  + Shift + I

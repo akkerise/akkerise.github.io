@@ -1,0 +1,67 @@
+* Cần Sử Dụng :
+Live Reload
+Quick Edit
+JSLint
+SCSS
+SCSS snipets
+CSSFier - Copy code HTML paste vào file CSS sẽ thấy các dòng id hoặc class selector được liệt kê sẵn
+ACB Bootstrap Snippets
+ACB Jade to Bootstrap Snippets
+Brackets SASS – Hỗ trợ dịch SASS mỗi lần lưu file và live preview với SASS không cần save. Extension cần thiết cho người dùng SASS.
+Beautify – Hỗ trợ định dạng lại tập tin HTML, CSS và Javascript đẹp hơn.
+Brackets CSS Color Preview – Mặc định các mã màu sử dụng trong Brackets sẽ hiển thị khi rê chuột vào mã màu, nhưng với extension này bạn có thể biết được màu chính xác mà không cần rê chuột vào.
+Brackets File Icons – Hiển thị icon đại diện cho các tập tin ở cây thư mục bên trái.
+Brackets Devicons – Đẹp hơn và giống như Brackets File Icons - Brackets Icons
+Brackets Code Folding – Hỗ trợ tạo nếp gấp cho các block code để hiển thị gọn hơn.
+Brackets FixMyJS – Tự động sửa các cảnh báo Javascript trong JSLint.
+Brackets Grunt – Hiển thị danh sách các task trong Grunt của dự án trong code editor để tiện sử dụng.
+Brackets Gradient Editor – Sửa các dãi màu trong CSS nhanh hơn.
+Brackets Bower – Cài các thành phần cần thiết cho dự án front-end với Bower trực tiếp trong Brackets. Hãy quên đi lệnh bower install pack
+Brackets Git – Extension phải dùng nếu bạn đang dùng Git, nó sẽ quản lý lịch sử các lần commit, push, pull, theo dõi branch, tags,…rất trực quan.
+Brackets Sidebar Plus – Thêm tuỳ chọn ẩn hiện sidebar của Brackets.
+Brackets Terminal – Sử dụng terminal ngay trong Brackets, terminal này là của Linux chứ không phải của riêng Brackets. Hữu dụng cho dân Linux.
+Brackets FTP-Sync Plus – Gửi file lên FTP nhanh chóng.
+Brackets WordPress Hint – Tự động gợi ý các hàm trong WordPress, bao gồm các hàm trong plugin Woocommerce.
+Brackets WordPress Hook Hint – Gợi ý các action và filter hook trong WordPress.
+Brackets Emmet – Viết HTML và CSS nhanh.
+PSD Extract
+Code Folding
+Autoprefixer
+Documents Toolbar
+Right Click Extended
+Lorem Pixel
+Markdown Preview
+Lint ALL Things
+Brackets Todo
+Themes
+Minimap : 1 khung kéo như Sublime text 3
+SCSS Lint
+Terminal
+Open Terminal Here
+LINTYAI
+Jade Snippet
+Open In Browser
+eqFTP 
+HTML Designer for Brackets
+Extension Rating
+brackets alignment
+jQuinter : Gạch chân selector mà đang viết code cho selector đó bằng file khác
+Console Plus
+Brackets Stylus Code Hints
+
+
+* Nên Thử :
+Ionic Framework Code Hinting : framework dạng giống Boostrap
+Brackets Power Mode : Phát sáng phần trỏ code
+CSS Color Marker
+ACB GIMEpix Placeholder : Insert ảnh rồi tạo 3D quay vòng tròn cho những ảnh đã insert
+Brackets Pixlr : Chỉnh sửa ảnh
+Bootswatch Theme Picker : Các module được làm sẵn dựa trên bootstrap
+Projects : Tên folder project dựa theo chức năng của project đó 
+AEM Brackets Extension : Chỉnh sửa font - mã màu file CSS 1 cách trực quan
+Brackets Bootstrap Skeleton
+WakaTime : Theo dõi quá trình code viết lập biểu đồ thời gian viết bằng ngôn ngữ nào trong vòng bao nhiêu thời gian
+adenin Mobility Portal Builder : Dựa theo smartphone để thiết kế giao diện
+Brackets Image Convert
+Brackets Ungit : Not Git
+Indent Guides

@@ -1,0 +1,20 @@
+<html>
+<head>
+<script type="text/javascript">
+function show_popup()
+{
+var p=window.createPopup()
+var pbody=p.document.body
+pbody.style.backgroundColor="#FFFF44"
+pbody.style.border="solid black 1px"
+pbody.innerHTML="This is a pop-up! Click outside the pop-up to close."
+p.show(100,30,300,50,pbody)
+}
+</script>
+</head>
+
+<body>
+<label onMouseOver="show_popup()">Show pop-up!</label>
+</body>
+
+</html>

@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<!-- saved from url=(0043)http://docs.lighttable.com/#submit-a-plugin -->
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <title>Light Table docs</title>
+    <meta name="author" content="Chris Granger">
+    <meta name="description" content="Documentation for Kodowa&#39;s Light Table development environment">
+    <link href="http://feeds.feedburner.com/ChrisGranger" rel="alternate" title="Chris Granger" type="application/atom+xml">
+
+    <!-- syntax highlighting CSS -->
+    <link rel="stylesheet" href="./Light Table docs_files/syntax.css" type="text/css">
+
+    <link rel="stylesheet" href="./Light Table docs_files/reset.css" type="text/css" media="screen, projection">
+    <!-- Homepage CSS -->
+    <link rel="stylesheet" href="./Light Table docs_files/screen-dark.css" type="text/css" media="screen, projection">
+    <link href="./Light Table docs_files/css" rel="stylesheet" type="text/css">
+
+    <script type="text/javascript" async="" src="./Light Table docs_files/ga.js"></script><script src="./Light Table docs_files/jquery.min.js" type="text/javascript"> </script>
+
+    <!-- header links CSS -->
+    <link rel="stylesheet" href="./Light Table docs_files/font-awesome.min.css">
+    <link rel="stylesheet" href="./Light Table docs_files/header-links.css" type="text/css" media="screen">
+
+  <style type="text/css" id="igtranslator-color"></style><style type="text/css">/* This is not a zero-length file! */</style><style type="text/css">/* This is not a zero-length file! */</style></head>
+  <body cz-shortcut-listen="true">
+
+    <div id="wrapper">
+      <div id="nav">
+        <h1><a href="http://www.lighttable.com/">Light Table</a></h1>
+        <ul>
+            <li><a href="http://docs.lighttable.com/#start">Getting started</a></li>
+            <li><a href="http://docs.lighttable.com/#how">How do I..?</a></li>
+            <li><a href="http://docs.lighttable.com/#what">What is..?</a></li>
+            <li><a href="http://docs.lighttable.com/#other">Other</a></li>
+            <li><a href="http://docs.lighttable.com/#" id="searchtoggle">Search</a></li>
+        </ul>
+        <input type="text" id="search" placeholder="search">
+      </div>
+
+      <div id="contentwrapper">
+        <div id="content" class="">
+          
+<div class="post" id="start">
+    <h2>Getting Started</h2>
+    <h3 id="full-tutorials"><a class="header-link" href="http://docs.lighttable.com/#full-tutorials"><i class="fa fa-link"></i></a>Full tutorials</h3>
+
+<ul>
+<li><a href="http://docs.lighttable.com/tutorials/full/">Getting started with Light Table</a></li>
+</ul>
+
+<h3 id="opening-and-creating-new-files"><a class="header-link" href="http://docs.lighttable.com/#opening-and-creating-new-files"><i class="fa fa-link"></i></a>Opening and creating new files</h3>
+
+<p>To create a new file, use the <code>New file</code> menu item in the <code>File</code> menu or press cmd/ctrl-n
+To open a file, use the <code>Open file</code> menu item in the <code>File</code> menu or press cmd/ctrl-shift-o</p>
+
+<h3 id="with-clojure"><a class="header-link" href="http://docs.lighttable.com/#with-clojure"><i class="fa fa-link"></i></a>With Clojure</h3>
+
+<p>If you have some Clojure code in a file already, you can get going with inline eval by:</p>
+
+<ol>
+<li>Create a new file and save it with a .clj extension or open a .clj file</li>
+<li>Press Cmd/Ctrl+Enter to evaluate a form</li>
+<li>Wait for the client to connect (this can take a bit the first time)</li>
+<li>Once connected you'll see your result.</li>
+</ol>
+
+<h3 id="with-javascript-html-css"><a class="header-link" href="http://docs.lighttable.com/#with-javascript-html-css"><i class="fa fa-link"></i></a>With Javascript/HTML/CSS</h3>
+
+<p>In order to evaluate Javascript, HTML, or CSS, we need a browser to see the result in. To open a browser tab in Light Table:</p>
+
+<ol>
+<li>In the view menu click the <code>commands</code> item</li>
+<li>Type "brows" and press enter when the <code>Browser: add browser tab</code> command is highlighted</li>
+<li>Use the url bar at the bottom to open your page (note: this can be a <code>file://</code> url to open an html file locally, or it can be something on the internet/localhost).</li>
+</ol>
+
+<p>Now that we have a place to send our code, let's open a .js file and eval something:</p>
+
+<ol>
+<li>Create a new file and save it with a .js extension or open a .js file</li>
+<li>Press Cmd/Ctrl+Enter while the cursor is over a top-level block of code. To eval an inner block, select and then eval it.</li>
+<li>Select the webpage name from the available clients popup</li>
+<li>You'll now see results inline!</li>
+<li>Evaling from a .css file will inject the css into the page.</li>
+<li>Evaling from an .html file will refresh the browser tab.</li>
+</ol>
+
+<h3 id="with-python"><a class="header-link" href="http://docs.lighttable.com/#with-python"><i class="fa fa-link"></i></a>With Python</h3>
+
+<p>Getting started with Python is as simple as:</p>
+
+<ol>
+<li>Create a new file with a .py extension or open a .py file</li>
+<li>While over some code press Cmd/Ctrl+Enter</li>
+<li>Allow Light Table a few seconds while it connects to a python process</li>
+<li>You'll now see results inline!</li>
+</ol>
+
+<p>If you want to use Light Table to do matplotlib/pylab graphs and such, you'll want to install the IPython kernel:</p>
+
+<ol>
+<li>Follow these <a href="http://ipython.org/ipython-doc/stable/install/install.html">instructions</a> to install IPython (note: it must IPython 1.0 or greater and you <em>must</em> install pyzmq as well in order for it to work with Light Table.)</li>
+<li>Make sure IPython is on your path</li>
+<li>Restart Light Table</li>
+<li>Open a .py file by pressing Cmd/Ctrl+Shift+O</li>
+<li>Over an expression that will return a graph, press Cmd/Ctrl+Enter</li>
+<li>You'll see the graph embedded below your expression.</li>
+</ol>
+
+<h3 id="with-the-workspace-tree-or-how-to-open-files"><a class="header-link" href="http://docs.lighttable.com/#with-the-workspace-tree-or-how-to-open-files"><i class="fa fa-link"></i></a>With the workspace tree (or how to open files)</h3>
+
+<p>Opening each file individually through the native open dialogs isn't very efficient. The <code>workspace</code> tree allows you to instead add files and folders into a file explorer that you can then use to open/rename/delete/etc the files you're interested in. To open the workspace tree, click the <code>Workspace</code> item in the view menu. You can then add files or folders to the workspace using the buttons at the top.</p>
+
+<p><img src="./Light Table docs_files/wsadd.png" alt="workspace tab"></p>
+
+<p>Once you have items in your workspace, you can use the right-click context menu to do the standard file actions you would expect (rename, delete, new file, etc) as well as remove them from the workspace if you no longer want them there.</p>
+
+<p><img src="./Light Table docs_files/wsmenu.png" alt="workspace tab menu"></p>
+
+<p>When you open a new window of Light Table, you'll be given a new blank workspace - if you want to switch to a recently used one, click the recent button and select one of your old workspaces from the list.</p>
+
+<p><img src="./Light Table docs_files/wsrecent.png" alt="workspace tab recent"></p>
+
+<h3 id="with-the-navigate-pane"><a class="header-link" href="http://docs.lighttable.com/#with-the-navigate-pane"><i class="fa fa-link"></i></a>With the Navigate pane</h3>
+
+<p>Once you have files and folders in your workspace, the <code>navigate</code> pane provides the quickest way to open a file by name. Opening it is bound to Cmd/Ctrl+O by default.</p>
+
+<p><img src="./Light Table docs_files/navi.png" alt="navigate tab"></p>
+
+<p>The navigate tab is a "filter list" where typing in the top input will filter the results down to those that match what you've typed. All filter lists inside of Light Table use a form of sequential partial substring matching, which is a fancy way of saying that you can type letters and as long as those letters appear in order in one of the list items it will be considered a match. This allows you to type "mcf" to match "my-cool-file" and so on, dramatically increasing efficiency of filter operations.</p>
+
+<p><img src="./Light Table docs_files/navi2.png" alt="navigate tab filtered"></p>
+
+<h3 id="with-the-connections-pane"><a class="header-link" href="http://docs.lighttable.com/#with-the-connections-pane"><i class="fa fa-link"></i></a>With the Connections pane</h3>
+
+<p>The <code>connect</code> pane shows you a list of currently connected "clients" that can be used for doing language operations like eval. To open it, use the <code>Connections</code> item in the <code>View</code> menu or the <code>Connect: Show connect bar</code> command.</p>
+
+<p><img src="./Light Table docs_files/_con.png" alt="connect tab"></p>
+
+<p>This list allows you to disconnect a client, which often kills the process it is associated to, or unset a client associated to an editor. You might do the latter when you want to change the context in which you eval something, for example. Clients associated with the currently active editor will appear highlighted.</p>
+
+<p><img src="./Light Table docs_files/consel.png" alt="connect tab"></p>
+
+<p>The <code>connect</code> tab also allows you to explicitly add a connection to a client, by presenting a list of all the available client type for you to select one from.</p>
+
+<p><img src="./Light Table docs_files/conadd.png" alt="connect tab"></p>
+
+<h3 id="with-the-command-pane"><a class="header-link" href="http://docs.lighttable.com/#with-the-command-pane"><i class="fa fa-link"></i></a>With the Command pane</h3>
+
+<p>The <code>command</code> pane is your one stop shop to figure out if Light Table can do something. It's a filter list like navigate that presents a list of all the visible commands in Light Table. Want to open a file or change some setting? Type "open file" or "setting" to filter down to what you want to do and then press enter to do it. Opening the <code>command</code> pane is bound to Ctrl+Space by default, but you can use the <code>Commands</code> item in the <code>View</code> menu as well.</p>
+
+<p><img src="./Light Table docs_files/cmd.png" alt="command tab"></p>
+
+<p>The command pane will also show keybindings for the given command underneath the command's name.</p>
+
+<p><img src="./Light Table docs_files/cmdopts.png" alt="command tab"></p>
+
+</div>
+
+<div class="post" id="how">
+    <h2>How Do I...</h2>
+    <h3 id="change-settings-fonts-line-numbers"><a class="header-link" href="http://docs.lighttable.com/#change-settings-fonts-line-numbers"><i class="fa fa-link"></i></a>Change settings (fonts, line numbers...)?</h3>
+
+<p>Settings are represented as behaviors in Light Table. To modify your user behaviors, execute the <code>Settings: User behaviors</code> command and modify the file that is opened. For example, to turn on the line number gutter, find the <code>:editor</code> tag and in the square brackets type "number". Then select <code>Editor: Show line numbers</code> behavior. This workflow lets you search for the behavior you want via the auto-complete and then the helper will show you what parameters are needed (if any) for that behavior.</p>
+
+<p>All settings in Light Table work this way and behaviors give you the ability to fundamentally change the functionality of Light Table.</p>
+
+<h3 id="configure-behaviors"><a class="header-link" href="http://docs.lighttable.com/#configure-behaviors"><i class="fa fa-link"></i></a>Configure behaviors</h3>
+
+<p>To add a behavior to your <code>user.behaviors</code> file, add a vector in the format <code>[:TAG :COMMAND :ARG1 :ARG2 ...]</code> e.g. <code>[:editor :lt.objs.editor/no-wrap]</code>. If a command takes arguments append them after the command e.g. <code>[:app :lt.objs.app/set-default-zoom-level 0.8]</code>. Behaviors that are set by default can be subtracted/removed by prefixing the command with '-'  e.g. <code>[:editor :-lt.objs.editor/no-wrap]</code>.</p>
+
+<h3 id="change-theme"><a class="header-link" href="http://docs.lighttable.com/#change-theme"><i class="fa fa-link"></i></a>Change theme</h3>
+
+<p>To set the editor theme execute the <code>Settings: User behaviors</code> command, type <code>[:editor :lt.objs.style/set-theme "" ]</code> and in between quotation marks type a theme name (auto-complete will help you here). To see what different themes look like, try <a href="http://codemirror.com/demo/theme.html">the CodeMirror theme demo</a>. Note that some themes listed there may not be available because LightTable may not be on the same CodeMirror version as the demo. To try third party themes, like <a href="https://github.com/FarhadG/code-mirror-themes">these ones</a>, download them and add an entry for it in user.behaviors file:  <code>[:app :lt.objs.style/provide-theme "theme-name" "/full/path/to/theme/css"]</code>. Once a theme is provided you can set it with the aforementioned <code>set-theme</code>.</p>
+
+<h3 id="evaluate-code-inline"><a class="header-link" href="http://docs.lighttable.com/#evaluate-code-inline"><i class="fa fa-link"></i></a>Evaluate code inline?</h3>
+
+<p>Within an editor, eval a single "block" (or form if you're used to LISP) is bound to Cmd/Ctrl+Enter by default and evaling an entire file is bound to Cmd/Ctrl+Shift+Enter. Not all file types know how to eval, to find out what kinds of clients are available for evaluation, open the <code>connect</code> tab and press the "Add Connection" button. This will give you a list of all the clients Light Table knows how to start.</p>
+
+<h3 id="change-keybindings"><a class="header-link" href="http://docs.lighttable.com/#change-keybindings"><i class="fa fa-link"></i></a>Change keybindings?</h3>
+
+<p>Keybindings are defined in .keymap files in Light Table. To open the user keymap, execute the <code>Settings: User keymap</code> command. To see the default keybindings you can execute the <code>Settings: Default keymap</code> command. Keys are bound based on context (tag), which allows you to create contextual command schemes.</p>
+
+<h3 id="configure-keybindings"><a class="header-link" href="http://docs.lighttable.com/#configure-keybindings"><i class="fa fa-link"></i></a>Configure keybindings</h3>
+
+<p>To add a keybinding to your <code>user.keymap</code> file, add a vector in the format <code>[:TAG "KEYBINDING" :COMMAND]</code> e.g. <code>[:editor "alt-w" :editor.watch.watch-selection]</code>. If a command takes arguments wrap the command and its arguments in a parentheses e.g. <code>[:editor "alt-(" (:paredit.select.parent "(")]</code>. If you want to bind multiple commands to the same keybinding, use a simple vector for the whole binding-command e.g. <code>[:editor  "alt-(" (:paredit.select.parent "(") :smart-indent-selection]</code>. Keybindings that are set by default can be subtracted/removed by prefixing the key with '-'  e.g. <code>[:app "-ctrl-shift-d" :docs.search.show]</code>.</p>
+
+<h3 id="split-windows"><a class="header-link" href="http://docs.lighttable.com/#split-windows"><i class="fa fa-link"></i></a>Split windows?</h3>
+
+<p>You can create a new tabset by either right clicking in the tab area and selecting <code>New tabset</code> or by using the <code>Tabs: Add a tabset</code> command in the command bar. To close a tabset you can either use the <code>Tabs: Remove active tabset</code> command or resize it such that it has 0 width.</p>
+
+<h3 id="open-a-new-window"><a class="header-link" href="http://docs.lighttable.com/#open-a-new-window"><i class="fa fa-link"></i></a>Open a new window?</h3>
+
+<p>By default, Cmd/Ctrl+Shift+N is bound to the command <code>Window: Open new window</code>, which you can also just execute from the command tab.</p>
+
+<h3 id="open-a-browser-tab-for-live-modification"><a class="header-link" href="http://docs.lighttable.com/#open-a-browser-tab-for-live-modification"><i class="fa fa-link"></i></a>Open a browser tab for live modification?</h3>
+
+<p>You can open a browser tab by either using the <code>Browser: add browser tab</code> command or by choosing the browser client type form the "Add Connection" menu in the <code>connect</code> tab. Once open, it is now available as an evaluation client and Cmd/Ctrl+R is bound to refreshing it.</p>
+
+<h3 id="bring-up-auto-completion"><a class="header-link" href="http://docs.lighttable.com/#bring-up-auto-completion"><i class="fa fa-link"></i></a>Bring up auto-completion?</h3>
+
+<p>Auto-complete is bound to the Tab key if there's some non-space character preceding the cursor, otherwise a tab is inserted.</p>
+
+<h3 id="eval-an-arbitraty-unit-of-code"><a class="header-link" href="http://docs.lighttable.com/#eval-an-arbitraty-unit-of-code"><i class="fa fa-link"></i></a>Eval an arbitraty unit of code?</h3>
+
+<p>If you have something selected Light Table will send the selection text for eval if you press Cmd/Ctrl+Enter.</p>
+
+<h3 id="eval-clojure"><a class="header-link" href="http://docs.lighttable.com/#eval-clojure"><i class="fa fa-link"></i></a>Eval Clojure?</h3>
+
+<p>To eval Clojure, open a .clj file and press Cmd/Ctrl+Enter. Light Table will find a leiningen project if there is one or it will use it's local REPL client to evaluate your code.</p>
+
+<h3 id="eval-clojurescript"><a class="header-link" href="http://docs.lighttable.com/#eval-clojurescript"><i class="fa fa-link"></i></a>Eval ClojureScript</h3>
+
+<p>You can eval ClojureScript <a href="https://github.com/LightTable/Clojure#clojurescript-eval">a couple of different
+ways</a>. For your ClojureScript project,
+building your cljs assets and then pressing Cmd/Ctrl+Enter is recommended. To read more about this
+workflow, <a href="https://github.com/LightTable/Clojure#clojurescript-workflows">see the Clojure plugin REAMDE</a>.</p>
+
+<h3 id="eval-javascript-in-nodejs"><a class="header-link" href="http://docs.lighttable.com/#eval-javascript-in-nodejs"><i class="fa fa-link"></i></a>Eval Javascript in NodeJS?</h3>
+
+<p>To eval in a Node process:</p>
+
+<ol>
+<li>Go to the <code>connect</code> tab</li>
+<li>Click "Add Connection"</li>
+<li>Select "NodeJS"</li>
+<li>Choose a Javascript file to start the node server with.</li>
+<li>Open a .js file</li>
+<li>Press Cmd/Ctrl+Enter</li>
+<li>Select your nodejs client from the popup</li>
+</ol>
+
+<h3 id="eval-python"><a class="header-link" href="http://docs.lighttable.com/#eval-python"><i class="fa fa-link"></i></a>Eval Python?</h3>
+
+<p>The easiest way is to simply open a Python file and press Cmd/Ctrl+Enter. This will cause Light Table to start a python client that it can then send code to.</p>
+
+<h3 id="use-ipython-for-python-eval"><a class="header-link" href="http://docs.lighttable.com/#use-ipython-for-python-eval"><i class="fa fa-link"></i></a>Use IPython for Python eval?</h3>
+
+<p>By default, if Light Table can find a recent IPython installed on your machine, it will use it to provide a much more robust python evaluation environment. If you don't have it installed, follow these <a href="http://ipython.org/ipython-doc/stable/install/install.html">instructions</a> to do so (make sure you install pyzmq as well). With it you can use matplotlib and pylab inline. To see if Light Table is using IPython for Python eval, open the <code>connect</code> tab and look to see if your Python client has the type of <code>ipython</code>. Note that in order for Light Table to use IPython, pyzmq also needs to be installed.</p>
+
+<h3 id="see-the-output-from-stdout-and-stderr"><a class="header-link" href="http://docs.lighttable.com/#see-the-output-from-stdout-and-stderr"><i class="fa fa-link"></i></a>See the output from STDOUT and STDERR?</h3>
+
+<p>When you print from a client, it will appear in the Console, which can be opened by clicking the blue number in the bottom right corner of the editor, from the <code>View</code> menu, or by using the <code>Console: Toggle console</code> command.</p>
+
+<h3 id="use-a-different-client-once-i-39-ve-evaled-something"><a class="header-link" href="http://docs.lighttable.com/#use-a-different-client-once-i-39-ve-evaled-something"><i class="fa fa-link"></i></a>Use a different client once I've evaled something?</h3>
+
+<p>From the <code>connect</code> tab, find the client and make sure the editor you evaled in is active. The connected client(s) will appear highlighted. Click the "unset" button to force Light Table to re-evaluate what clients are available to eval in the editor.</p>
+
+<h3 id="close-a-client"><a class="header-link" href="http://docs.lighttable.com/#close-a-client"><i class="fa fa-link"></i></a>Close a client?</h3>
+
+<p>From the <code>connect</code> tab, find the client and click the "disconnect" button.</p>
+
+<h3 id="install-a-plugin"><a class="header-link" href="http://docs.lighttable.com/#install-a-plugin"><i class="fa fa-link"></i></a>Install a Plugin</h3>
+
+<p>Open the command pane and find the command "Plugins: Show Plugin Manager". In the manager, search for a plugin. Hover over a search result and click its install button.</p>
+
+<h3 id="toggle-vim-keybindings"><a class="header-link" href="http://docs.lighttable.com/#toggle-vim-keybindings"><i class="fa fa-link"></i></a>Toggle Vim keybindings?</h3>
+
+<p>Install the <code>Vim</code> plugin using the Plugin Manager and then run the command <code>App: Reload
+behaviors</code>. If Emacs is already installed, disable it in users.behaviors with <code>[:editor
+:-lt.plugins.emacs/activate-emacs]</code>.</p>
+
+<h3 id="toggle-emacs-keybindings"><a class="header-link" href="http://docs.lighttable.com/#toggle-emacs-keybindings"><i class="fa fa-link"></i></a>Toggle Emacs keybindings?</h3>
+
+<p>Install the <code>Emacs</code> plugin using the Plugin Manager and then run the command <code>App: Reload
+behaviors</code>. If Vim is already installed, disable it in users.behaviors with <code>[:editor
+:-lt.plugins.vim/activate-vim]</code>.</p>
+
+<h3 id="exclude-files-from-the-workspace"><a class="header-link" href="http://docs.lighttable.com/#exclude-files-from-the-workspace"><i class="fa fa-link"></i></a>Exclude files from the workspace?</h3>
+
+<p>Open your user behaviors and in the <code>:app</code> tag start typing "ignore". Select the <code>Files: Set ignore pattern</code> behavior.</p>
+
+<h3 id="change-the-location-of-the-lighttable-directory"><a class="header-link" href="http://docs.lighttable.com/#change-the-location-of-the-lighttable-directory"><i class="fa fa-link"></i></a>Change the location of the lighttable directory?</h3>
+
+<p>You can use the environment variable <code>LTHOME</code> to tell the command line scripts where to find LT.</p>
+
+<h3 id="find-out-what-version-of-light-table-i-39-m-using"><a class="header-link" href="http://docs.lighttable.com/#find-out-what-version-of-light-table-i-39-m-using"><i class="fa fa-link"></i></a>Find out what version of Light Table I'm using?</h3>
+
+<p>Use the <code>App: Light Table version</code> command from the command tab.</p>
+
+<h3 id="plugins-directory"><a class="header-link" href="http://docs.lighttable.com/#plugins-directory"><i class="fa fa-link"></i></a>Plugins directory</h3>
+
+<p>The plugins directory varies depending on the platform:</p>
+
+<ul>
+<li>Mac: <code>~/Library/Application\ Support/LightTable/plugins</code></li>
+<li>Linux: <code>~/.config/LightTable/plugins</code></li>
+<li>Windows: <code>%APPDATALOCAL%/LightTable/plugins</code></li>
+</ul>
+
+<p>Alternatively, you can see your location from running the command <code>App: Light Table version</code>.</p>
+
+<h3 id="user-plugin"><a class="header-link" href="http://docs.lighttable.com/#user-plugin"><i class="fa fa-link"></i></a>User plugin</h3>
+
+<p>Your complete configuration, including plugins you've installed, is stored in a User plugin. Since the User plugin is just a directory, you can share it by putting it under revision control e.g. git and uploading it to a service like Github. To explore it, add it to your workspace with the command <code>Settings: Add User plugin to workspace</code>. Any custom keybindings and behaviors are added to <code>user.keymap</code> and <code>user.behaviors</code>. To write commands, behaviors and more, see <code>src/lt/plugins/user.cljs</code>. To open your <code>user.cljs</code> at anytime use the command <code>Settings: User script</code>. Inside the default <code>user.cljs</code> is an example command and behavior. If you're upgrading Light Table, you will need to add two behaviors to <code>user.behaviors</code> in order for the examples to work:</p>
+<div class="highlight"><pre><code class="language-clojure" data-lang="clojure"><span class="p">[</span><span class="ss">:app</span> <span class="ss">:lt.objs.plugins/load-js</span> <span class="s">"user_compiled.js"</span><span class="p">]</span>
+<span class="p">[</span><span class="ss">:user.hello</span> <span class="ss">:lt.plugins.user/on-close-destroy</span><span class="p">]</span>
+</code></pre></div>
+<p>Run the command <code>User: Say Hello</code> to see your own command!</p>
+
+<h3 id="write-a-plugin"><a class="header-link" href="http://docs.lighttable.com/#write-a-plugin"><i class="fa fa-link"></i></a>Write a plugin</h3>
+
+<p>Plugins are a great way to share your Light Table enhancement with the community. The recommended way to generate one is with <code>lein new lt-plugin my-plugin --to-dir MyPlugin</code>. Make sure to run that it in <a href="http://docs.lighttable.com/#plugins-directory">your plugin directory</a>. Add the generated plugin to your workspace and open the generated <code>.cljs</code> file. With your <a href="http://docs.lighttable.com/#eval-clojurescript">LT UI connection set up</a>, eval the file with <code>Cmd-Shift Enter</code>. Now try your new plugin command <code>Say Hello</code>! For more about writing plugins, see <a href="https://github.com/LightTable/LightTable/wiki/For-Developers#creating-a-plugin">this wiki page</a>.</p>
+
+<h3 id="submit-a-plugin"><a class="header-link" href="./Light Table docs_files/Light Table docs.html"><i class="fa fa-link"></i></a>Submit a plugin</h3>
+
+<p>If it's your first time submitting a plugin, make sure you have a valid <code>plugin.edn</code>. Fill out the keys as follows:</p>
+
+<ul>
+<li><code>:name</code>*: Camel case is recommended</li>
+<li><code>:version</code>*: Must be in format X.X.X e.g. 0.1.4</li>
+<li><code>:source</code>*: Must be a github url e.g. https://github.com/USER/PLUGIN</li>
+<li><code>:behaviors</code>*: Refers to the behaviors file which is needed to load the plugin and define any keybinding or behavior.</li>
+<li><code>:desc</code>: Primary means users can find your plugin</li>
+<li><code>:author</code>: Your name and another useful way to find your plugin</li>
+</ul>
+
+<p><code>*</code> Means the field is required.</p>
+
+<p>When releasing a new version, you must update the <code>:version</code> key and push the new git tag e.g. <code>git tag X.X.X &amp;&amp; git push --tags</code>. With your updated <code>plugin.edn</code>, add or update your plugin to the <a href="https://github.com/LightTable/plugin-metadata">plugin metadata repository</a> using <a href="https://github.com/LightTable/plugin-metadata#submit-a-plugin">these instructions</a>.</p>
+
+<h3 id="for-more-questions-see-the-user-contributed-faq"><a class="header-link" href="http://docs.lighttable.com/#for-more-questions-see-the-user-contributed-faq"><i class="fa fa-link"></i></a>For more questions, see <a href="https://github.com/LightTable/LightTable/wiki/FAQ">the user contributed FAQ</a>.</h3>
+
+</div>
+
+<div class="post" id="what">
+    <h2>What is...</h2>
+    <h3 id="eval"><a class="header-link" href="http://docs.lighttable.com/#eval"><i class="fa fa-link"></i></a>Eval?</h3>
+
+<p>Eval, short for evaluation, is the act of executing code inside of a running process. This means you modify the code that is currently executing without having to restart whatever you're doing. This also gives you the ability to evaluate an expression and see the result of it in real time based on the actual state of your application.</p>
+
+<h3 id="a-repl"><a class="header-link" href="http://docs.lighttable.com/#a-repl"><i class="fa fa-link"></i></a>A REPL?</h3>
+
+<p>REPL stands for Read-Eval-Print-Loop, wikipedia has a <a href="http://en.wikipedia.org/wiki/Read%E2%80%93eval%E2%80%93print_loop">decent description</a> of it. Basically the gist of it is that it's a little prompt that you can type code in and when submit that code, it evaluates it, prints the result, and lets you do it again. REPLs make for a great way to try things out. Inside of Light Table we remove the need for a special prompt, and instead you can eval directly in a file to see what something does/evaluates to.</p>
+
+<h3 id="an-instarepl"><a class="header-link" href="http://docs.lighttable.com/#an-instarepl"><i class="fa fa-link"></i></a>An Instarepl?</h3>
+
+<p>The Instarepl is a term we coined for an editor that evaluates as you type and shows you not only the result of an expression, but also how all the variables in your code are filled in to get that result. This allows you to see data flow through your program and amounts to a sort of real-time debugging. Results are blue and variable values are shown in purple to the right of their use in the code.</p>
+
+<h3 id="a-client"><a class="header-link" href="http://docs.lighttable.com/#a-client"><i class="fa fa-link"></i></a>A client?</h3>
+
+<p>A client is a process that is connected to Light Table that we can send messages to. Usually these messages revolve around being able to eval code in that process, but they don't necessarily have to. For example, in order to eval Python code, we run a Python process that talks to Light Table over TCP and acts a client for us to send code to.</p>
+
+<h3 id="a-workspace"><a class="header-link" href="http://docs.lighttable.com/#a-workspace"><i class="fa fa-link"></i></a>A workspace?</h3>
+
+<p>In the Light Table world, a workspace is the group of files and folders that you're interested in. Workspaces are saved and created automatically, and you can access the last 20 workspaces you've used by clicking the "recent" button at the top of the workspace tree.</p>
+
+<h3 id="a-behavior"><a class="header-link" href="http://docs.lighttable.com/#a-behavior"><i class="fa fa-link"></i></a>A behavior</h3>
+
+<p>Light Table's functionality is defined by functions that respond to a set of triggers. This combination of a function and the triggers that it reacts to is called a behavior. Behaviors serve as the way to define what Light Table does in any number of situations and operate as a very powerful settings system. Behaviors are not applied directly to objects, but rather to "tags". These tags allow you to specify behavior for kinds of things at different levels of specificity. For example, you can apply behavior to all editors by adding a behavior to the <code>:editor</code> tag or to only clojure editors by adding it to the <code>:editor.clojure</code> tag. To modify behaviors, execute the <code>Settings: User behaviors</code> command.</p>
+
+</div>
+
+<div class="post" id="other">
+    <h2>Other stuff</h2>
+    <h3 id="what-languages-does-light-table-support"><a class="header-link" href="http://docs.lighttable.com/#what-languages-does-light-table-support"><i class="fa fa-link"></i></a>What languages does Light Table support?</h3>
+
+<p>Light Table's general editor capabilities will work with most languages out there, but it has deeper language integrations (things like inline eval) for Clojure, ClojureScript, Javascript, Python, HTML, and CSS. More languages can be added via plugins in the future.</p>
+
+<h3 id="what-platforms-does-light-table-support"><a class="header-link" href="http://docs.lighttable.com/#what-platforms-does-light-table-support"><i class="fa fa-link"></i></a>What platforms does Light Table support?</h3>
+
+<p>Light Table runs on Windows, Mac OSX 10.7+, and most flavors of Linux.</p>
+
+<h3 id="does-light-table-auto-update"><a class="header-link" href="http://docs.lighttable.com/#does-light-table-auto-update"><i class="fa fa-link"></i></a>Does Light Table auto-update?</h3>
+
+<p>Yes, Light Table will download updates in the background and let you know when you need to restart to get the newest version.</p>
+
+<h3 id="what-is-light-table-written-in"><a class="header-link" href="http://docs.lighttable.com/#what-is-light-table-written-in"><i class="fa fa-link"></i></a>What is Light Table written in?</h3>
+
+<p>Light Table, with the exception of specific language clients, is written almost entirely in ClojureScript. For more detail on how it is architected, take a look at Chris's blog post <a href="http://www.chris-granger.com/2013/01/24/the-ide-as-data/">The IDE as a Value</a>.</p>
+
+</div>
+
+
+
+        </div>
+      </div>
+
+      <p id="copyright">© 2012 Chris Granger</p>
+    </div>
+
+    <!-- Google Analytics -->
+    <script type="text/javascript">
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-5714038-1']);
+      _gaq.push(['_trackPageview']);
+
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+    </script>
+    <!-- Google Analytics end -->
+    <script src="./Light Table docs_files/default.js" type="text/javascript"></script>
+
+
+    <!-- header links -->
+    <script>
+      $(function() {
+        return $("h2, h3, h4, h5, h6").each(function(i, el) {
+          var $el, icon, id;
+          $el = $(el);
+          id = $el.attr('id');
+          icon = '<i class="fa fa-link"></i>';
+          if (id) {
+            return $el.prepend($("<a />").addClass("header-link").attr("href", "#" + id).html(icon));
+          }
+        });
+      });
+    </script>
+
+  
+
+<div class="igtranslator-main-div" style="display: none; width: 0px; height: 0px;"><iframe src="about:blank" class="igtranslator-iframe" scrolling="no" frameborder="0"></iframe></div><div class="igtranslator-activator-icon bounceIn" style="display: none; background-image: url(&quot;chrome-extension://jdjonegefoidjkblnpgpijkcbfnnenfo/./data/icons/home.png&quot;);" title="Click to Show Translation"></div></body></html>

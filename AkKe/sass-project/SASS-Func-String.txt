@@ -1,0 +1,79 @@
+/*String Functions*/
+unquote($string)
+    Removes quotes from a string.
+quote($string)
+    Adds quotes to a string.
+str-length($string)
+    Returns the number of characters in a string.
+str-insert($string, $insert, $index)
+    Inserts $insert into $string at $index.
+str-index($string, $substring)
+    Returns the index of the first occurrence of $substring in $string.
+str-slice($string, $start-at, [$end-at])
+    Extracts a substring from $string.
+to-upper-case($string)
+    Converts a string to upper case.
+to-lower-case($string)
+    Converts a string to lower case.
+
+
+/*Number Functions*/
+percentage($number)
+    Converts a unitless number to a percentage.
+round($number)
+    Rounds a number to the nearest whole number.
+ceil($number)
+    Rounds a number up to the next whole number.
+floor($number)
+    Rounds a number down to the previous whole number.
+abs($number)
+    Returns the absolute value of a number.
+min($numbers…)
+    Finds the minimum of several numbers.
+max($numbers…)
+    Finds the maximum of several numbers.
+random([$limit])
+    Returns a random number. 
+
+
+/*List Functions*/
+Lists in Sass are immutable; all list functions return a new list rather than updating the existing list in-place.
+All list functions work for maps as well, treating them as lists of pairs.
+
+length($list)
+    Returns the length of a list.
+nth($list, $n)
+    Returns a specific item in a list.
+set-nth($list, $n, $value)
+    Replaces the nth item in a list.
+join($list1, $list2, [$separator])
+    Joins together two lists into one.
+append($list1, $val, [$separator])
+    Appends a single value onto the end of a list.
+zip($lists…)
+    Combines several lists into a single multidimensional list.
+index($list, $value)
+    Returns the position of a value within a list.
+list-separator($list)
+    Returns the separator of a list. 
+
+
+/*Map Functions*/
+Maps in Sass are immutable; all map functions return a new map rather than updating the existing map in-place.
+
+map-get($map, $key)
+    Returns the value in a map associated with a given key.
+map-merge($map1, $map2)
+    Merges two maps together into a new map.
+map-remove($map, $keys…)
+    Returns a new map with keys removed.
+map-keys($map)
+    Returns a list of all keys in a map.
+map-values($map)
+    Returns a list of all values in a map.
+map-has-key($map, $key)
+    Returns whether a map has a value associated with a given key.
+keywords($args)
+    Returns the keywords passed to a function that takes variable arguments. 
+
+

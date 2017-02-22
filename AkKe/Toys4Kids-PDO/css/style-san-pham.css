@@ -1,0 +1,251 @@
+/* HEADER NAVBAR*/
+section .row-top .row {
+    font-family: "Comic Sans MS", sans-serif;
+    font-weight: bold;
+}
+
+section .row-top .row .col-sm-5 h2 {
+    font-family: "Open Sans", sans-serif;
+    color: #FDA767;
+    padding: 8px;
+    text-align: center;
+    border-radius: 4px;
+    transition: all 1.5s ease-in-out;
+    font-size: 1.2em;
+}
+
+section .row-top .row .col-sm-5 {
+    border-radius: 5px;
+}
+
+section .row-top .row .col-sm-5 h5 {
+    text-transform: uppercase;
+}
+
+section .row-top .row .col-sm-5 .btn {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 2px;
+    transition: 1.5s all ease-in-out;
+}
+
+section .container .col-md-9 .col-sm-5 .clear {
+    clear: both;
+}
+
+section .container .col-md-9 .col-sm-5 h2 {
+    color: #003366;
+}
+
+section .container .col-md-9 .col-sm-5 h4 {
+    font-family: 'Comic Sans MS', sans-serif !important;
+    font-size: 0.9em;
+    float: right;
+    padding-right: 15px;
+    font-style: italic;
+}
+
+section .container .col-md-9 .col-sm-5 p {
+    font-size: 0.88em;
+    text-indent: 12px;
+    line-height: 1.4em;
+}
+
+section .container .col-md-9 .col-sm-5 span {
+    margin-left: 5px;
+    font-size: 0.68em;
+}
+
+section .container .col-md-9 .col-sm-5 a {
+    color: #993300;
+    text-transform: uppercase;
+}
+
+section .row-top .row .col-sm-5 .div-btn-first {
+    background-color: #ffffff;
+    color: #993300;
+}
+
+section .row-top .row .col-sm-5 .div-btn-first:hover {
+    background-color: #993300;
+    color: black;
+}
+
+section .row-top .row .col-sm-5 .div-btn-second {
+    background-color: #ffffff;
+    color: green;
+}
+
+section .row-top .row .col-sm-5 .div-btn-second:hover {
+    background-color: #99CC99;
+    color: black;
+}
+
+section .row-top .row .col-sm-5 .div-btn-third {
+    background-color: #ffffff;
+    color: #003366;
+}
+
+section .row-top .row .col-sm-5 .div-btn-third:hover {
+    background-color: #003366;
+    color: black;
+}
+
+section .row-bottom h3 {
+    text-transform: uppercase;
+    font-size: 1em;
+}
+
+section .row-bottom p {
+    text-transform: capitalize;
+    font-size: 0.88em;
+    color: #003366;
+}
+
+.right-col-des {
+    padding: 10px;
+    line-height: 1.4em;
+}
+
+.right-col-des h5 {
+    padding-right: 20px;
+    width: 100%;
+    border-bottom: 1px solid green;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    margin-bottom: 15px;
+}
+
+.right-col-des .clear {
+    clear: both;
+}
+
+.right-col-des span {
+    color: red;
+}
+
+.right-col-des #span-xt {
+    margin-left: 10px;
+}
+
+.right-col-des a {
+    color: red;
+}
+
+.right-col-des a::after {
+    content: " ...";
+}
+
+.row-bottom {
+    font-family: "Roboto", "Helvetica Neue", sans-serif;
+    vertical-align: center;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    border-bottom: 1px solid grey;
+}
+
+.row-bottom .row {
+    margin: 40px auto;
+}
+
+.row-bottom h3 {
+    font-size: 1.2em;
+    color: #337ab7;
+    float: left;
+    padding-bottom: 5px;
+    padding-left: 10px;
+}
+
+.row-bottom .clear {
+    clear: both;
+}
+
+.row-bottom h3 span {
+    font-size: 0.6em;
+    padding-left: 10px;
+    text-transform: uppercase;
+}
+
+.row-bottom span a {
+    color: grey;
+}
+
+.row-bottom p {
+    font-size: 1.2em;
+    margin: 0px auto;
+    text-align: center;
+    text-transform: capitalize;
+    font-family: 'Helvetica Neue', sans-serif;
+}
+
+.row-bottom img {
+    height: 200px;
+    margin: 0px auto;
+}
+
+footer .line1 .col-md-8 {
+    font-size: 0.9em;
+    color: #337ab7;
+}
+
+/* Tap/Pills Material Design for Bootstrap */
+
+.nav-tabs {
+    border-bottom: 2px solid #DDD;
+}
+
+.nav-tabs > li.active > a, .nav-tabs > li.active > a:focus, .nav-tabs > li.active > a:hover {
+    border-width: 0;
+}
+
+.nav-tabs > li > a {
+    border: none;
+    color: #666;
+}
+
+.nav-tabs > li.active > a, .nav-tabs > li > a:hover {
+    border: none;
+    color: #4285F4 !important;
+    background: transparent;
+}
+
+.nav-tabs > li > a::after {
+    content: "";
+    background: #4285F4;
+    height: 2px;
+    position: absolute;
+    width: 100%;
+    left: 0px;
+    bottom: -1px;
+    transition: all 250ms ease 0s;
+    transform: scale(0);
+}
+
+.nav-tabs > li.active > a::after, .nav-tabs > li:hover > a::after {
+    transform: scale(1);
+}
+
+.tab-nav > li > a::after {
+    background: #21527d none repeat scroll 0% 0%;
+    color: #fff;
+}
+
+.tab-pane {
+    padding: 15px 0;
+}
+
+.tab-content {
+    padding: 20px;
+}
+
+.card {
+    background: #FFF none repeat scroll 0% 0%;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.3);
+    margin-bottom: 30px;
+}
+
+body {
+    background: #EDECEC;
+    padding: 50px
+}
+

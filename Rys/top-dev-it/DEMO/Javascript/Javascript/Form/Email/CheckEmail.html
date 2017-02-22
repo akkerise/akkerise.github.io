@@ -1,0 +1,42 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Kiểm tra địa chỉ Email</title>
+<script language ="javascript">
+
+function kiemtra(mail){
+
+if(mail.length==0) {
+   alert("Quý khách vui lòng nhập Email")
+   return false;
+  }
+ // Kiem tra xem co @ hay khong
+  if(mail.indexOf("@")<0) {
+   alert("Địa chỉ Email không đúng")
+   return false;
+  }
+  var btloc=/^([\w-]+(?:\.[\w-]+)*)@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$/i 
+  if(btloc.test(mail)) {
+   alert("Địa chỉ Email đúng");    
+   kq=true ;
+  }
+  else { 
+   alert("Địa chỉ Email không đúng"); 
+   kq=false; 
+  } 
+  return kq; 
+
+}
+
+</script> 
+</head>
+
+<body>
+<form id="form1" name="frmEmail" method="post" action="">
+  Nh&#7853;p địa chỉ Email 
+  <input name="txtEmail" type="text" id="txtEmail" />
+  <input name="btnKiemTra" type="button" id="btnKiemTra" value="Ki&#7875;m Tra" onclick="kiemtra(document.frmEmail.txtEmail.value)" />
+</form>
+</body>
+</html>

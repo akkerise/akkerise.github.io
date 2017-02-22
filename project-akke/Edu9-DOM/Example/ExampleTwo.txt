@@ -1,0 +1,17 @@
+Chú ý:
+Danh sách các event trong DOM: http://www.w3schools.com/jsref/dom_obj_event.asp
+Tham khảo đối tượng Math có sẵn trong javascript giúp thực hiện các hàm tính toán http://www.w3schools.com/jsref/jsref_obj_math.asp
+Thẻ input có attribute là value, nên để set value cho ô input chúng ta làm như sau: 
+document.getElementById("input_id").value = "new value here"
+ 
+
+Bài tập:
+Viết ứng dụng Calculator có các chức năng sau:
+
+Có 1 ô để người dùng nhập dữ liệu và hiển thị kết quả.
+Có các nút +, −, ×, ÷, %, =, dấu chấm (số thập phân) và các số từ 0 đến 9, để giúp người dùng tính toán các phép tính cơ bản như 1 chiếc máy tính cầm tay.
+Có thêm 1 số nút để thực hiện các phép tính nâng cao như: bình phương, giai thừa, căn bậc 2, ...
+Có nút để reset phép tính về như lúc ban đầu khi chưa thực hiện phép tính nào (không reload lại trang web).
+Yêu cầu: 
+Trình bày đẹp, hợp lý, có title, style CSS đầy đủ.
+Nộp bài tập trên github dưới dạng static page (có thể xem trực tiếp kết quả trên trình duyệt) http://techmaster.vn/posts/33569/lam-trang-web-tinh-voi-github

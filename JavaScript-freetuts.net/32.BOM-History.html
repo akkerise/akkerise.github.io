@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Bài 32 : BOM History</title>
+</head>
+<body>
+<button onclick="forwardPage()">Forward Page</button><br>
+<button onclick="backPage()">Back Page</button><br>
+<button onclick="goPage()">Go Page</button><br>
+<script type="text/javascript">
+	// Cũng như location, history cũng là một thành phần con của window nên chúng ta phải thông qua đối tượng window để thao tác với history.
+	window.history;
+
+	//// Đếm tổng số trang đã lưu từ lược sử web
+	var totalPage = window.history.length;
+	// alert(totalPage);
+
+
+	//// Đi tới một trang nào đó trong history
+
+    // history.back() : trở lại trang trước
+    // history.forward() : đi tới trang kế tiếp
+    // history.go(number): đi tới một trang:
+    //   *  nếu number âm thì tính từ trang hiện tại trừ đi number
+    //   *  nếu number dương thì tính từ trang hiện tại cộng với number
+
+    var forwardPage = () => {
+    	return window.history.forward();
+    }
+    var backPage = () => {
+    	window.history.back();
+    }
+    var goPage = () => {
+    	window.history.go(-5);
+    }
+</script>
+</body>
+</html>

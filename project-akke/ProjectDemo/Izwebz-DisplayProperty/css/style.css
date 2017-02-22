@@ -1,0 +1,63 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#wrap {
+    width: 300px;
+    margin: 10px;
+}
+
+img {
+    border: none;
+}
+
+#container {
+    width: 400px;
+    border: 2px solid green;
+    position: relative;
+}
+
+#container p {
+	position: absolute;
+	border: 1px solid #a4a4a4;
+	width: 100px;
+	background-color: #f1f1f1;
+	top: 20px;
+	left: 300px;
+	display: none;
+}
+
+div#container:hover p , p:hover {
+	display: block;
+}
+
+div#tooltip {
+	margin: 30px 0px;
+}
+
+div#tooltip a {
+	position: relative;
+	text-decoration: none;
+	font-family: "Georgia";
+	font-size: 20px;
+
+}
+
+div#tooltip a span {
+	position: absolute;
+	top: -15px;
+	right: -160px;
+	display: none;
+	padding: 5px 0px 0px 15px;
+}
+
+div#tooltip a:hover span {
+	display: block;
+	color: #909090;
+	border: 1px solid grey;
+	padding: 3.5px;
+}
+
+
+

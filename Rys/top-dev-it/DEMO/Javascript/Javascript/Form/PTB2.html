@@ -1,0 +1,130 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Giải phương trình bậc 2</title>
+<style type="text/css">
+<!--
+.style1 {
+	color: #0000FF;
+	font-weight: bold;
+}
+.style2 {
+	color: #FF0000;
+	font-weight: bold;
+}
+.style3 {
+	color: #990099;
+	font-weight: bold;
+}
+.style4 {
+	color: #336600;
+	font-weight: bold;
+}
+-->
+</style>
+<script language="javascript">
+function bienluan()
+{
+	kq = "";
+	
+	if(f.t1.value=="")
+	{
+		alert("Mời bạn nhập giá trị thứ nhất");
+		f.t1.focus();
+	}
+	else if(isNaN(f.t1.value))
+	{
+		alert("Mời bạn nhập giá trị số");
+		f.t1.focus();
+	}
+	else if(f.t2.value=="")
+	{
+		alert("Mời bạn nhập giá trị thứ hai");
+		f.t2.focus();
+	}
+	else if(isNaN(f.t2.value))
+	{
+		alert("Mời bạn nhập giá trị số");
+		f.t2.focus();
+	}
+	else if(f.t3.value=="")
+	{
+		alert("Mời bạn nhập giá trị thứ ba");
+		f.t3.focus();
+	}
+	else if(isNaN(f.t3.value))
+	{
+		alert("Mời bạn nhập giá trị số");
+		f.t3.focus();
+	}
+	else
+	{
+		a = f.t1.value;
+		b = f.t2.value;
+		c = f.t3.value;
+		if(a==0)
+			if(b==0)
+				if(c==0)
+					kq="Phương trình vô số nghiệm" 
+				else
+					kq="Phương trình vô nghiệm" 
+			else
+				kq="x="+(-c/b) 
+		else
+		{
+			delta=(b*b)-(4*a*c);
+			if(delta<0)
+				kq="Phương trình vô nghiệm" 
+			else if(delta==0)
+				{
+					x=(-b)/(2*a);
+					kq="Phương trình có nghiệm kép x1 = x2 =" +x;
+					
+				}
+			else
+			{
+				
+				x1 = ((-b)+Math.sqrt(delta))/(2*a);
+				x2 = ((-b)-Math.sqrt(delta))/(2*a);
+				kq="Phương trình có 2 nghiệm x1 = "+x1+" x2 = "+x2;
+			}
+		}
+	}
+	f.t4.value=kq;
+}
+</script>
+</head>
+
+<body>
+<form id="f" name="f" method="post" action="">
+  <table width="524" border="0" align="center">
+    <tr>
+      <td colspan="3"><div align="center" class="style1">GIẢI PHƯƠNG TRÌNH BẬC 2 </div></td>
+    </tr>
+    <tr>
+      <td colspan="3"><label>
+        <div align="center">
+          <input name="t1" type="text" id="t1" size="5" />
+          X<SUP>2  </SUP>+ 
+          <input name="t2" type="text" id="t2" size="5" />
+          X + 
+          <input name="t3" type="text" id="t3" size="5" /> 
+          = 0        </div>
+      </label></td>
+    </tr>
+    <tr>
+      <td colspan="3"><input name="t4" type="text" id="t4" size="100" disabled="disabled" /></td>
+    </tr>
+    <tr>
+      <td width="161">&nbsp;</td>
+      <td width="287"><label>
+        <input type="button" name="Button" value="Giải phương trình" onclick="bienluan()" />
+        <input type="reset" name="Reset" value="Thực hiện lại" />
+      </label></td>
+      <td width="62">&nbsp;</td>
+    </tr>
+  </table>
+</form>
+</body>
+</html>

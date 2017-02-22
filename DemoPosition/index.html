@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Demo Position</title>
+    <style type="text/css">
+        * {
+            margin: 0px;
+            padding: 0px;
+            font-family: "Tahoma" , "Helvetica Neue" , sans-serif;
+        }
+        
+        body {
+            border: 1px solid grey;
+            width: 1000px;
+            margin: 20px auto;
+            position: relative;
+            padding: 10px auto;
+        }
+        
+        div#container {
+            
+	        background-color: #ddd;
+        }
+        
+        div#container #header #logo img{
+            width: 88px;
+            position: absolute;
+            top: 220px;
+            left: 100px;
+            border: 5px solid white;
+            border-radius: 50%;
+        }
+        /*   END HEADER   */
+        div#container #nav {
+            letter-spacing: 0.04em;
+            word-spacing: 0.2em;
+            margin: 10px 0px;
+        }
+        div#container #nav ol {
+            display: block;
+            list-style-image: none;
+            margin-left: 10px;
+            font-size: 18px;
+        }
+        
+        div#container #nav ol li {
+            list-style-type: none;
+            display: block;
+            float: left;
+            padding-right: 15px;
+        }
+        div#container #nav ol li:hover {
+            background-color: aqua;
+            color: white;
+        }
+        div#container #nav ol li a {
+            text-decoration: none;
+        }
+        div#container #nav ol li a:hover {
+            color: white;
+        }
+        div#container #nav ol li a:visited {
+            color: black;
+        }
+        .clear {
+	        clear: both
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div id="header">
+            <h6>This is site copy from AkKe InC. Company</h6>
+            <div id="logo">
+                <img src="img/logo.png" alt="Logo">
+            </div>
+            <div id="banner">
+                <img src="img/banner.jpg" alt="Banner">
+            </div>
+        </div>
+        <div id="nav">
+            <ol>
+                <li><a href="#">Trang Chủ</a></li>
+                <li><a href="#">Giới Thiệu</a></li>
+                <li><a href="#">Liên Lạc</a></li>
+                <li><a href="#">Gallery</a></li>
+                <li><a href="#">Supports</a></li>
+                <li><a href="#">Description</a></li>
+            </ol>
+        </div>
+        <div class="clear"></div>
+        <div id="content">
+            <div class="dv"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi magni, fuga tenetur eveniet, quidem autem atque qui dolor hic facilis unde aut nihil quo corrupti fugiat, earum excepturi totam minima.</p></div>
+            <div class="dv"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates, enim. Amet, repellendus error. Accusamus obcaecati rem distinctio provident doloribus nihil cum rerum dolore, eligendi est at possimus vero? Delectus et, quidem, eaque sapiente quod enim voluptatum tempore, excepturi magni debitis repudiandae nulla ad nobis exercitationem recusandae? Optio fugiat labore nam.</p></div>
+            <div class="dv"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident veniam sapiente ducimus consequuntur soluta iste vitae alias debitis quam similique laudantium doloremque vero aspernatur, nemo quos temporibus. Pariatur autem corrupti quia quae, adipisci consequatur, ullam consequuntur delectus quisquam id repellendus.</p></div>
+        </div>
+        
+    </div>
+</body>
+</html>

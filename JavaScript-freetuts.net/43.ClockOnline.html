@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 43 : Hàm xử lý ngày tháng năm trong JavaScript</title>
+</head>
+<body onload="startTime()">
+<script>
+//    Trong Javascript tổng cộng có 10 hàm thiết lập thời gian thông dụng:
+//        getDate() lấy ngày (1 - 31)
+//        getDay() lấy ngày trong tuần (0-6)
+//        getFullYear() lấy năm đầy đủ (YYYY)
+//        getYear() lấy năm 2 số cuối (YY)
+//        getHours() lấy số giờ (0 - 23)
+//        getMiliSeconds() lấy số mili giây (0 - 999)
+//        getMinutes() lấy số phút (0 - 59)
+//        getMonth() lấy tháng (0 - 11)
+//        getSeconds() lấy số giây (0 - 59)
+//        getTime() thời gian đã được convert sang dạng miliseconds.
+
+//        Tương ứng với mỗi hàm Date Get thì sẽ có một hàm Date Set (trừ hàm getDay()).
+//
+//        setDate() thiết lập ngày (1 - 31)
+//        setFullYear() thiết lập năm đầy đủ (YYYY)
+//        setYear() thiết lậpnăm 2 số cuối (YY)
+//        setHours() thiết lập số giờ (0 - 23)
+//        setMiliSeconds() thiết lập số mili giây (0 - 999)
+//        setMinutes() thiết lập số phút (0 - 59)
+//        setMonth() thiết lập tháng (0 - 11)
+//        setSeconds() thiết lập số giây (0 - 59)
+//        setTime() thiết lập thời gian đã được convert sang dạng miliseconds.
+
+    var startTime = () => {
+        var today = new Date();
+        var s = today.getSeconds();
+        var m = today.getMinutes();
+        var h = today.getHours();
+        s = checkTime(s);
+        m = checkTime(m);
+        h = checkTime(h);
+        console.log(h+":"+m+":"+s);
+        document.getElementById('timer').innerHTML = h + ":" + m + ":" + s;
+        setTimeout(function () {
+            startTime();
+        },1);
+    }
+    function checkTime(i) {
+        if (i < 10){
+            i = "0" + i;
+        }
+        return i;
+    }
+</script>
+    <div id="timer">
+
+    </div>
+</body>
+</html>

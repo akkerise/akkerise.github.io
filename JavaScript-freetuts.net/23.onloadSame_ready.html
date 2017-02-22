@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 23 : Onload giống ready trong JQuery </title>
+</head>
+<body>
+    // Onload giống ready trong JQuery tức là phải chờ cho trình duyệt biên dịch 1 lần và <br>
+    // không quan tâm thứ tự trước sau của hàm hoặc biến chưa được định nghĩa khi được gọi mà chưa khai báo
+    <script>
+        alert(1);
+        window.onload = function () {
+            alert(3);
+        };
+        alert(2);
+    </script>
+</body>
+</html>

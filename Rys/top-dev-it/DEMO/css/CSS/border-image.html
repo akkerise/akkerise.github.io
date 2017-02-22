@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<style> 
+div
+{
+	border:15px solid transparent;
+	width:250px;
+	padding:10px 20px;
+}
+
+#round
+{
+	-moz-border-image:url(border.png) 30 30 round; /* Old Firefox */
+	-webkit-border-image:url(border.png) 30 30 round; /* Safari and Chrome */
+	-o-border-image:url(border.png) 30 30 round; /* Opera */
+	border-image:url(border.png) 30 30 round;
+}
+
+#stretch
+{
+	-moz-border-image:url(border.png) 30 30 stretch; /* Old Firefox */
+	-webkit-border-image:url(border.png) 30 30 stretch; /* Safari and Chrome */
+	-o-border-image:url(border.png) 30 30 stretch; /* Opera */
+	border-image:url(border.png) 30 30 stretch;
+}
+</style>
+
+</head>
+<body>
+
+<p><b>Chú ý:</b> Internet Explorer không hỗ trợ thuộc tính border-image.</p>
+<p>Thuộc tính border-image xác định một hình ảnh được dùng như một đường viền.</p>
+
+<div id="round">Ở đây, hình ảnh được lặp lại để điền cho vùng không gian của đường viền.</div>
+<br>
+<div id="stretch">Ở đây, hình ảnh được kéo dãn để điền cho vùng không gian của đường viền.</div>
+
+<p>Ở đây hình ảnh được dùng:</p>
+<img src="border.png">
+
+</body>
+</html>
+

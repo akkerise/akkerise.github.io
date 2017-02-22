@@ -1,0 +1,26 @@
+body {
+  color: grey;
+  background-color: white;
+  font-family: 'Tahoma', sans-serif;
+  font-weight: bold; }
+
+.blog > h1 {
+  color: blue;
+  font-size: 20px; }
+.blog .entry a {
+  color: #ccceee; }
+  .blog .entry a:hover {
+    color: black; }
+  .blog .entry a:active {
+    color: grey; }
+.blog .entry p {
+  color: #35f;
+  font-size: 12px; }
+  html.csscolumns .blog .entry p {
+    column-count: 3;
+    column-gap: 10px;
+    column-rule: 3px solid #ee22ee;
+    margin: 10px;
+    border: 1px solid black; }
+
+/*# sourceMappingURL=style.css.map */

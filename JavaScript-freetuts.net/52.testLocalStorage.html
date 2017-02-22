@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Bai 52: Test Local Storage </title>
+</head>
+<body>
+	<script>
+		if (typeof(Storage) !== 'undefined') {
+			var ls = localStorage.getItem('domain');
+			document.write(ls);
+		} else {
+			document.write('Not Support HTML5');
+		}
+
+		if (typeof(Storage) !== 'undefined') {
+			// var dm = sessionStorage.dm;
+			// document.write(dm);
+			document.write(sessionStorage.dm);
+		} else {
+			document.write('Not Support HTML5');
+		}
+	</script>
+</body>
+</html>

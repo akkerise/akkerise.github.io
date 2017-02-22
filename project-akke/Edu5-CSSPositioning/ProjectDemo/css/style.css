@@ -1,0 +1,28 @@
+/*PSEUDO CLASS*/
+a:link {
+    color: black;
+}
+a:visited {
+    color: gray;
+}
+a:hover {
+    color: blue;
+}
+a:active {
+    color: green;
+}
+/*Dùng để t*/
+
+img {
+	max-width: 30%;
+	border: 2px solid orange;
+	border-radius: 30%;
+
+}
+img:hover {
+    border-radius: 50%;
+}
+
+p {
+	height: 5px;
+}

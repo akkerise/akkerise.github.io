@@ -1,0 +1,50 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+<script language="javascript">
+
+	dtFormat = 'MM/DD/YYYY'
+
+	function chkDt()
+	{
+		udt = document.frmBirthDay.txtBirthDay.value;
+		if((udt.indexOf("/") == -1) ||(udt.length!=10)){
+			alert('Định dạng ngày không đúng '+dtFormat);
+			document.frmBirthDay.txtBirthDay.focus();
+			return false;
+		}
+		dt1 = udt.split("/")
+		mm1 = parseInt(dt1[0]);
+		dd1 = parseInt(dt1[1]);
+		yy1 = parseInt(dt1[2]);
+		if(isNaN(dd1) || isNaN(mm1) || isNaN(yy1)){
+			alert('Ngày không hợp lệ !');
+			return false;
+		}
+		dt2 = new Date(mm1+'/'+dd1+'/'+yy1)
+		dd2 = dt2.getDate();
+		mm2 = dt2.getMonth()+1;
+		yy2 = dt2.getFullYear();
+		
+
+		if(dd1==dd2 && mm1==mm2 && yy1==yy2)
+			alert('Ngày hợp lệ !');
+		else
+			alert('Ngày không hợp lệ !');
+		document.frmBirthDay.txtBirthDay.focus();
+	}
+
+
+</script>
+</head>
+
+<body>
+<form id="form1" name="frmBirthDay" method="post" action="">
+  Nh&#7853;p v&agrave;o ng&agrave;y  (MM/DD/YYYY) 
+  <input name="txtBirthDay" type="text" id="txtBirthDay" />
+  <input name="btnKiemTra" type="button" id="btnKiemTra" value="Ki&#7875;m Tra" onclick="chkDt();" />
+</form>
+</body>
+</html>

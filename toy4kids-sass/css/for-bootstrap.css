@@ -1,0 +1,11 @@
+.container .navbar-right .modal-header,
+.container .navbar-right .modal-header h4,
+.container .navbar-right .modal-header .close {
+      background-color: #5cb85c;
+      color:white !important;
+      text-align: center;
+      font-size: 30px;
+  }
+  .container .navbar-right .modal-footer {
+      background-color: #f9f9f9;
+  }

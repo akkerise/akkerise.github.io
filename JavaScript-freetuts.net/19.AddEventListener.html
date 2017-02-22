@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 19 : AddEventListener()</title>
+</head>
+<body>
+<input type="text" value="" id="txt-val">
+<div id="result"></div>
+<h4 id="h4Changed">Bạn hãy zoom vào trình duyệt</h4>
+<div id="res"></div>
+<script>
+    var addEventLis = document.getElementById('txt-val');
+    var result = document.getElementById('result');
+    var res = document.getElementById('res');
+    var h4Changed = document.getElementById('h4Changed');
+    addEventLis.addEventListener('keyup',function () {
+        result.innerHTML = addEventLis.value;
+    });
+    addEventLis.addEventListener('keyup',function () {
+        if (addEventLis.value.length > 5){
+            alert(addEventLis.value.length);
+        }
+    });
+    window.addEventListener('resize',function () {
+        res.innerHTML = 'Bạn đã zoom vào trình duyệt cmnr';
+    });
+    h4Changed.addEventListener('click',function () {
+        do_something(h4Changed.innerHTML);
+    })
+    function do_something(e) {
+        alert(e);
+    }
+</script>
+</body>
+</html>

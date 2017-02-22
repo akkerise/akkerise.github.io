@@ -1,0 +1,45 @@
+AdvancedNewFile
+Color Highlighter
+Color Picker
+Alignment
+All Autocomplete
+DistractionFreeWindow
+DocBlockr
+Emmet
+FileBrowser
+Git
+Google Search
+HTML-CSS-JSPrettify
+HTML5
+IndentX
+SublimeLinter
+SublimeCodeIntel
+JavaScript Console
+JavaScript Snippets
+JQuery
+JQuery Snippets pack
+MultiEditUtils
+Predawn
+SCSS
+SCSS Snippets
+Sass
+SASS Snippets
+SideBarEnhancements
+Tag
+Terminal
+predawn
+Bootstrap 3 ,4
+Theme Material
+
+BracketHighlighter
+SidebarFolder
+SidebarGits
+BeautifyRuby
+C++ snippets
+Git Gutter
+Ruby on Rails snippets
+Theme - Asphalt
+Theme - Dark Material
+WordPress
+
+

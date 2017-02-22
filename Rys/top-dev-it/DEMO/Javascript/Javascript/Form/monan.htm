@@ -1,0 +1,132 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>Foods</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<script language="JavaScript">
+function chooseFood()
+{
+	for(i=0;i<10;i++)
+		document.forms[0].elements[i].checked = false;
+
+	a = Math.round(Math.random()*9);
+	b = Math.round(Math.random()*9);
+	c = Math.round(Math.random()*9);
+
+	while(b==a)
+		b = Math.round(Math.random()*9);
+	while(c==a || c==b)
+		c = Math.round(Math.random()*9);
+	
+	
+	document.forms[0].elements[a].checked = true;
+	document.forms[0].elements[b].checked = true;
+	document.forms[0].elements[c].checked = true;
+
+	document.forms[0].elements[10].value = eval(document.forms[0].elements[a].value) + eval(document.forms[0].elements[b].value) + eval(document.forms[0].elements[c].value);
+	
+}
+
+</script>
+</head>
+
+<body>
+<form>
+  <table width="63%" border="1" align="center" cellpadding="5" cellspacing="0">
+    <tr> 
+      <td colspan="3"><div align="center">
+        <p><strong><font color="#000099" size="+1"><img src="images/menu_header.jpg" width="827" height="53"></font></strong></p>
+</div></td>
+    </tr>
+    <tr> 
+      <td width="49%" align="center">  
+        <p>
+          <input name="c1" type="checkbox" id="c1" value="30000">
+        1. featured items</p>
+        <p><strong>30.000VND</strong></p><img src="images/featured_items.jpg" width="170" height="114"></td>
+      
+      <td width="51%" align="center">  
+        <p>
+          <input name="c2" type="checkbox" id="c2" value="20000">
+        6. Pasta</p>
+        <p><strong>20.000VND</strong></p>
+        <p><img src="images/Pasta.jpg" width="170" height="115"> </p></td>
+      
+    </tr>
+    <tr> 
+      <td align="center"> 
+        <p>
+          <input name="c3" type="checkbox" id="c3" value="30000">
+        2. Appetizers</p>
+        <p><strong>30.000VND</strong></p><img src="images/Appetizers.jpg" width="170" height="114"></td>
+      
+      <td align="center"> 
+        <p>
+          <input name="c4" type="checkbox" id="c4" value="120000">
+        7. Signature Salads &amp; Soups</p>
+        <p><strong>120.000VND</strong></p>
+        <p><img src="images/SignatureSaladsSoups.jpg" width="170" height="114"></p></td>
+      
+    </tr>
+    <tr> 
+      <td align="center"> 
+        <p>
+          <input name="c5" type="checkbox" id="c5" value="40000">
+        3. Chicken &amp; Ribs</p>
+        <p><strong>40.000VND</strong></p>
+        <p><img src="images/ChickenRibs.jpg" width="170" height="114"> </p></td>
+      
+      <td align="center"> 
+        <p>
+          <input name="c6" type="checkbox" id="c6" value="20000">
+        8. Sandwiches</p>
+        <p><strong>20.000VND</strong></p>
+        <p><img src="images/Sandwiches.jpg" width="170" height="115"></p></td>
+      
+    </tr>
+    <tr> 
+      <td align="center"> 
+        <p>
+          <input name="c7" type="checkbox" id="c7" value="50000">
+        4. Steaks &amp; Combos</p>
+        <p><strong>50.000VND</strong></p>
+        <p><img src="images/SteaksCombos.jpg" width="170" height="114"></p></td>
+      
+      <td align="center"> 
+        <p>
+          <input name="c8" type="checkbox" id="c8" value="15000">
+        9. Burgers</p>
+        <p><strong>15.000VND</strong></p>
+        <p><img src="images/Burgers.jpg" width="170" height="114"> </p></td>
+      
+    </tr>
+    <tr> 
+      <td align="center"> 
+        <p>
+          <input name="c9" type="checkbox" id="c9" value="75000">
+        5. Seafood</p>
+        <p><strong>75.000VND</strong></p>
+        <p><img src="images/Seafood.jpg" width="170" height="114"></p></td>
+      
+      <td align="center"> 
+        <p>
+          <input name="c10" type="checkbox" id="c10" value="200000">
+        10. Brunch</p>
+        <p><strong>200.000VND</strong></p>
+        <p><img src="images/Brunch.jpg" width="170" height="114"> </p></td>
+      
+    </tr>
+    <tr> 
+      <td colspan="4"><div align="center"><strong> <font color="#FF0000">Total: </font>
+            <input type="text" name="txtTotal" id="txtTotal">
+          </strong>VNĐ</div></td>
+    </tr>
+    <tr> 
+      <td colspan="4"><div align="center">
+        <input type="button" name="Button" value="Click here to choose randomly 3 foods" onClick="chooseFood()">
+      </div></td>
+    </tr>
+  </table>
+</form>
+</body>
+</html>

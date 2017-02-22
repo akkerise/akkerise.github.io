@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>DOM (Document Object Model)</title>
+    <link rel="stylesheet" href="">
+    <script src="js/DOM.js" type="text/javascript" charset="utf-8" async defer></script>
+</head>
+<body>
+<h1 id="h1Content" value='Is value of h1'>
+
+</h1>
+<script language="javascript">
+    // Hàm show kết quả
+    function show_result()
+    {
+        // Lấy hai thẻ HTML
+        var input = document.getElementById("message");
+        var div = document.getElementById("result");
+
+        // Gán nội dung ô input vào thẻ div
+        div.innerHTML = input.value;
+    }
+    function show_message() {
+        alert('Bạn đã copy trang web thành công');
+    }
+
+    function tinh() {
+        var a = document.getElementById('a').value;
+        var b = document.getElementById('b').value;
+
+        // Tính tổng a và b
+        var tong = parseInt(a) + parseInt(b);
+        if(!isNaN(tong)){
+            document.getElementById('ketqua').value = tong;
+        }
+    }
+
+    function check(){
+        return false;
+    }
+
+    function information(){
+        var user = document.getElementById('username').value;
+        var pass = document.getElementById('password').value;
+        var repass = document.getElementById('repassword').value;
+        var thongtin = document.getElementById('thongtin').value;
+        if (user != "" && pass != "" && repass != ""){
+            if(pass == repass){
+                return alert('Username của bạn là' + user);
+            }else{
+                return alert('Password không trùng nhau mời bạn nhập lại'); // return false
+            }
+        }else{
+            return alert('Bạn phải nhập đầy đủ thông tin vào các trường'); // return false
+        }
+    }
+</script>
+<input type="text" id="message" value="" onkeyup="show_result()"/>
+<div id="result"></div>
+<div oncopy="show_message()">Đây là nội dung trang web</div>
+a: <input type="text" id="a" value="" onkeyup="tinh()"><br>
+b: <input type="text" id="b" value="" onkeyup="tinh()"><br>
+Kết quả : <input id="ketqua" type="text" value="">
+
+<input type="text" onkeypress="return check()"><br>
+
+<form method="post" action="">
+    Username: <input type="text" value="" name="username" id="username"><br>
+    Password: <input type="text" value="" name="password" id="password"><br>
+    RePassword: <input type="text" value="" name="repassword" id="repassword"><br>
+    <input type="submit" value="Register" onclick="return information()">
+    <input type="text" value="" id="thongtin">
+</form>
+</body>
+</html>

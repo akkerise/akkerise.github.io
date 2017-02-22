@@ -1,0 +1,56 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Ngày</title>
+<script language="javascript" type="text/javascript">
+	var now = new Date(); 
+
+	var xmasDay = new Date(now.getFullYear(), 11, 24); // khởi tạo ngày Noel cùng năm với ngày hiện tại 
+
+	var offset = xmasDay.getTime() - now.getTime(); // lấy độ lệch của 2 mốc thời gian, đơn vị tính là millisecond 
+
+var totalDays = Math.round(offset / 1000 / 60 / 60 / 24); 
+
+alert("Còn " + totalDays + " ngày là đến Noel"); 
+
+var totalHours = Math.round(offset / 1000 / 60 / 60); 
+
+alert("Còn " + totalHours + " giờ là đến Noel");  
+
+var totalMinutes = Math.round(offset / 1000 / 60); 
+
+alert("Còn " + totalMinutes + " phút là đến Noel");   
+
+var totalSeconds = Math.round(offset / 1000); 
+
+alert("Còn " + totalSeconds + " giây là đến Noel");   
+
+   
+
+// Tính chi tiết hơn 
+
+var days = Math.floor(offset / 1000 / 60 / 60 / 24); 
+
+offset -= days * 1000 * 60 * 60 * 24; // giảm offset đi 
+
+var hours = Math.floor(offset / 1000 / 60 / 60); 
+
+offset -= hours * 1000 * 60 * 60; // giảm offset đi 
+
+var minutes = Math.floor(offset / 1000 / 60); 
+
+offset -= minutes * 1000 * 60; 
+
+var seconds = Math.floor(offset / 1000); 
+
+alert("Còn " + days + " ngày " + hours + " giờ " + minutes + " phút " + seconds + " giây là đến Noel"); 
+
+
+</script>
+</head>
+
+
+<body>
+</body>
+</html>

@@ -1,0 +1,44 @@
+body {
+    color: grey;
+    background-color: white;
+    font-family: 'Tahoma', sans-serif;
+    font-weight: bold;
+}
+
+$primaryColor: #ccceee;
+$secondsColor: #eeffff;
+$thirdsColor: #35f;
+$fordsColor: #cef345;
+.blog {
+    > h1 {
+        color: blue;
+        font-size: 20px;
+    }
+    .entry {
+        a {
+            color: $primaryColor;
+            &:hover {
+                color: black;
+            }
+            &:active {
+                color: grey;
+            }
+        }
+        p {
+            color: $thirdsColor;
+            font-size: 12px;
+            html.csscolumns & {
+                column-count: 3;
+                column-gap: 10px;
+                column-rule: 3px solid #ee22ee;
+                margin: 10px;
+                border: 1px solid black;
+            }
+        }
+    }
+}
+
+// html.csscolumns .blog .entry {
+//     border: 1px solid grey;
+//     border-radius: 10px;
+// }

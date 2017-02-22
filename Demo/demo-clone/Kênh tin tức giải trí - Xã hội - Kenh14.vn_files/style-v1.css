@@ -1,0 +1,141 @@
+﻿@charset "utf-8";
+/* CSS Document */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+textarea {
+    resize: none;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+    font-family: Arial, Helvetica, sans-serif;
+	-webkit-font-smoothing: antialiased;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+.clearfix:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+}
+
+.fl {
+	float: left;
+}
+
+.fr {
+	float: right;
+}
+
+.w1014 {
+	width: 1014px;
+	margin: 0 auto;
+}
+
+.w710 {
+    width: 710px;
+}
+
+.w700 {
+    width: 700px;
+}
+
+.w694 {
+    width: 694px;
+}
+
+.w680 {
+    width: 680px;
+}
+
+.w440 {
+	width: 440px;
+}
+
+.w320 {
+    width: 320px;
+}
+
+.w300 {
+    width: 300px;
+}
+
+.w220 {
+	width: 220px;
+}
+
+.mt-20 {
+	margin-top: 20px;
+}
+
+.mr-20 {
+	margin-right: 20px;
+}
+
+@font-face
+{
+    font-family: SFD-Light;
+    src: url('http://k14.vcmedia.vn/web_font/SFD-Light.ttf');
+}
+
+@font-face
+{
+    font-family: SFD-Bold;
+    src: url('http://k14.vcmedia.vn/web_font/SFD-Bold.ttf');   
+}
+
+@font-face
+{
+    font-family: SFD-SemiBold;
+    src: url('http://k14.vcmedia.vn/web_font/SFD-SemiBold.ttf');   
+}
+
+
+@font-face
+{
+    font-family: SFD-Medium;
+    src: url('http://k14.vcmedia.vn/web_font/SFD-Medium.ttf');
+}
+
+.kl-group.inline .kgc-list-news .kgc-news, .kl-group.inline .kgc-list-news .kgc-news .kn-title {
+    display: block;
+}

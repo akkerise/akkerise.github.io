@@ -1,0 +1,44 @@
+FUNCTION :
+
+		// No Param
+		- No Param :
+			function sayHello(){
+				echo "Hello";
+			}
+
+		// With param
+		- With Param :
+			+> No default Value :
+			function sayYYY($str){
+				echo $str;
+			}
+			+> With default Value
+			function sayXXX($str = "Ahihi"){
+				echo $str;
+			}
+
+		- Return Value
+			function odd($arr){
+				$result = [];
+				for($i=0;$i<count($arr);$i++){
+					if ($arr[$i] % 2 == 01){
+						array_unshift($result, $arr[i]);
+					}
+				}
+				return $result;
+			}
+			$result = odd([1,2,3,4,5,6,7,8]);
+			var_dump(odd($result))
+			//print_r($result)
+			// Truyền hàm này sang hàm khác bằng phương cách tùy chọn
+			$replaceFunction = "odd"
+			var_dump($replaceFunction);
+		- No Return Value
+
+
+
+INCLUDE:
+REQUIRE:
+DATABASE:
+		- PDO
+		- MySQLi

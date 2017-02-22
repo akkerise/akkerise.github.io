@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 20 : Đối tượng this trong JS (hay còn gọi là đối tượng this)</title>
+</head>
+<body>
+<button type="submit" type="submit" id="btn">Click Me</button>
+<script>
+    var btn = document.getElementById('btn');
+    btn.addEventListener('click' , function () {
+        alert(this.type);
+    });
+</script>
+</body>
+</html>

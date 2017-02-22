@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Bài 36 : setTimeout() và setInterval()</title>
+</head>
+<body>
+<script type="text/javascript">
+// setTimeout() chỉ thực hiện một lần
+// var action = () => {
+// 	alert('Chào mừng các bạn đến với Freetuts.net');
+// }
+// var do_alert = setTimeout(action,3000);
+
+// var clearTimeout_alert = () => {
+// 	clearTimeout(do_alert);
+// }
+
+var setInterval_on = () => {
+	setInterval(function(){
+		console.log('Đã xong một lần chạy 3s');
+	},3000);
+}
+var clearInterval_off = () => {
+	clearInterval(setInterval_on);
+}
+</script>
+
+<input type="button" value="ClearTimeout" onclick="clearTimeout_alert()">
+<input type="button" value="OpenInterval" onclick="setInterval_on()">
+<input type="button" value="ClearInterval" onclick="clearInterval_off()">
+</body>
+</html>

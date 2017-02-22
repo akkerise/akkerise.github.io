@@ -1,0 +1,107 @@
+* {
+    box-sizing: border-box;
+    font-family: "Comic Sans MS", "Helvetica Neue", "Comic Sans MS", sans-serif;
+}
+
+.fullsite {
+    position: relative;
+    width: 1000px;
+    margin: auto;
+    background-color: #dddddd;
+}
+
+img {
+    max-width: 100%;
+}
+
+#banner {
+    border-bottom-color: green;
+    border-bottom-width: 5px;
+}
+
+.main-menu {
+    position: relative;
+    text-align: center;
+}
+
+.main-menu a {
+    text-decoration: none;
+    padding: 15px;
+    font-size: 1.2em;
+    transition: all 1.2s linear;
+    display: inline-block;
+    border-radius: 12px;
+}
+
+.main-menu a:link,
+a:visited {
+    color: blue;
+}
+
+.main-menu a:active {
+    color: blue;
+}
+
+.main-menu a:hover {
+    color: grey;
+    background-color: white;
+    border-radius: 12px;
+}
+
+.box img {
+    width: 33%;
+    height: 188px;
+    transition: all 1.2s ease-in-out;
+    overflow: hidden;
+    opacity: 1;
+}
+
+.box img:hover {
+    transform: scale(1.05);
+    opacity: 0.8;
+}
+
+.box {
+    width: 100%;
+    margin: 1px;
+    float: left;
+    border: 1px dotted grey;
+}
+
+.div-hidden {
+    display: inline;
+}
+#logo img {
+    border: 3px solid white;
+    border-radius: 50%;
+    transition: all 5s linear;
+    opacity: 1;
+}
+#logo img:hover{
+    transform: rotate(180deg);
+    opacity: 0.5;
+}
+#logo {
+    width: 128px;
+    position: absolute;
+    top: -108px;
+    left: 88px;
+}
+
+.content {
+    position: relative;
+}
+
+#chat {
+    position: fixed;
+    width: 58px;
+    bottom: 0px;
+    right: 48px;
+}
+
+#backontop {
+    position: fixed;
+    width: 48px;
+    bottom: 0px;
+    left: 48px;
+}

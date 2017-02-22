@@ -1,0 +1,551 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>Dịch vụ mua hàng</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<script language="JavaScript">
+function khoitao()
+{
+	today = new Date();
+	f.t4.value = today.getDate() + "/" + (today.getMonth()+1) + "/" +today.getYear()
+	f.t5.disabled = true;
+	f.t7.disabled = true;
+	f.t9.disabled = true;
+	f.t11.disabled = true;
+	f.t13.disabled = true;
+	f.b1.disabled = true;
+	f.b2.disabled = true;
+	f.b3.disabled = true;
+	f.b4.disabled = true;
+	f.b5.disabled = true;
+}
+function check1()
+{
+	if(f.c1.checked == true)
+	{
+		f.t5.disabled = false;
+		f.b1.disabled = false;
+	}
+	else
+	{
+		f.t5.value = "";
+		f.t6.value = "";
+		f.t5.disabled = true;
+		f.b1.disabled = true;
+	}
+	
+} 
+function check2()
+{
+	if(f.c2.checked == true)
+	{
+		f.t7.disabled = false;
+		f.b2.disabled = false;
+	}
+	else
+	{
+		f.t7.value = "";
+		f.t8.value = "";
+		f.t7.disabled = true;
+		f.b2.disabled = true;
+	}
+	
+} 
+function check3()
+{
+	if(f.c3.checked == true)
+	{
+		f.t9.disabled = false;
+		f.b3.disabled = false;
+	}
+	else
+	{
+		f.t9.value = "";
+		f.t10.value = "";
+		f.t9.disabled = true;
+		f.b3.disabled = true;
+	}
+	
+	
+} 
+function check4()
+{
+	if(f.c4.checked == true)
+	{
+		f.t11.disabled = false;
+		f.b4.disabled = false;
+	}
+	else
+	{
+		f.t11.value = "";
+		f.t12.value = "";
+		f.t11.disabled = true;
+		f.b4.disabled = true;
+	}
+	
+	
+} 
+function check5()
+{
+	if(f.c5.checked == true)
+	{
+		f.t13.disabled = false;
+		f.b5.disabled = false;
+	}
+	else
+	{
+		f.t13.value = "";
+		f.t14.value = "";
+		f.t13.disabled = true;
+		f.b5.disabled = true;
+	}
+	
+	
+} 
+
+function tinh1()
+{
+	n = parseInt(f.t5.value);
+	if(f.t5.value=="")
+	{
+		alert("Moi ban nhap so luong..");
+		f.t5.focus();
+	}
+	else if(f.t5.value < 0)
+	{
+		alert("So luong khong duoc am");
+		f.t5.focus();
+	}
+	else if(n != f.t5.value)
+	{
+		alert("So luong khong duoc le");
+		f.t5.focus();
+	}
+	else if(isNaN(f.t5.value))
+	{
+		alert("So luong phai la so");
+		f.t5.focus();
+	}
+	else
+	{
+		if(f.t5.value > 20)
+		{
+			giatri = (f.t5.value * f.c1.value);
+			f.t6.value = giatri - (giatri*30/100);
+		}
+		else if(f.t5.value > 10)
+		{
+			giatri = (f.t5.value * f.c1.value);
+			f.t6.value = giatri - (giatri*20/100);
+		}
+		else if(f.t5.value >= 5)
+		{
+			giatri = (f.t5.value * f.c1.value);
+			f.t6.value = giatri - (giatri*10/100);
+		}
+		else
+		{
+			giatri = (f.t5.value * f.c1.value);
+			f.t6.value = giatri; 
+		}
+		
+	}
+	f.t15.value = f.t6.value*1 + f.t8.value*1 + f.t10.value*1 + f.t12.value*1 + f.t14.value*1;	
+}
+
+function tinh2()
+{
+	n = parseInt(f.t7.value);
+	if(f.t7.value=="")
+	{
+		alert("Moi ban nhap so luong..");
+		f.t7.focus();
+	}
+	else if(f.t7.value < 0)
+	{
+		alert("So luong khong duoc am");
+		f.t7.focus();
+	}
+	else if(n != f.t7.value)
+	{
+		alert("So luong khong duoc le");
+		f.t7.focus();
+	}
+	else if(isNaN(f.t7.value))
+	{
+		alert("So luong phai la so");
+		f.t7.focus();
+	}
+	else
+	{
+		if(f.t7.value > 20)
+		{
+			giatri = (f.t7.value * f.c2.value);
+			f.t8.value = giatri - (giatri*30/100);
+		}
+		else if(f.t7.value > 10)
+		{
+			giatri = (f.t7.value * f.c2.value);
+			f.t8.value = giatri - (giatri*20/100);
+		}
+		else if(f.t7.value >= 5)
+		{
+			giatri = (f.t7.value * f.c2.value);
+			f.t8.value = giatri - (giatri*10/100);
+		}
+		else
+		{
+			giatri = (f.t7.value * f.c2.value);
+			f.t8.value = giatri; 
+		}
+		
+	}
+	f.t15.value = f.t6.value*1 + f.t8.value*1 + f.t10.value*1 + f.t12.value*1 + f.t14.value*1;	
+}
+
+function tinh3()
+{
+	n = parseInt(f.t9.value);
+	if(f.t9.value=="")
+	{
+		alert("Moi ban nhap so luong..");
+		f.t9.focus();
+	}
+	else if(f.t9.value < 0)
+	{
+		alert("So luong khong duoc am");
+		f.t9.focus();
+	}
+	else if(n != f.t9.value)
+	{
+		alert("So luong khong duoc le");
+		f.t9.focus();
+	}
+	else if(isNaN(f.t9.value))
+	{
+		alert("So luong phai la so");
+		f.t9.focus();
+	}
+	else
+	{
+		if(f.t9.value > 20)
+		{
+			giatri = (f.t9.value * f.c3.value);
+			f.t10.value = giatri - (giatri*30/100);
+		}
+		else if(f.t9.value > 10)
+		{
+			giatri = (f.t9.value * f.c3.value);
+			f.t10.value = giatri - (giatri*20/100);
+		}
+		else if(f.t9.value >= 5)
+		{
+			giatri = (f.t9.value * f.c3.value);
+			f.t10.value = giatri - (giatri*10/100);
+		}
+		else
+		{
+			giatri = (f.t9.value * f.c3.value);
+			f.t10.value = giatri; 
+		}
+		
+	}
+	f.t15.value = f.t6.value*1 + f.t8.value*1 + f.t10.value*1 + f.t12.value*1 + f.t14.value*1;	
+}
+
+function tinh4()
+{
+	n = parseInt(f.t11.value);
+	if(f.t11.value=="")
+	{
+		alert("Moi ban nhap so luong..");
+		f.t11.focus();
+	}
+	else if(f.t11.value < 0)
+	{
+		alert("So luong khong duoc am");
+		f.t11.focus();
+	}
+	else if(n != f.t11.value)
+	{
+		alert("So luong khong duoc le");
+		f.t11.focus();
+	}
+	else if(isNaN(f.t11.value))
+	{
+		alert("So luong phai la so");
+		f.t11.focus();
+	}
+	else
+	{
+		if(f.t11.value > 20)
+		{
+			giatri = (f.t11.value * f.c4.value);
+			f.t12.value = giatri - (giatri*30/100);
+		}
+		else if(f.t11.value > 10)
+		{
+			giatri = (f.t11.value * f.c4.value);
+			f.t12.value = giatri - (giatri*20/100);
+		}
+		else if(f.t11.value >= 5)
+		{
+			giatri = (f.t11.value * f.c4.value);
+			f.t12.value = giatri - (giatri*10/100);
+		}
+		else
+		{
+			giatri = (f.t11.value * f.c4.value);
+			f.t12.value = giatri; 
+		}
+		
+	}	
+	f.t15.value = f.t6.value*1 + f.t8.value*1 + f.t10.value*1 + f.t12.value*1 + f.t14.value*1;	
+}
+
+function tinh5()
+{
+	n = parseInt(f.t13.value);
+	if(f.t13.value=="")
+	{
+		alert("Moi ban nhap so luong..");
+		f.t13.focus();
+	}
+	else if(f.t13.value < 0)
+	{
+		alert("So luong khong duoc am");
+		f.t13.focus();
+	}
+	else if(n != f.t13.value)
+	{
+		alert("So luong khong duoc le");
+		f.t13.focus();
+	}
+	else if(isNaN(f.t13.value))
+	{
+		alert("So luong phai la so");
+		f.t13.focus();
+	}
+	else
+	{
+		if(f.t13.value > 20)
+		{
+			giatri = (f.t13.value * f.c5.value);
+			f.t14.value = giatri - (giatri*30/100);
+		}
+		else if(f.t13.value > 10)
+		{
+			giatri = (f.t13.value * f.c5.value);
+			f.t14.value = giatri - (giatri*20/100);
+		}
+		else if(f.t13.value >= 5)
+		{
+			giatri = (f.t13.value * f.c5.value);
+			f.t14.value = giatri - (giatri*10/100);
+		}
+		else
+		{
+			giatri = (f.t13.value * f.c5.value);
+			f.t14.value = giatri; 
+		}
+		
+	}
+	f.t15.value = f.t6.value*1 + f.t8.value*1 + f.t10.value*1 + f.t12.value*1 + f.t14.value*1;	
+}
+
+function kiemtra()
+{
+	mail = f.t3.value;
+	kitu = mail.indexOf('@');
+	daucham1 = mail.indexOf('.');
+	daucham2 = mail.lastIndexOf('.');
+	khoangtrong = mail.indexOf(' ');
+	chieudai = mail.length - 1;
+	if(f.t1.value=="")
+	{
+		alert("Họ tên không được rỗng");
+		f.t1.focus();
+	}
+	else if(f.t1.value.length >30)
+	{
+		alert("Họ tên tối đa 30 ký tự");
+		f.t1.focus();
+	}
+	else if(f.t2.value=="")
+	{
+		alert("Địa chỉ không được rỗng");
+		f.t2.focus();
+	}
+	else if(f.t3.value=="")
+	{
+		alert("Email không được rỗng");
+		f.t2.focus();
+	}
+	else if((kitu < 1) || (kitu == chieudai) || (daucham1 == 0) 
+	        || (daucham1 == kitu-1) || (daucham1 == kitu+1) || (daucham2==chieudai) || (khoangtrong != -1))
+	{
+		alert("Email không hợp lệ..")
+		f.t3.focus();
+	}
+	
+	else
+	{
+				disp = open("","result");
+				disp.document.write("<title>Result page</title>");
+				disp.document.write("<h2 align=center>THÔNG TIN ĐẶT HÀNG</h2><hr><pre>");
+				disp.document.write("\t\t\tHọ tên: "+f.t1.value+"<br>");
+				disp.document.write("\t\t\tĐịa chỉ: "+f.t2.value+"<br>");
+				disp.document.write("\t\t\tEmail: "+f.t3.value+"<br>");
+				disp.document.write("\t\t\tNgày đặt: "+f.t4.value+"<br>");
+				disp.document.write("\t\t\tTổng tiền: "+f.t15.value+"<br>");
+				
+				if(f.c1.checked==true || f.c2.checked==true || f.c3.checked==true || f.c4.checked==true || f.c5.checked==true)
+					disp.document.write("<h3>\t\t\t\t\tThông tin chi tiết:</h3><br>");
+				else
+					disp.document.write("<h3>\t\t\t\t\tBạn chưa chọn hàng</h3><br>");
+					
+				if(f.t5.value!="")
+				{
+					disp.document.write("\t\t\t\t\t*Sản phẩm WindowsXP - Giá $150:<br>");
+					disp.document.write("\t\t\t\t\t\tsố lượng: "+f.t5.value+" - Thành tiền: "+f.t6.value+"<br>");
+				}
+				if(f.t7.value!="")
+				{
+					disp.document.write("\t\t\t\t\t*Sản phẩm Windows 2003 Server - Giá $170:<br>");
+					disp.document.write("\t\t\t\t\t\tsố lượng: "+f.t7.value+" - Thành tiền: "+f.t8.value+"<br>");
+				}
+				if(f.t9.value!="")
+				{
+					disp.document.write("\t\t\t\t\t*Sản phẩm Microsoft Office- Giá $100:<br>");
+					disp.document.write("\t\t\t\t\t\tsố lượng: "+f.t9.value+" - Thành tiền: "+f.t10.value+"<br>");
+				}
+				if(f.t11.value!="")
+				{
+					disp.document.write("\t\t\t\t\t*Sản phẩm SQL Server 2005 - Giá $120:<br>");
+					disp.document.write("\t\t\t\t\t\tsố lượng: "+f.t11.value+" - Thành tiền: "+f.t12.value+"<br>");
+				}
+				if(f.t13.value!="")
+				{
+					disp.document.write("\t\t\t\t\t*SSản phẩm Visual.NET - Giá $110:<br>");
+					disp.document.write("\t\t\t\t\t\tsố lượng: "+f.t13.value+" - Thành tiền: "+f.t14.value+"<br>");
+				}
+				disp.document.write("<br>\t\t\t\t\tCám ơn rất nhiều<br>");
+				disp.document.write("</pre>");
+				
+	}
+}
+</script>
+</head>
+
+<body onLoad="khoitao()">
+<form name="f" method="post" action="">
+  <table width="486" border="1" align="center" bordercolor="#990000">
+    <tr>
+      <td width="430"><table width="114%" height="65%" border="0" align="center">
+        <tr>
+          <td height="28" colspan="3" bgcolor="#CCFFCC"><div align="center"><strong><font color="#990033" size="5">DỊCH 
+            VỤ MUA BÁN TRỰC TUYẾN</font></strong></div></td>
+        </tr>
+        <tr>
+          <td height="24" colspan="2" bgcolor="#edf1fc">Họ tên</td>
+          <td align="center" valign="top" bgcolor="#edf1fc"><div align="left">
+              <input name="t1" type="text" id="t1">
+          </div></td>
+        </tr>
+        <tr>
+          <td height="53" colspan="2">Địa chỉ</td>
+          <td align="center" valign="top"><div align="left">
+              <textarea name="t2" rows="3" id="t2"></textarea>
+          </div></td>
+        </tr>
+        <tr>
+          <td height="24" colspan="2" bgcolor="#edf1fc">Email</td>
+          <td align="center" valign="top" bgcolor="#edf1fc"><div align="left">
+              <input name="t3" type="text" id="t3">
+          </div></td>
+        </tr>
+        <tr>
+          <td height="24" colspan="2">Ngày đặt</td>
+          <td align="center" valign="top"><div align="left">
+              <input name="t4" type="text" id="t4" readonly="">
+          </div></td>
+        </tr>
+        <tr>
+          <td height="24" colspan="3" bgcolor="#edf1fc"><input name="c1" type="checkbox" id="c1" value="150" onClick="check1()">
+            1) Sản phẩm WindowsXP - Giá $150</td>
+        </tr>
+        <tr>
+          <td width="13%" height="26">&nbsp;</td>
+          <td colspan="2">Số lượng
+            <input name="t5" type="text" id="t5" size="10">
+              <input name="b1" type="button" id="b1" value="Thành tiền" onClick="tinh1()">
+              <input name="t6" type="text" id="t6" size="10" readonly="">
+            (đô la)</td>
+        </tr>
+        <tr>
+          <td height="24" colspan="3" bgcolor="#edf1fc"><input name="c2" type="checkbox" id="c2" value="170" onClick="check2()">
+            2) Sản phẩm Windows 2003 Server - Giá $170</td>
+        </tr>
+        <tr>
+          <td height="26">&nbsp;</td>
+          <td colspan="2">Số lượng
+            <input name="t7" type="text" id="t7" size="10">
+              <input name="b2" type="button" id="b2" value="Thành tiền" onClick="tinh2()">
+              <input name="t8" type="text" id="t8" size="10" readonly="">
+            (đô la)</td>
+        </tr>
+        <tr>
+          <td height="24" colspan="3" bgcolor="#edf1fc"><input name="c3" type="checkbox" id="c3" value="100" onClick="check3()">
+            3) Sản phẩm Microsoft Office- Giá $100</td>
+        </tr>
+        <tr>
+          <td height="26">&nbsp;</td>
+          <td colspan="2">Số lượng
+            <input name="t9" type="text" id="t9" size="10">
+              <input name="b3" type="button" id="b3" value="Thành tiền" onClick="tinh3()">
+              <input name="t10" type="text" id="t10" size="10" readonly="">
+            (đô la)</td>
+        </tr>
+        <tr>
+          <td height="24" colspan="3" bgcolor="#edf1fc"><input name="c4" type="checkbox" id="c4" value="120" onClick="check4()">
+            4) Sản phẩm SQL Server 2005 - Giá $120</td>
+        </tr>
+        <tr>
+          <td height="26">&nbsp;</td>
+          <td colspan="2">Số lượng
+            <input name="t11" type="text" id="t11" size="10">
+              <input name="b4" type="button" id="b4" value="Thành tiền" onClick="tinh4()">
+              <input name="t12" type="text" id="t12" size="10" readonly="">
+            (đô la)</td>
+        </tr>
+        <tr>
+          <td height="24" colspan="3" bgcolor="#edf1fc"><input name="c5" type="checkbox" id="c5" value="110" onClick="check5()">
+            5) Sản phẩm Visual.NET - Giá $110</td>
+        </tr>
+        <tr>
+          <td height="26">&nbsp;</td>
+          <td colspan="2">Số lượng
+            <input name="t13" type="text" id="t13" size="10">
+              <input name="b5" type="button" id="b5" value="Thành tiền" onClick="tinh5()">
+              <input name="t14" type="text" id="t14" size="10" readonly="">
+            (đô la)</td>
+        </tr>
+        <tr>
+          <td height="24" colspan="2" bgcolor="#edf1fc"><div align="left">Tổng tiền</div></td>
+          <td align="center" valign="top" bgcolor="#edf1fc"><div align="left">
+              <input name="t15" type="text" id="t15" value="0" readonly="">
+            (đô la)</div></td>
+        </tr>
+        <tr>
+          <td height="26" colspan="3"><div align="center">
+              <input name="b6" type="button" id="b6" value="Đặt hàng" onClick="kiemtra()">
+              <input name="b7" type="reset" id="b7" value="Hủy bỏ">
+          </div></td>
+        </tr>
+      </table></td>
+    </tr>
+  </table>
+  <p>&nbsp;</p>
+</form>
+</body>
+</html>

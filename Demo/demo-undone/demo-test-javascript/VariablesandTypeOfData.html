@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Variables and Type of Data</title>
+</head>
+
+<body>
+    <div id="demoDiv">
+      This is some more text ....
+    </div>
+    <button id="clickMe">Click Me</button>
+    <script>
+        // * Array và Object là 2 kiểu dữ liệu đặc biệt, nó có thuộc tính tham chiếu nên sẽ không thể sao chép như biến thông thường.
+        //  Ví dụ, với các kiểu dữ liệu như number, string, boolean  ta có thể sao chép biến như sau:
+
+        var x = 1;
+        var y = x;      // y copy giá trị của x nên y có giá trị bằng 1
+        x = 2;          // thay đổi giá trị của x thì y vẫn có giá trị bằng 1
+                        // nhưng đối với 1 array hoặc object thì do chúng là đối tượng và khi dùng phép gán thì các biến đều tham chiếu đến cùng 1 đối tượng nên sẽ không thể copy bằng phép gán:
+
+        var a = [1,2,3];
+        var b = a;      // b tham chiếu đến a
+        a[0] = 10;      // thay đổi giá trị a[0], do cả 2 biến đều tham chiếu đến 1 mảng nên có giá trị giống nhau là [10,2,3]. Do đó b[0] có giá trị bằng 10
+        b[1] = 11;      // thay đổi giá trị b[1] thì cả 2 biến vẫn có giá trị giống nhau là [10,11,3]
+
+        // Việc tham chiếu của Array và Object như trên khi gán var b = a; thì bản thân 2 array a và b cùng dùng chung 1 mảng nên việc sẽ bị thay đổi giá trị là hiển nhiên
+        // Còn biến thông thường do sự tham chiếu là ngắn hạn nên sẽ không bị thay đổi khi giá trị ban đầu của biến đã được gán
+
+
+
+        // - Để copy 1 array ta dùng cách sau:
+
+        var x = [1,2,3];
+        var y = x.slice();          // Copy array giữ nguyên vẹn giá trị khi bắt đầu copy
+
+        // - Để copy 1 object ta dùng cách sau:
+
+        var a = {name: "xyz"};
+        var b = Object.create(a);   // Copy object giữ nguyên vẹn giá trị khi bắt đầu copy
+
+        var c = document.getElementById("demo").innerHTML = "Fuck all text ..."
+        function onclickbutton() {
+        }
+    </script>
+
+</body>
+
+</html>

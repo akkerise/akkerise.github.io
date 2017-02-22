@@ -1,0 +1,68 @@
+* {
+    box-sizing      : border-box;
+}
+
+body {
+    margin          : 0px auto;
+    padding         : 0px;
+}
+
+.wrap {
+    width           : 1000px;
+    margin          : auto;
+    background-color: #dddddd;
+    border          : 1px solid green;
+}
+
+.wrap > #banner > img {
+    display         : block;
+    width           : 1000px;
+    height          : 200px;
+}
+
+.main-menu {
+    border          : 1px solid grey;
+    font-size       : 1.4em;
+    padding         : 15px 15px 15px 50px;
+    margin          : 0px auto;
+    position        : relative;
+}
+
+.main-menu a {
+    padding-left    : 20px;
+    font-style      : normal;
+    text-decoration : none;
+    font-family     : cursive;
+}
+
+.main-menu          :hover a,
+.main-menu          :visited a {
+    color           : blue;
+}
+
+.main-menu          :active a {
+    color           : red;
+}
+
+.main-menu img {
+    width           : 128px;
+    border          : 2px solid;
+    border-color    : darkslateblue;
+    border-radius   : 50%;
+    position        : absolute;
+    top             : -120px;
+    left            : 50px;
+}
+
+.content {
+    height          : 600px;
+}
+
+.footer {
+    text-align      : center;
+    font-size       : 1.2em;
+    border          : 1px solid green;
+    font-family     : sans-serif;
+    font-weight     : 500;
+    font-style      : normal;
+}

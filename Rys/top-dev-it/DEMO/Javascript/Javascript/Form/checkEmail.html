@@ -1,0 +1,43 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Untitled Document</title>
+<script language="javascript">
+
+function checkEmail() {
+	var email = document.getElementById('emailaddress');
+	var filter = /^([a-zA-Z0-9_.-])+@(([a-zA-Z0-9-])+.)+([a-zA-Z0-9]{2,4})+$/;
+	if (!filter.test(email.value)) {
+		alert('Please provide a valid email address');
+		email.focus
+		return false;
+	}
+	else { 
+		alert('This is a valid email address');
+		return false;
+	}
+	
+}
+</script>
+
+</head>
+
+<body>
+<form name="frm" method="post">
+  
+  <table width="200" border="1">
+    <tr>
+      <td width="40">Email</td>
+      <td width="144"><input id="emailaddress" type="text" id="txtEmail" /></td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>
+        <input onclick="checkEmail()" name="btnOK" type="button" id="btnOK" value="OK" />
+</td>
+    </tr>
+  </table>
+</form>
+</body>
+</html>

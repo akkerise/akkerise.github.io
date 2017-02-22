@@ -1,0 +1,42 @@
+consistent  : thích hợp
+generator   : khái niệm , ý niệm
+ensure      : đảm bảo
+sequences   : trình tự
+instance    : trường hợp
+summary     : tóm lược
+determine   : mục đích
+whether     : liệu , không biết có đúng không
+saturated   : bảo hòa
+appended    : nối, trói, đóng dấu, treo cờ ,gắn thêm
+nest        : lồng nhau
+provided    : cung cấp
+occurrence  : biến cố , xảy ra
+arbitrary   : tuỳ tiện
+customizable: tùy biến
+hash        : băm
+increases   : tăng
+decreases   : giảm
+subtracted  : trừ
+hue         : sắc
+saturation  : bão hòa
+specified   : xác định
+optional    : không xác định
+both        : cả hai
+adjustment  : điều chỉnh
+wheel       : bánh xe
+amount      : lượng
+otherwise   : nếu không thì
+also        : cũng thế
+proprietary : độc quyền
+separator   : phân ly,riêng lẻ , tách biệt
+rather      : hơn
+dynamic     : năng động
+whole       : toàn thể
+compare     : so sánh
+either      : hoặc (or)
+workaround  : cách giải quyết
+identically : giống hệt nhau
+plain       : rõ ràng , phân minh
+except      : ngoại trừ
+present		: trình bày
+thus		: như vậy , đến đây

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 30: BOM (Browser Object Model)</title>
+</head>
+<body>
+<script>
+    /*
+     window
+     screen
+     location
+     history
+     navigator
+     popup
+     timing
+     cookies
+     */
+    // 1. Xác định kích thước trình duyệt
+    var heightBrowser = window.innerHeight;
+    var widthBrowser = window.innerWidth;
+
+    //// Đối với Internet Explorer các version 5,6,7,8 thì cú pháp như sau:
+    // Lấy chiều cao
+    var height = document.documentElement.clientHeight;
+    // hoặc
+    var height = document.body.clientHeight;
+
+    // Lấy chiều rộng
+    var width = document.documentElement.clientWidth;
+    // hoặc
+    var width = document.body.clientWidth;
+
+    //// Mẹo dùng với tất cả các trình duyệt browser
+    var width = window.innerWidth
+        || document.documentElement.clientWidth
+        || document.body.clientWidth;
+
+    var height = window.innerHeight
+        || document.documentElement.clientHeight
+        || document.body.clientHeight;
+    document.write("Trình duyệt có chiều rộng là: " + width + "<br/>");
+    document.write("Trình duyệt có chiều cao là: " + height + "<br/>");
+
+    // 2. Thao tác với một cửa sổ window
+
+    //// Mở một cưa sổ với lệnh window.open()
+    //// + Cú pháp: window.open(url, name, options)
+    //// + Trong đó:
+
+    ////    url : là đường dẫn website bạn muốn mở
+    ////    name: là tên bạn đặt cho cửa sổ này
+    ////    options: là một chuỗi các thông số được cách nhau bởi dấu phẩy, sau đây là các thông số thông dụng:
+    ////        *height=pixels : chiều cao của cửa sổ
+    ////        *width=pixels: chiều rộng của cửa sổ
+    ////        *top=pixels: vị trí hiển thị cửa sổ so với lề trên
+    ////        *left=pixels: vị trí hiển thị cửa sổ so với lề trái
+    ////        *menubar=yes|no|1|0: có hiển thị thanh menu hay không?
+    ////        *resizable=yes|no|1|0: có hiển thị biểu tượng resize cửa sổ hay không?
+    ////        *scrollbars=yes|no|1|0: có hiển thị thanh cuộn hay không?
+    ////        *status=yes|no|1|0: có hiển thị thanh trạng thái hay không?
+    ////        *titlebar=yes|no|1|0: có hiển thị titlebar hay không?
+    ////        *toolbar=yes|no|1|0: có hiển thị toolbar hay không?
+    ////        *fullscreen=yes|no|1|0: có hiển thị biểu tượng fullscreen hay không?
+    var windowChild = null;
+    function openLink() {
+        windowChild = window.open('http://freetuts.net', "windowChild", "width=500, height=500");
+        return false;
+    }
+    function closeLink() {
+        windowChild.close();
+        return false;
+    }
+    function moveLink() {
+        windowChild.moveTo(500,300);
+        windowChild.focus();
+        return false;
+    }
+    function resizeLink() {
+        windowChild.resizeTo(200,200);
+        windowChild.focus();
+        return false;
+    }
+</script>
+<a href="#" id="open_link" onclick="openLink()">Open Link</a><br>
+<a href="#" id="close_link" onclick="closeLink()">Close Link</a><br>
+<a href="#" id="move_link" onclick="moveLink()">Move Link</a><br>
+<a href="#" id="resize_link" onclick="resizeLink()">Resize Link</a><br>
+</body>
+</html>

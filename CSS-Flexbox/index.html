@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Kỹ Thuật Dàn Trang Flex Box</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<style type="text/css">
+		#container {
+			border: 1px solid grey;
+			background-color: #ccc;
+			margin: 0px auto;
+			max-width: 1000px;
+			max-height: 1000px;
+			padding: 5px;
+		}
+		.item {
+			background-color: #333;
+			margin: 5px;
+			text-align: center;
+			line-height: 50px;
+			color: white;
+		}
+		#container {
+			display: flex;
+			/*
+			row: Chuyển trục main axis thành chiều ngang, nghĩa là hiển thị theo hàng.
+			colum: Chuyển trục main axis thành chiều dọc, nghĩa là hiển thị theo cột.
+			row-reverse: Hiển thị theo hàng nhưng đảo ngược vị trí các item.
+			column-reverse: Hiển thị theo cột nhưng đảo ngược vị trí các item.
+
+			flex-direction: row | row-reverse | column | column-reverse;
+			*/
+			flex-direction: row;
+			/*flex-wrap: wrap;*/
+			/*
+			** flex-wrap: wrap;
+			4 item có width > 25% so với chiều rộng #container thì sẽ tự động trôi từng item xuống dưới
+			Không trôi mà sẽ giữ cùng 1 hàng
+			Tự động trôi khi thu nhỏ trình duyệt
+			  */
+			 justify-content: flex-start | flex-end | center | space-between | space-around;
+			 /*
+			 flex-start: trôi từ trái qua phải; - Tương tự float: left;
+			 flex-end: trôi từ phải qua trái; 	- Tương tự float: right; (flex-end không thay đổi số thứ tự như float:right)
+			 center: 	các phẩn tử được căn chỉnh ra giữa ;
+			 space-between: khoảng cách rỗng được chia đều theo số lượng của các item - mỗi item sẽ cách nhau 1 khoảng đều nhau như vậy (VD: có 4 item tổng chiều rộng là 800px - vậy #container còn thừa khoảng 200px chia cho 3 được 66.6666px . Vậy mỗi item sẽ cách nhau 1 khoảng ~ 66.6667px);
+			 space-around: CHƯA HIỂU BỔ SUNG SAU;
+			  */
+		}
+		.item {
+			width: 200px;
+		}
+		.item1 {
+			/*flex-grow: 1; 	 Tự động chiếm hết chiều rộng còn thừa của #container */
+			/*order: 4; 		 chuyển sang vị trí của item4 - item2 sẽ tự động trôi thế chỗ của item1 */
+		}
+		.item2 {
+			/*order: 3;*/
+			/*flex-grow: 2; 	 Gấp đôi chiều rộng item1 */
+			/*flex-shrink: 2;	 Nhỏ lại gấp 2 so với phần tử bình thường có flex-shrink: 1; khi thu nhỏ chiều rộng của #container (hay trình duyệt) */
+			flex-shrink: 2;
+			flex-basis: 300px;
+		}
+		.item3 {
+			/*order: 2;*/
+			/*flex-grow: 3;	 Gấp ba chiều rộng của item1 */
+			/*flex-shrink: 3;	 Nhỏ lại gấp 3 so với phần tử bình thường có flex-shrink: 1; khi thu nhỏ chiều rộng của #container (hay trình duyệt) */
+			flex-shrink: 3;
+		}
+		.item4 {
+			order: 1;
+
+		}
+
+
+	</style>
+</head>
+<body>
+	<div id="container">
+		<div class="item item1">1</div>
+		<div class="item item2">2</div>
+		<div class="item item3">3</div>
+		<div class="item item4">4</div>
+	</div>
+</body>
+</html>

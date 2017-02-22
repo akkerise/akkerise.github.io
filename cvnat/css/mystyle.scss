@@ -1,0 +1,86 @@
+@import 'variables.scss';
+@import 'functions.scss';
+body {
+}
+.slides {
+  font-family: $font_general;
+  /*** START #page-one ***/
+  #page-one {
+    h4 {
+      font-size: $font_size_text_normal;
+    }
+    
+    h6 {
+      font-size: $font_size_text_mini_small;
+    }
+    
+    img {
+      @include avatar;
+    }
+  }
+  /*** END #page-one ***/
+
+  /*** START #page-two ***/
+  #page-two {
+    h4 {
+      @extend h4;
+      margin-bottom: 100px;
+    }
+    p {
+      font-size: $font_size_text_small;
+      position: relative;
+      line-height : 40px;
+      strong {
+        position: absolute;
+        top: 80px;
+        right: 60px;
+        border-bottom: 1px solid grey;
+      }
+    }
+
+  }
+  /*** END #page-two ***/
+
+  /*** START #page-three ***/
+  #page-three {
+    #experience {
+
+     }
+    #train {
+      > h4 {
+        font-size: $font_size_text_small;
+      }
+
+      ul:first-child {
+        margin-bottom: 10px;
+      }
+      #full-end {
+        font-size: $font_size_text_super_small2;
+        width: 100%;
+        height: 500px;
+
+        #front-end {
+          float: left;
+          width: 50%;
+          height: 100%;
+          @include full-end-ul-li;
+        }
+
+        #back-end {
+          height: 100%;
+          @include full-end-ul-li;
+          a {
+            color: #E45641;
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  }
+  /*** END #page-three ***/
+  /*** START #page-four ***/
+  #page-four {
+    font-size: $font_size_text_normal;
+  }
+  /*** END #page-four ***/
+}

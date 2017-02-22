@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Branching Conditional 1</title>
+</head>
+
+<body>
+    <script type="text/javascript">
+    /*Toán tử logic, dùng kết hợp với câu lệnh điều kiện
+
+    Ký hiệu Mô tả ký hiệu   Ví dụ   Mô tả ví dụ
+    &&  và  x > 1 && x <10  x lớn hơn 1 và nhỏ hơn 10
+    ||  hoặc    x == 1 || x == 10   x bằng 1 hoặc x bằng 10
+    !   phủ định    !x  phủ định của x (nếu x bằng true thì !x bằng false và ngược lại)
+    Bài tập:
+    - Bài 1. Sử dụng câu lệnh if để viết 1 hàm cho phép 2 tham số là number và tìm ra số lớn nhất trong 2 số đó.
+    */
+    function timSoLonNhat(a, b) {
+        if (typeof a == "number" && typeof b == "number") {
+
+            var x = a - b;
+            var y = b - a;
+            if (x > 0) {
+                return "Số lớn là : " + a;
+            } else(y > 0)
+            return "Số lớn là : " + b;
+        }
+    }
+
+    /*
+    - Bài 2. Viết 1 hàm dùng để tính giai thừa của 1 số với tham số đầu vào là bất kỳ. Kiểm tra tham số đầu vào nếu không phải là number hoặc là number nhưng không phải là 1 số nguyên dương (số Integer > 0) thì hiển thị thông báo lỗi, ngược lại tính giai thừa và in ra kết quả.
+    */
+    function tinhGT_First(n){
+        if(typeof n == "number" && n > 0){
+            var gt = 1;
+            for(i=1 ; i> 0 ; i++ ){
+                gt *= i;
+            }
+            return gt;
+        }
+    }
+    function tinhGT_Seconds(n){
+        if(typeof n == "number" && n > 0){
+
+            for(i = 0 ; i<n ; i--){
+
+            }
+            return gt;
+        }
+    }
+
+    /*
+    - Bài 3. Cho 1 mảng các số bất kỳ. Tạo ra 1 mảng mới chỉ chứa các số chẵn lấy ra từ mảng trên và sắp xếp theo thứ tự giảm dần.
+    */
+    var someArr = [];
+    function funcSomeArr(){
+        for(i=0 ; i <= someArr.length; i++){
+            if(someArr[i] % 2 == 0){
+                someArr = someArr.push(someArr[i]);
+            }
+        }
+        return someArr;
+    }
+    /*
+    - Bài 4. Một trang web cho phép người dùng tạo tài khoản. Hãy viết hàm kiểm tra tính hợp lệ của thông tin người dùng nhập vào.
+
+    Giả sử tham số đầu vào là 1 object có dạng như sau (giá trị của thuộc tính là do người dùng nhập):
+    user = {
+      username: "username",
+      password: "secret",
+      confirm: "secret"
+    }
+
+    Hãy kiểm tra username phải khác rỗng và không được vượt quá 20 ký tự, password phải có độ dài từ 6 đến 32 ký tự, confirm phải giống password.
+    Gợi ý:
+    - Để tạo 1 mảng mới với số phần tử chưa rõ, đầu tiên ta tạo 1 mảng rỗng:
+
+    var arr = [];
+    sau đó push thêm phần tử vào mảng:
+
+    arr.push(2);
+    arr.push("ok");*/
+
+
+    var username = "" , password = "" , confirm = "";
+    function testArr(username,password,confirm){
+        var arr = [username,password,confirm];
+        if(username.length != ""
+        && username.length <20
+        && password.length < 32
+        && password.length > 6
+        && password == confirm){
+            for(var i in arr){
+                return arr[i]
+            }
+        }
+    }
+
+    </script>
+</body>
+
+</html>

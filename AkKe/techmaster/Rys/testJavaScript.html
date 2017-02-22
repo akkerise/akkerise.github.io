@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Test JavaScript</title>
+</head>
+
+<body>
+    <button onclick="this.innerHTML='This is value!'">The time is?</button>
+
+    <button onclick="onClick()">The time is?</button>
+
+    <h1 onclick="this.innerHTML='Ooops!'"> Click on this text!</h1>
+    <!--
+        Con trỏ this ở đây được định nghĩa là thẻ h1 
+        Show con trỏ this ra ngoài
+    -->
+
+    <h1 onclick="changeText(this)">Click on this text!</h1>
+    <script>
+        function onClick() {
+            document.getElementsByTagName("button")[0].innerHTML = Date();
+        }
+
+        function changeText(id) {
+            id.innerHTML = "Ooops!";
+        }
+    </script>
+
+
+
+    <script>
+    </script>
+</body>
+
+</html>

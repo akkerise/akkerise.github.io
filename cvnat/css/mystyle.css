@@ -1,0 +1,66 @@
+.slides {
+  font-family: Helvetica Neue, "Roboto", "Lato", sans-serif;
+  /*** START #page-one ***/
+  /*** END #page-one ***/
+  /*** START #page-two ***/
+  /*** END #page-two ***/
+  /*** START #page-three ***/
+  /*** END #page-three ***/
+  /*** START #page-four ***/
+  /*** END #page-four ***/ }
+  .slides #page-one h4 {
+    font-size: 77%; }
+  .slides #page-one h6 {
+    font-size: 44%; }
+  .slides #page-one img {
+    width: 28%;
+    border: 1px solid grey;
+    border-radius: 50%; }
+  .slides #page-two h4 {
+    margin-bottom: 100px; }
+  .slides #page-two p {
+    font-size: 66%;
+    position: relative;
+    line-height: 40px; }
+    .slides #page-two p strong {
+      position: absolute;
+      top: 80px;
+      right: 60px;
+      border-bottom: 1px solid grey; }
+  .slides #page-three #train > h4, .slides #page-three #page-two #train > h4 {
+    font-size: 66%; }
+  .slides #page-three #train ul:first-child {
+    margin-bottom: 10px; }
+  .slides #page-three #train #full-end {
+    font-size: 38%;
+    width: 100%;
+    height: 500px; }
+    .slides #page-three #train #full-end #front-end {
+      float: left;
+      width: 50%;
+      height: 100%; }
+      .slides #page-three #train #full-end #front-end ul {
+        margin-left: 0px; }
+        .slides #page-three #train #full-end #front-end ul li {
+          padding-left: 15px;
+          list-style-position: inside;
+          list-style-type: circle; }
+          .slides #page-three #train #full-end #front-end ul li ul li {
+            list-style-type: square; }
+    .slides #page-three #train #full-end #back-end {
+      height: 100%; }
+      .slides #page-three #train #full-end #back-end ul {
+        margin-left: 0px; }
+        .slides #page-three #train #full-end #back-end ul li {
+          padding-left: 15px;
+          list-style-position: inside;
+          list-style-type: circle; }
+          .slides #page-three #train #full-end #back-end ul li ul li {
+            list-style-type: square; }
+      .slides #page-three #train #full-end #back-end a {
+        color: #E45641;
+        text-decoration: underline; }
+  .slides #page-four {
+    font-size: 77%; }
+
+/*# sourceMappingURL=mystyle.css.map */

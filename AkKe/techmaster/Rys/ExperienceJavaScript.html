@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Test JavaScript</title>
+</head>
+
+<body>
+    <td colspan="5"> <input id="Result" type="text"></td>
+    <td><input id="btn" type="button" value="7" onclick="Result.value+=this.value" /></td><br>
+    <button id="oC" onclick="onClick()">On Click</button><br>
+    <button id="oMO" onmouseover="onMouseOver()">On Mouse Over</button><br>
+
+    <select onchange="onChange()" id="onChange">    
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+        <option value="9">9</option>
+    </select>
+
+    <div id="demo"></div>
+
+
+
+    <script>
+        var result = document.getElementById("Result").value;
+
+        function onClick() {
+            document.getElementById("Result").value += document.getElementById("oC").innerHTML;
+            // Điều cần lưu ý ở đây dó là :
+            /*
+            Nên để ý kỹ innerHTML và value khác hoàn toàn cách lấy dữ liệu
+            *) Điểm giống là đều dùng phương thức như :
+            document.getElementById("id") để get lấy thuộc tính hoặc dữ liệu cần thêm vào !
+            *) ĐIểm khác nhau là :
+                đối với dữ liệu ở ngoài thì dùng innerHTML
+                đối với dữ liệu được mặc định ở trong thì ta nên dùng document.getElementById("id").value mới trỏ đến được element
+            */
+        }
+
+        function onMouseOver() {
+            document.getElementById("oMO").style.color = "red";
+            /*
+                Đối với phương thức onmouseover=function();
+            // Di chuột vào và thay đổi mãi mãi ! 
+            */
+        }
+
+        function onChange() {
+            var number = document.getElementById("onChange").value;
+            document.getElementById("demo").innerHTML = "You selected number is : " + number;
+            /*
+
+            */
+        }
+    </script>
+</body>
+
+</html>

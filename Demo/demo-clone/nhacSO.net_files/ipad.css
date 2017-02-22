@@ -1,0 +1,113 @@
+/*@media screen and (min-device-width: 481px) and (orientation:portrait) {
+  #slide_show .slick-prev{left: 10px;}
+  #slide_show .slick-next{right: 10px;}
+  #search_auto_complete{width: 1024px!important;}
+  .input-group{width: 350px;}
+  .content-left{width: 694px;}
+  .footer-social .nav > li > a{margin-right: 0; margin-left: 16px;}
+  .footer-center .col-xs-3{width: 30%;}
+  #peakPlayer, #player-b{width: 1024px;}
+  #mainControls{padding-left: 0; width: 125px;}
+  .infoSong{width: 200px;}
+  #showList .wrap-showlist{width: 1024px;}
+  #listsongs{padding-left: 10px;}
+  #showList h2{padding-left: 0;}
+  .edit-list{right: 30px;}
+  .navbar-nav > li > a{padding: 15px 12px;}
+  .ad-info{padding-left: 10px;}
+  .list-bxh .link-song-name{max-width: 220px;}
+  .content-full .main-content{width: 779px;}
+  .top-banner img{width: 994px;}
+  .block-startalk .list-startalk li{width: 320px; float: left; margin-left: 17px;}
+  #artist-art, #MY_VIDEO_1, .video-section .vjs-loading{width: 674px !important;}
+  .video-section .vjs-loading{left: 63%;}
+  .live-three{left: 90.5%;}
+}
+@media screen and (min-device-width: 481px) and (orientation:landscape) {
+  #slide_show .slick-prev{left: 10px;}
+  #slide_show .slick-next{right: 10px;}
+  #search_auto_complete{width: 1024px!important;}
+  .input-group{width: 350px;}
+  .content-left{width: 694px;}
+  .footer-social .nav > li > a{margin-right: 0; margin-left: 16px;}
+  .footer-center .col-xs-3{width: 30%;}
+  #peakPlayer, #player-b{width: 1024px;}
+  #mainControls{padding-left: 0; width: 125px;}
+  .infoSong{width: 200px;}
+  #showList .wrap-showlist{width: 1024px;}
+  #listsongs{padding-left: 10px;}
+  #showList h2{padding-left: 0;}
+  .edit-list{right: 30px;}
+  .navbar-nav > li > a{padding: 15px 12px;}
+  .ad-info{padding-left: 10px;}
+  .list-bxh .link-song-name{max-width: 220px;}
+  .content-full .main-content{width: 779px;}
+  .top-banner img{width: 994px;}
+  .block-startalk .list-startalk li{width: 320px; float: left; margin-left: 17px;}
+  #artist-art, #MY_VIDEO_1, .video-section .vjs-loading{width: 674px !important;}
+  .video-section .vjs-loading{left: 63%;}
+  .live-three{left: 90.5%;}
+}*/
+
+/*@media all and (max-width: 1024px) {
+  
+}*/
+@media only screen and (min-device-width : 481px) and (max-device-width : 1024px){
+  .b-ht, .banner-adv > a{width: 674px!important;}
+  .main-banner .top-adv{position: absolute; top: 70px; left: 125px;}
+  .main-banner .top-adv img{width: auto!important;}
+  .container{width: auto!important;}
+  #search_auto_complete{width: auto!important;}
+  #slide_show .slick-prev{left: 10px;}
+  #slide_show .slick-next{right: 10px;}
+  .input-group{width: 320px;}
+  .content-left{width: 694px; float: left;}
+  .sidebar{width: 283px;}
+  #volume{margin: 16px 10px;}
+  #showPlaylist{margin-right: 30px;}
+  .footer-social .nav > li > a{margin-right: 0; margin-left: 10px;}
+  .footer-center .col-xs-3{width: 30%;}
+  #peakPlayer, #player-b{width: 1024px;}
+  #mainControls{padding-left: 0; width: 125px;}
+  .infoSong{width: 200px;}
+  #showList .wrap-showlist{width: 1024px;}
+  #listsongs{padding-left: 10px;}
+  #showList .text-song{margin-left: 0;}
+  #showList h4{left: 0;}
+  #showList .text-song{width: 490px; float: left;}
+  #showList .style-song{width: 500px; float: right;}
+  #showList h2{padding-left: 512px;}
+  #previousSongButton{top: 5px; left: 15px;}
+  #nextSongButton{top: 5px; right: -10px;}
+  .edit-list{right: 30px;}
+  .navbar-nav > li > a{padding: 15px 12px;}
+  .ad-info{padding-left: 10px;}
+  .list-bxh .link-song-name{max-width: 220px;}
+  .content-full .main-content{width: 779px;}
+  .top-banner img{width: 994px;}
+  .list-startalk li{width: 320px; float: left; margin-left: 17px;}
+  .top-adv img{width: 970px!important;}
+  #artist-art, #MY_VIDEO_1, .video-section .vjs-loading{width: 674px !important;}
+  .video-section .vjs-loading{left: 63%;}
+  .live-three{left: 90.5%;}
+  .block-8k{width: 994px;}
+  .block-8k .box-1{width: 674px; margin-right: 20px;}
+  .global-image{background: #fff!important;}
+  .block-8k .box-2{width: 300px;}
+  .list-startalk li:nth-child(3n+1){margin-left: 0!important;}
+  #bnr{width: 283px; height: 236px;}
+  .uiScaledImageContainer, ._2p3a{width: 283px;}
+  #google_image_div{width: 674px; height: 83px;}
+  #block-news .box-news-hl{width: 390px; margin-right: 20px;}
+  #block-news .list-news-1{width: 264px;}
+  .orther-news-item .thumb{width: 120px;}
+  .orther-news-item .thumb a span{height: 80px!important;}
+  .box-news-hl ul li{width: 190px; margin-right: 10px;}
+  #slide_show .slide-item{margin: 0 22px;}
+  .banner-ad, .banner-qc{width: 100%; overflow: hidden;}
+  .news-sp{width: 662px; margin-right: 10px;}
+  .list-news-hl{width: 322px;}
+  .list-news li{width: 325px;}
+  .content-details img{width: 100%!important;}
+  #comment_content{width: 555px!important}
+}

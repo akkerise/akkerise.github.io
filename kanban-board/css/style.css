@@ -1,0 +1,11 @@
+.ui-state-highlight {
+	background: #fafafa;
+	height: calc(1.5rem + 20px);
+}
+.collection .collection-item .dragging {
+    -webkit-transform-origin: rotate(2deg);
+    -moz-transform-origin: rotate(2deg);
+    -ms-transform-origin: rotate(2deg);
+    -o-transform-origin: rotate(2deg);
+    transform-origin: rotate(2deg);
+}

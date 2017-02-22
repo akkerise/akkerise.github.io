@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Javascript Function</title>
+</head>
+<body>
+    <script type="text/javascript" src="">
+    // - Bài 1. Viết 1 function tính bình phương của 1 số.
+    function tinhBinhPhuong1(a){
+        return a*a;
+    }
+
+    // - Bài 2. Cho 3 số a, b và c. Viết function tính bình phương của (3a + 2b - c)
+
+    function tinhBinhPhuong2(a,b,c){
+        var z = 3*a + 2*b -c;
+        return z*z;
+    }
+
+    // - Bài 3. Cho 1 chuỗi dài hơn 100 ký tự. Viết 1 function cắt chuỗi, lấy ra 10 ký tự đầu tiên và thêm vào dấu "..." ở cuối chuỗi.
+    var str = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur, porro suscipit in officia sit impedit similique rerum quas quae architecto perspiciatis reprehenderit est consequuntur laudantium labore vero ex eius quis culpa et rem qui necessitatibus blanditiis. Animi, commodi, voluptatum odit nam temporibus quo rerum non in qui harum id natus ea et ullam officiis explicabo nisi possimus quas laborum reiciendis hic doloremque suscipit sit laudantium modi illum corrupti quam. Doloremque, modi, quidem facere nostrum sint officiis ad aspernatur fuga vitae architecto ratione blanditiis nihil quos quisquam saepe aperiam nemo tempore sunt debitis exercitationem? Facilis, architecto molestias assumenda incidunt dignissimos nulla?";
+    function splice10CharInStr(e,f){
+        var kq = str.slice(e,f);
+        return document.write("<p>" +kq+ "</p>")
+    }
+
+    // - Bài 4. Viết 1 function có tác dụng biến 1 chuỗi thành viết hoa từ đầu tiên.
+    function someArr(someStr){
+        var kqcharAt = someStr.charAt(0).toUpperCase();
+        return kqcharAt + someStr.slice(1);
+
+    }
+
+    // - Bài 5. Viết 1 function lấy ra 1 số nhỏ nhất trong 1 mảng các số.
+    // Phương thức sort()
+    var awesomeArr = [3,4,88,9,20,10,60,100];
+    awesomeArr.sort(function(a,b){
+        return (a-b);
+    })
+
+    // - Bài 6. Cho 1 mảng gồm tên của 5 học viên. Hãy viết function sắp xếp lại thứ tự các học viên theo bảng chữ cái và in ra màn hình danh sách học viên.
+    var thirsdArr = ["Joog","Cuek","Aye","Finer","Sixer"];
+    return thirsdArr.sort();
+
+    // - Bài 7. Tạo 3 đối tượng là teacher, student và parent. Mỗi đối tượng đều có các thuộc tính: firstName, lastName, age. Cả 3 đối tượng đều có chung 1 phương thức là say(). Hãy viết function aboutMe() in ra màn hình 1 câu giới thiệu bản thân và gán vào phương thức say() của các đối tượng trên.
+    var teacher= {
+        firstName: "Nguyen",
+        lastName: "Anh",
+        age: 25,
+        say: function(){
+            "My name is : " + this.firstName + " " + this.lastName + " !";
+        }
+    }
+
+    var parent= {
+        firstName: "John",
+        lastName: "Doe",
+        age: 50,
+        say: function(){
+            "My name is : " + this.firstName + " " + this.lastName + " !";
+        }
+    }
+    var student= {
+        firstName: "Eminem",
+        lastName: "Mathaus",
+        age: 18,
+        say: function(){
+            "My name is : " + this.firstName + " " + this.lastName + " !";
+        }
+    }
+    </script>
+</body>
+</html>

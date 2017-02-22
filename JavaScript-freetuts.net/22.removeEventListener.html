@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 22 : removeEventListener()</title>
+</head>
+<body>
+<div id="result"></div>
+<input type="button" value="Stop Random" id="stop_random">
+<script>
+    var result = document.getElementById('result');
+    var stopRandom = document.getElementById('stop_random');
+    var html = document.getElementsByTagName('html')[0];
+    function do_something() {
+        result.innerHTML = Math.random();
+    }
+    html.addEventListener('mousemove' , function () {
+        do_something();
+    });
+    stopRandom.addEventListener('onclick',function () {
+       html.removeEventListener('mousemove');
+    });
+</script>
+</body>
+</html>

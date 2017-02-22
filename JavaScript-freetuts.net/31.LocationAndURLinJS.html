@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Bài 31: BOM Location điều hướng và xử lý URL trong JavaScript</title>
+</head>
+<body>
+	<button onclick="refreshPage()">Refresh Page</button><br>
+	<button onclick="replacePage()">Replace Page</button><br>
+	<button onclick="assignPage()">Assign Page</button><br>
+	<script>
+	// Đối tượng window luôn tồn tại trong các trình duyệt hiện nay
+
+	var refreshPage = () => window.location.reload();
+
+	var replacePage = () => {
+		// Hàm này sẽ KHÔNG đưa trang vào lược sử
+		window.location.replace('http://www.google.com');
+		// Hàm này CÓ đưa trang vào lược sử
+		window.location.href = "http://www.google.com";
+
+		/* Test cả 2 hàm trên thì cả 2 hàm đều lưu vào lược sử*/
+	}
+
+	// Về bản chất thì window.location.assign() giống với window.location.href
+	var assignPage = () => window.location.assign('http://www.google.com');
+</script>
+
+<script language="javascript">
+	document.write("hash:" +window.location.hash + "<br/>");
+	document.write("host:" +window.location.host + "<br/>");
+	document.write("hostname:" +window.location.hostname + "<br/>");
+	document.write("href:" +window.location.href + "<br/>");
+	document.write("origin:" +window.location.origin + "<br/>");
+	document.write("pathname:" +window.location.pathname + "<br/>");
+	document.write("port:" +window.location.port + "<br/>");
+	document.write("search:" +window.location.search + "<br/>");
+</script>
+</body>
+</html>

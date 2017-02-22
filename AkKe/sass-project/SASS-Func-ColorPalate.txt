@@ -1,0 +1,69 @@
+/* COLOR PALATE */
+
+
+/*// RGB Functions*/
+
+// rgb($red, $green, $blue)
+//     Creates a Color from red, green, and blue values.
+// rgba($red, $green, $blue, $alpha)
+//     Creates a Color from red, green, blue, and alpha values.
+// red($color)
+//     Gets the red component of a color.
+// green($color)
+//     Gets the green component of a color.
+// blue($color)
+//     Gets the blue component of a color.
+// mix($color1, $color2, [$weight])
+//     Mixes two colors together.
+
+/*// HSL Functions*/
+
+// hsl($hue, $saturation, $lightness)
+//     Creates a Color from hue, saturation, and lightness values.
+// hsla($hue, $saturation, $lightness, $alpha)
+//     Creates a Color from hue, saturation, lightness, and alpha values.
+// hue($color)
+//     Gets the hue component of a color.
+// saturation($color)
+//     Gets the saturation component of a color.
+// lightness($color)
+//     Gets the lightness component of a color.
+// adjust-hue($color, $degrees)
+//     Changes the hue of a color.
+// lighten($color, $amount)
+//     Makes a color lighter.
+// darken($color, $amount)
+//     Makes a color darker.
+// saturate($color, $amount)
+//     Makes a color more saturated.
+// desaturate($color, $amount)
+//     Makes a color less saturated.
+// grayscale($color)
+//     Converts a color to grayscale.
+// complement($color)
+//     Returns the complement of a color.
+// invert($color)
+//     Returns the inverse of a color.
+
+/*// Opacity Functions*/
+
+// alpha($color) / opacity($color)
+//     Gets the alpha component (opacity) of a color.
+// rgba($color, $alpha)
+//     Changes the alpha component for a color.
+// opacify($color, $amount) / fade-in($color, $amount)
+//     Makes a color more opaque.
+// transparentize($color, $amount) / fade-out($color, $amount)
+//     Makes a color more transparent.
+
+/*// Other Color Functions*/
+
+// adjust-color($color, [$red], [$green], [$blue], [$hue], [$saturation], [$lightness], [$alpha])
+//     Increases or decreases one or more components of a color.
+// scale-color($color, [$red], [$green], [$blue], [$saturation], [$lightness], [$alpha])
+//     Fluidly scales one or more properties of a color.
+// change-color($color, [$red], [$green], [$blue], [$hue], [$saturation], [$lightness], [$alpha])
+//     Changes one or more properties of a color.
+// ie-hex-str($color)
+//     Converts a color into the format understood by IE filters.
+

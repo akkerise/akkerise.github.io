@@ -1,0 +1,43 @@
+body {
+	width: 1000px;
+	margin: auto;
+}
+input {
+	font-style: normal;
+	font-weight: 200;
+	font-family: 'Georgia' , sans-serif;
+	height: 25px;
+	width: 100px;
+	background: #fffddd;
+	font-size: 1.15em;
+
+}
+
+#input-search {
+	border: 1px solid grey;
+	width: 400px;
+	height: 200px;
+	text-align: center;
+	background: #ddd;
+	border-radius: 5px;
+}
+#type-search {
+	border: 1px solid green;
+	border-radius: 5px;
+	width: 200px;
+}
+#button-search {
+	max-width: 100%;
+	opacity: 1;
+	text-transform: uppercase;
+	transition: color 1s linear , background 1s ease;
+}
+
+#button-search:hover {
+	border-radius: 5px;
+	opacity: 0.5;
+	color: white;
+	background: #3F51B5;
+}
+
+@keyframe hello {}

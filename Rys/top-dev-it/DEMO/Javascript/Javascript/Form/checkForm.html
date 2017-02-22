@@ -1,0 +1,68 @@
+<HTML>
+ <HEAD>
+	<TITLE> Form Events </TITLE>
+	<SCRIPT LANGUAGE="JavaScript">
+	<!--
+function validateFirstName()
+	{
+	 var str= form1.fname.value;
+	 if(str.length==0)
+	 {
+	  alert(" The first name cannot be empty");
+	  return false;
+	 }
+	 return true
+	}
+	function validateLastName()
+	{
+	 var str= form1.lname.value;
+	 if(str.length==0)
+	 {
+	  alert(" The last name cannot be empty");
+	  return false;
+	 }
+	  return true;
+	}
+
+function validateEmail()
+	{
+	 var str= form1.email.value;
+	 if(str.length==0)
+	 {
+	  alert(" The Email field cannot be empty");
+	  return false;
+	 }
+	}
+   function processForm()
+	{
+ 	  disp=open("", "result")
+	  disp.document.write("<TITLE> Result Page </TITLE>"+"<PRE>")
+                    disp.document.write("<H2 ALIGN='CENTER'>"+
+                                         "Thanks for signing in"+"</H2>"+"<HR>"+"<BR><BR>")
+                    disp.document.write("First name \t\t: "+form1.fname.value+"<BR>") 
+	 disp.document.write("Last name \t\t: "+form1.lname.value+"<BR>") 
+	  disp.document.write("Email \t\t\t: "+form1.email.value+"<BR>") 
+	  disp.document.write("Your Comments \t\t: "+form1.comment.value+"<BR>") 
+	  disp.document.write("<PRE>") 
+	  
+	               if(disp.confirm("Is this information correct"))
+             disp.close()
+             }
+                //-->
+           </SCRIPT>
+           </HEAD>
+           <BODY BGCOLOR="#FFFFFF">
+           <H2 ALIGN="CENTER"> Handling Form Events</H2><HR>
+           <FORM name="form1"><P> First Name : <INPUT TYPE="text" 
+                                    NAME="fname" size=10 onBlur="validateFirstName()">
+                                    Last Name : <INPUT TYPE="text" NAME="lname" size=15          
+                                    onBlur="validateLastName()"></p>
+            <P> Email : <INPUT TYPE="text" NAME="email" size=10 onBlur="validateEmail()">
+             Comments : <TEXTAREA NAME="comment" rows=4 cols=30 > Enter your comments    
+             </TEXTAREA></p>
+             <P ALIGN="CENTER"><INPUT TYPE="button" value="Submit this form"                       
+                             onClick="processForm()">
+             <INPUT TYPE="reset"></P>
+             </FORM>
+              </BODY>
+              </HTML>

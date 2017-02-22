@@ -1,0 +1,27 @@
+@import "variables";
+
+
+@mixin a {
+    a {
+        color: $six-color;
+        text-decoration: none;
+        &:hover{
+            color: white;
+        }
+    }
+}
+@mixin li {
+    li {
+        float: left;
+        transition: all 1.4s linear;
+        padding: 10px;
+        &:hover{
+            background-color: $six-color;
+        }
+    }
+}
+
+@mixin ul-lia{
+    @include li;
+    @include a;
+}

@@ -1,0 +1,71 @@
+*{
+	box-sizing: border-box;
+	margin: 0px;
+	padding: 0px;
+}
+
+body {
+	width: 1000px;
+	/*max-width: 100%;*/
+	margin: 20px auto;
+	font-family: "Helvetica Neue" , "Helvetica" , sans-serif;
+	background-color: #ddd;
+	position: relative;
+}
+div#container #nav {
+	margin-bottom: 25px;
+}
+div#container #nav a img {
+	width: 128px;
+	position: absolute;
+	top: 200px;
+	left: 80px;
+	border: 5px solid #ffffff;
+	border-radius: 50%;
+}
+
+div#container #nav #banner img {
+	margin: auto 5px;
+}
+
+h1 {
+	font-family: "Helvetica" , sans-serif;
+	font-size: 50px;
+	font-weight: bold;
+	text-align: center;
+	color: grey;
+	display: block;
+	margin-bottom: 20px;
+}
+/*
+	END NAVIGATION
+ */
+
+
+div#container #content #line-One ,
+div#container #content #line-Two ,
+div#container #content #line-Three ,
+div#container #content #line-Four {
+	max-width: 100%;
+	float: left;
+
+}
+/*div#container #content #line-One img{
+	width: 33.15%;
+}*/
+
+.item{
+	width: 33.33%;
+	float: left;
+	
+}
+.item img{
+	width: 100%;
+	transition: box-shadow 2s linear;
+}
+
+.item img:hover {
+	-webkit-box-shadow: inset 10px 20px 5px 2px rgba(0,0,0,0.4);
+	-moz-box-shadow: inset 10px 20px 5px 2px rgba(0,0,0,0.4);
+	box-shadow: inset 10px 20px 5px 2px rgba(0,0,0,0.4);
+}

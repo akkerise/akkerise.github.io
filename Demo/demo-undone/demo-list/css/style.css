@@ -1,0 +1,70 @@
+body {
+    background-color: #ddd;
+    font-family: "Comic Sans MS", sans-serif;
+    font-size: 1.4em;
+}
+
+#wrap {
+    background-color: #ffffff;
+    border: 1px solid grey;
+    margin: 20px auto;
+    width: 1000px;
+    border-radius: 8px;
+    height: 800px;
+}
+
+#main-menu {
+    font-family: Tahoma, sans-serif;
+    font-size: 1.4em;
+    margin-top: 20px;
+    padding-left: 20%;
+}
+
+#main-menu a {
+    border: 1px solid grey;
+    border-radius: 5px;
+    color: grey;
+    opacity: 1;
+    padding: 5px;
+    text-decoration: none;
+    transition: all 1.5s linear 0s;
+}
+
+#main-menu a:hover {
+    background-color: grey;
+    border: 1px solid white;
+    color: white;
+    opacity: 0.6;
+    box-shadow: inset 8px 8px 8px 0px rgba(0, 0, 0, 0.68);
+}
+
+
+
+
+/*
+
+    Viết hiệu ứng di chuyển cho khối layout trên 
+
+#main-menu #ulList:hover {
+    transform: translate(150px);
+}
+*/
+
+
+/******** END #main-menu ********/
+
+#main-content {
+    padding: 0px 0px 20px 50px;
+}
+
+#main-content #content h1 {
+    text-align: center;
+    border-bottom: 1px solid grey;
+    margin: 50px auto;
+    width: 300px;
+    font-size: 1.2em;
+}
+
+#main-content #content ol li {
+    list-style-position: inside;
+}

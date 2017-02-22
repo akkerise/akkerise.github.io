@@ -1,0 +1,443 @@
+.head-bxh {
+  height: auto;
+  clear: both;
+  border-bottom: 1px solid #e4e4e4;
+  margin: 0 -20px;
+}
+
+.head-bxh h2 {
+  font-size: 34px;
+  font-weight: 300;
+  text-transform: uppercase;
+  float: left;
+  width: 33%;
+  text-align: center;
+  position: relative;
+  padding: 20px 0px;
+}
+
+.head-bxh h2 a:hover {
+  color: #1990DB;
+}
+
+.head-bxh h2 .box-arr {
+  position: absolute;
+  top: 68px;
+  left: 50%;
+  margin-left: -10px;
+  background: #fff;
+  height: 20px;
+  width: 20px;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+  border-top: 1px solid #e4e4e4;
+  border-left: 1px solid #e4e4e4;
+  display: none;
+}
+
+.head-bxh h2.current {
+  font-weight: 400;
+}
+
+.head-bxh h2.current .box-arr {
+  display: block;
+}
+
+.wrap-bxh {
+  padding: 20px 10px;
+  margin: 0 -20px 20px;
+  background-color: #fff;
+  max-width: 1200px;
+}
+.the-bxh ul.list-cl{
+	height:auto;
+	overflow:hidden;
+	clear:both;	
+	background-color:#f8f8f8;
+}
+.the-bxh ul.list-cl li{
+	font-size: 16px;
+	width: 33%;
+	float:left;
+	text-align:center;	
+	padding: 10px 0px;
+}
+.the-bxh ul.list-cl li.active{
+	background-color: #eee;	
+	    border-top: 1px solid #ed1b36;
+}
+.the-bxh .row {
+  margin: 0px 0px 30px 0px !important;
+}
+
+.the-bxh .pd-bxh {
+  padding: 0 15px !important;
+}
+
+
+.the-bxh h2 {
+  font-size: 20px;
+  font-weight: normal;
+  text-transform: uppercase;
+  padding: 15px 0px;
+  position: relative;
+  margin: 0px;
+}
+.the-bxh .singer-name{max-width: 290px!important;}
+
+.play-icon-bxh {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-top: -30px;
+  margin-left: -30px;
+  width: 60px;
+  text-align: center;
+  display: none;
+}
+
+.play-icon-bxh .fa {
+  font-size: 60px;
+  color: #fff;
+  opacity: 0.8;
+}
+
+.play-icon-bxh .fa:hover {
+  opacity: 0.9;
+}
+
+.link-img:hover .play-icon-bxh {
+  display: block;
+  color: #fff;
+}
+.list-bxh .media-body, .list-bxh .media{overflow: visible;}
+.list-bxh{ padding: 0px;
+  box-shadow: rgba(0, 0, 0, 0.3) 0 1px 2px;}
+.list-bxh li {
+  border-top: 1px solid #eee;
+  padding: 6px 0;
+  position: relative;
+  list-style-type: none;
+  margin: 0px !important;
+}
+
+.list-bxh li:hover {
+  background-color: #f8f8f8;
+}
+
+.list-bxh li.one .rank-bxh {
+  color: #ed561b;
+}
+
+.list-bxh li.two .rank-bxh {
+  color: #058dc7;
+}
+
+.list-bxh li.three .rank-bxh {
+  color: #50b432;
+}
+
+.list-bxh li:first-child {
+  border-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.list-bxh li .thumb {
+  width: 48px;
+  height: 48px;
+  float: left;
+  position: relative;
+  background-color: #000;
+  margin-right: 14px;
+}
+
+.list-bxh li .thumb .song-thumb {
+  width: 48px;
+  height: 48px;
+  vertical-align: middle;
+  display: inline-block;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.list-bxh li .thumb.vd {
+	width: 70px;
+}
+.list-bxh li .thumb.vd .song-thumb{
+	width: 70px;
+}
+
+.list-bxh li .thumb .play-48 {
+  display: block;
+  color: #fff;
+  position: absolute;
+  text-align: center;
+  top: 0;
+  left: 39%;
+  opacity: 0;
+  font-size: 18px;
+  z-index: 3;
+  line-height: 45px;
+}
+
+.list-bxh li .thumb .play-48 .fa {
+  line-height: 48px;
+}
+
+.list-bxh li .thumb:hover .play-48 {
+  opacity: 1;
+}
+
+.list-bxh li .thumb:hover .song-thumb {
+  opacity: 0.7;
+}
+
+.list-bxh li .status {
+  position: absolute;
+  z-index: 2;
+  top: 33px;
+  right: 220px;
+}
+
+.list-bxh li .status {
+  font-size: 18px;
+  text-align: center;
+  width: 40px;
+}
+
+.list-bxh li .status .up {
+  color: #090;
+}
+
+.list-bxh li .status .down {
+  color: #ff0000;
+}
+
+.list-bxh li .status .h {
+  color: #666;
+}
+.list-bxh li .status .n {
+  color: orange  ;
+}
+
+.list-bxh .rank-bxh {
+  width: 36px;
+  display: block;
+  font-size: 24px;
+  line-height: 38px;
+  text-align: center;
+}
+
+.list-bxh .singer-name,
+.list-bxh .song-name {
+  font-weight: normal;
+  font-size: 16px;margin: 0px;
+  line-height: 20px;
+}
+
+.list-bxh .singer-name {
+  margin-top: 4px;
+  font-size: 14px;
+  display:block;
+  text-overflow: ellipsis; 
+  overflow: hidden;
+  white-space: nowrap;
+  max-width: 200px;
+}
+
+.list-bxh .link-song-name {
+  color: #333;
+  padding-top: 4px; display:block;
+  text-transform: capitalize;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  max-width: 270px;
+}
+
+.list-bxh .link-singer-name {
+  color: #999;
+}
+
+
+.list-bxh .top .media-body {
+  margin-right: 10px;
+}
+
+.list-bxh .top .link-img {
+  width: 100%;
+  height: 150px;
+  display: block;
+  position: relative;
+  background-color: #000;
+}
+
+.collage {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow: hidden;
+}
+
+.link-img:hover .collage {
+  opacity: 0.7;
+}
+
+.img-wrapper {
+  width: 25%;
+  height: 50%;
+  float: left;
+  overflow: hidden;
+}
+
+.list-bxh .top img {
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.list-bxh .top .rank-bxh {
+  color: #fff;
+  background-color: #1990DB;
+  line-height: 58px;
+  text-align: center;
+  width: 52px;
+  font-size: 34px;
+}
+
+.list-bxh .top .song-name {
+  margin-top: 10px;
+}
+
+.list-bxh .inner-bxh {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.8);
+  right: 0;
+  left: 0;
+  bottom: 0;
+  height: 58px;
+}
+
+.list-bxh .top .link-song-name {
+  color: #eee;
+}
+
+.list-bxh .top .link-singer-name {
+  color: #ddd;
+}
+
+.list-bxh .top .link-song-name:hover {
+  color: #fff;
+}
+
+.list-bxh .top .link-singer-name:hover {
+  color: #eee
+}
+
+.the-bxh .bdl {
+  border-left: 1px solid #ddd;
+  border-top: 1px solid #ddd;
+}
+
+.play-top-100 {
+  font-size: 14px;
+  padding: 5px 10px;
+  background-color: #1990DB;
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  margin-top: -12.5px;
+  right: 15px;
+  text-transform: initial;
+}
+
+.play-top-100:hover {
+  color: #fff !important;
+  opacity: 0.95;
+}
+
+.play-top-100 img {
+  display: none;
+}
+
+.play-top-100 .fa-play {
+  display: inline-block;
+}
+
+.play-top-100 .fa-pause {
+  display: none;
+}
+
+.play-top-100.active .fa-play {
+  display: none;
+}
+
+.play-top-100.active .fa-pause {
+  display: inline-block;
+}
+
+.play-top-100.active img {
+  display: inline-block;
+}
+
+.sort-week {
+  text-align: center;
+  padding: 15px 20px 10px 20px;
+  font-size: 16px;
+  position:relative;
+}
+.sort-week .play-bxh { position:absolute; top: 16px; left:0px; z-index:1; width:105px; height: 22px; display:block;background: linear-gradient(315deg, #f21481 0%, #ed1b36 100%); color: #fff; font-size: 14px; line-height: 24px; text-align:left;}
+.sort-week .play-bxh:hover{ color:#fff;}
+.sort-week .play-bxh i{ font-size: 12px; margin: 0px 5px 0px 10px;}
+.sort-week .play-bxh img{margin: 0px 5px 0px 10px;}
+.sort-week .share{ position:absolute; right: 0px; top:12px;}
+.sort-week span {
+  padding: 0px 30px;
+  text-transform: uppercase;
+  font-size: 18px;
+  color: #333
+}
+
+.sort-week a,
+.sort-week a.play-pri:hover {
+  color: #ed1b36 ;
+}
+.sort-week a.play-pri{
+	color:#fff;	
+}
+
+.sort-week a:hover {
+  color: #000;
+}
+.list-bxh li .media-left {
+    padding-left: 10px;
+    float: left;
+}
+.list-bxh li .tool{ position:absolute; right: 28px; top: 37px;}
+.list-bxh li .tool .song-play,
+.list-bxh li .tool .add-playlist,
+.list-bxh li .tool .video-same,
+.list-bxh li .tool .song-down{visibility:visible; top: 0px;}
+.detail li{ padding: 10px 0px;}
+
+
+.list-bxh li .tool .song-play{top: 2px;}
+.list-bxh .add-playlist{right: 77px;}
+.list-bxh li .tool .flaticon-arrow8:before{font-size: 13px;}
+.list-bxh li .tool .flaticon-add182:before{font-size: 14px;}
+.list-bxh li .tool .song-down{top: 2px!important; right: 48px!important;}
+.list-bxh li .tool .song-down{}
+.list-bxh li .tool .flaticon-media25:before{font-size: 12px;}
+.list-bxh li .tool .flaticon-music79:before{font-size: 15px;}
+.list-bxh li .tool .go-to-album{top: -1px; right: 108px;}
+.list-bxh li .tool .flaticon-filming21:before{font-size: 15px;}
+.list-bxh li .tool .video-same{right: 141px;}
+
+.list-bxh .flaticon-play128:before{font-size: 15px;}

@@ -1,0 +1,121 @@
+<HTML>
+	<HEAD>
+		<TITLE>Calculator</TITLE>
+		<style type="text/css">
+			.num {
+				width: 35; height:35;
+			}
+			.bthuc{
+				width: 35; height:35;
+				color: red;
+			}
+		</style>
+		<script language="JavaScript">
+			num1 	= 0;
+			num2 	= 0;
+			bt 		= "";
+			function them(s){
+				s1 = ftmBangTinh.txtKQ.value;
+				s1 = s1 + s;
+				ftmBangTinh.txtKQ.value = s1;
+			}
+			
+			function tinh(bieuthuc){
+				num1 = ftmBangTinh.txtKQ.value;
+				ftmBangTinh.txtKQ.value = "";
+				switch (bieuthuc){
+					case "+":						
+						bt = "cong";
+						break;
+					case "-":
+						bt = "tru";
+						break;
+					case "*":
+						bt = "nhan";
+						break;
+					case "/":
+						bt = "chia";
+						break;
+				}
+			}
+			
+			function ketqua(){
+				num2 = ftmBangTinh.txtKQ.value;
+				if ( (num1.indexOf(".")>=0) || (num2.indexOf(".")>=0) ){
+					so1 = parseFloat(num1);
+					so2 = parseFloat(num2);
+				}					
+				else{
+					so1 = parseInt(num1);
+					so2 = parseInt(num2);				
+				}
+				kq = 0;
+				switch (bt){
+					case "cong":
+						kq = so1 + so2;
+						break;
+					case "tru":
+						kq = so1 - so2;						
+						break;
+					case "nhan":
+						kq = so1 * so2;						
+						break;
+					case "chia":
+						kq = so1 / so2;						
+						break;
+				}
+				
+				ftmBangTinh.txtKQ.value = kq;
+				num1 = 0;
+				num2 = 0;
+				bt = "";
+			}
+			function xoa(){
+				num1 = 0;
+				num2 = 0;
+				bt = "";
+				ftmBangTinh.txtKQ.value = "";
+			}
+		</script>
+	</HEAD>
+	<BODY>
+	<Form action="" name="ftmBangTinh" method="post">
+	<table border="1" cellpadding="3">
+	<tr><td><input type="text" name="txtKQ" value="" style="width:100%; text-align:right" readonly></td></tr>
+	<tr><td>	
+		<TABLE cellspacing="4">
+			<TR>
+				<TD>&nbsp;</TD>
+				<TD>&nbsp;</TD>
+				<TD colspan="2"><input type="button" name="bt3" value="Clear" style="height:35; width:100%" onClick="xoa()"></TD>
+			</TR>		
+			<TR>
+				<TD><input type="button" name="bt1" value="7" class="num" onClick="them('7')"></TD>
+				<TD><input type="button" name="bt2" value="8" class="num" onClick="them('8')"></TD>
+				<TD><input type="button" name="bt3" value="9" class="num" onClick="them('9')"></TD>
+				<TD><input type="button" name="bt1" value="/" class="bthuc" onClick="tinh('/')"></TD>
+			</TR>		
+			<TR>
+				<TD><input type="button" name="bt4" value="4" class="num" onClick="them('4')"></TD>
+				<TD><input type="button" name="bt5" value="5" class="num" onClick="them('5')"></TD>
+				<TD><input type="button" name="bt6" value="6" class="num" onClick="them('6')"></TD>
+				<TD><input type="button" name="bt7" value="*" class="bthuc" onClick="tinh('*')"></TD>
+			</TR>		
+			<TR>
+				<TD><input type="button" name="bt8" value="1" class="num" onClick="them('1')"></TD>
+				<TD><input type="button" name="bt9" value="2" class="num" onClick="them('2')"></TD>
+				<TD><input type="button" name="bt10" value="3" class="num" onClick="them('3')"></TD>
+				<TD><input type="button" name="bt11" value="-" class="bthuc" onClick="tinh('-')"></TD>
+			</TR>		
+			<TR>
+				<TD><input type="button" name="bt12" value="0" class="num" onClick="them('0')"></TD>
+				<TD><input type="button" name="bt13" value="." class="num" onClick="them('.')"></TD>
+				<TD><input type="button" name="bt14" value="=" class="bthuc" onClick="ketqua()"></TD>
+				<TD><input type="button" name="bt15" value="+" class="bthuc" onClick="tinh('+')"></TD>
+			</TR>		
+		</TABLE>
+		</td></tr>
+	</table>		
+		</Form>	
+	</BODY>
+</HTML>

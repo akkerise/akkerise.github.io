@@ -1,0 +1,112 @@
+<!-- *Thuộc tính quan trọng : thuộc tính display !
+Khái niệm Inline và Block :
+- Inline : <a> , <img> , <span>
+- Block  : <div> , <h1> -> <h6> , <p>
+Sự khác nhau giữa 2 khái niệm trên là : 
+	+ Block thì chấp nhận thuộc tính width & height . Inline thì không !
+	+ Block có chiều rộng mặc định là 100% , còn Inline thì có chiều rộng bằng nội dung bên trong. 
+	+ Margin,padding khi áp dụng cho Inline chỉ làm giãn khoảng cách theo chiều ngang còn Block thì là cả 2 chiều !
+
+Thuộc tính display: inline-block; // Làm cho 1 inline có thuộc tính như 1 block - chấp nhận thuộc tính width và height
+
+Thuộc tính display: none;
+Để ẩn một phần tử ta cũng có thể dùng thuộc tính visibility: hidden; . 
+Tuy nhiên thuộc tính này khác với display: none; ở chỗ nó chỉ làm chúng ta không nhìn thấy phần tử, nhưng nó vẫn chiếm chỗ trong layout còn display: none; thì làm phần tử biến mất hẳn khỏi layout.
+ -->
+
+border  : là viền của khung
+margin  : Được dùng để tạo khoảng cách với các thành phần bên ngoài thẻ html.
+padding : Được dùng để tạo khoảng cách cho các thành phần bên trong thẻ html.
+*tex-align: Căn vị trí text(căn trái , căn phải,căn giữa,căn đều 2 bên).
+	- Thuộc tính justify; căn đều 2 bên
+
+*text-transform : Chuyển chữ sang dạng viết hoa , viết thường hoặc viết hoa chữ cái đầu tiên.
+	- Thuộc tính uppercase : VIẾT IN HOA TẤT CẢ CÁC TỪ.
+	- Thuộc tính capitalize : Viết Hoa Chữ Cái Đầu Tiên Của Các Từ;
+
+*text-decoration: Thêm dấu gạch ngang , gạch chân ,...
+
+*tex-indent : Căn lề cho đoạn văn
+
+
+*font-size : Xác định kích cỡ của chữ, đơn vị có thể là px, em, %, ...
+
+
+Thuộc tính CSS của ảnh :
+
+img{
+
+	max-width 		: Độ rộng tối đa của ảnh (Có thể dùng % hoặc pixel để xác định độ rộng )
+	max-height		: Tương tự như trên. 
+	min-width		: Ngược lại với max-width
+	min-height		: Ngược lại với max-height
+	border 			: Tạo khung viền ảnh
+
+
+	border : 3px solid orange; 
+	<!-- 
+	Có thể viết tắt như trên với duy nhất 1 dòng lệnh
+	{
+	border-width 	: 3px (độ rộng của viền)
+	border-style 	: solid, dotted (solid và dotted là 2 kiểu viền khác nhau)
+	border-color	: orange ( màu của viền và ở đây là da cam)
+	} 
+	-->
+
+	border-radius 	: Bo góc của ảnh
+	border-top-left-radius (góc trên bên trái)
+	border-top-right-radius (góc trên bên phải)
+	border-bottom-right-radius (góc dưới bên phải)
+	border-bottom-left-radius (góc dưới bên trái)
+
+}
+
+*CSS Pseudo-classes
+Cú pháp : Syntax
+	selector:pseudo-class 
+		{
+		    property:value;
+		}
+Ví dụ : Example
+	/* unvisited link */
+	a:link {
+	    color: #FF0000;
+	}
+
+	/* visited link */
+	a:visited {
+	    color: #00FF00;
+	}
+
+	/* mouse over link */
+	a:hover {
+	    color: #FF00FF;
+	}
+
+	/* selected link */
+	a:active {
+	    color: #0000FF;
+	}
+Một số Pseudo Class hay dùng:
+
+:hover	Chọn element ở trạng thái di chuột qua
+:first-child	Chọn element mà là element con đầu tiên của 1 element khác
+:last-child		Chọn element mà là element con cuối cùng của 1 element khác
+:nth-child(n)	Chọn element mà là element con thứ n của 1 element khác
+:not(selector)	Chọn element mà không phải là selector
+
+
+* Các hiệu ứng CSS Effect 
+- Thuộc tính Opacity : thuộc tính làm mờ khi hover vào element được sử dụng theo cú pháp. 
+Cú pháp : 
+opacity: 1; (mức độ bình thường của element)
+- Thuộc tính Transition : làm nhanh hoặc chậm hiệu ứng trong khoảng thời gian xác định 
+Cú pháp : 
+transition: all 1s (linear,ease, ....) 
+Lưu ý : ta cũng có thể thay đổi chiều rộng hoặc chiều cao của element trong khoảng thời gian xác định nếu ta hover vào element đó . Bằng thuộc tính max-width !
+
+- Thuộc tính transform : thay đổi vị trí hoặc phóng to các element
+Hiệu ứng đi kèm : 
++ translate(x,y) (Di chuyển ngược lại element gốc , x và y là tọa độ trục tung và hoành). Có box-shadow theo kèm . Đây là thuộc tính để tạo hiệu ứng nổi hoặc chìm trong CSS Effect.
++ scale(n) : Phóng to hoặc thu nhỏ so với element gốc. Thuộc tính overflow: hidden; đi kèm để làm mất các element khi tràn ra khỏi khung cố định.
+

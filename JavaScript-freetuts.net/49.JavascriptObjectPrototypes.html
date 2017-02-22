@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Bài 49 : Javascript Object Prototypes</title>
+</head>
+<body>
+<script>
+    // 1. Prototypes trong Javascript
+    var age = new Number();
+    age.toString();
+    age.toFixed();
+    age.toPrecision();
+    age.valueOf();
+    //// Bổ sung dữ liệu vào đối tượng
+//    Object.prototype.thuoc_tinh = "giá trị mặc định";
+//    Object.prototype.phuong_thuc = function(){
+//        // some thing
+//    };
+    // Tạo đối tượng
+    Number.prototype.plus = function (value) {
+        return this.valueOf() + parseInt(value);
+    };
+
+    // Tạo mới đối tượng
+    var age = Number(12);
+    document.write(age.plus(12) + '<br>');
+
+    // Tạo đối tượng khác
+    var year = 2014;
+    document.write(year.plus(12) + '<br>');
+
+    // 2. Tạo mới Object và thao tác với Prototype
+    // var Person = {};
+    // sai do lỗi cú pháp không thể tạo lại được object Person
+    // var p = new Person();
+
+    // Sử dụng hàm để khởi tạo lại Javascript
+   	function Person(){
+   		// Thuộc tính
+   		this.name = "";
+   		this.email = "";
+   		this.address = "";
+   		// Phương thức
+   		this.showInfo = function () {
+   			document.write('Tên là : ' + this.name + "<br>");
+        document.write('Email là : ' + this.email + "<br>");
+        document.write('Địa chỉ là : ' + this.address + "<br>");
+   		}
+   	}
+   	// khởi tạo đối tượng mới
+   	var thanh = new Person();
+
+   	// gán thuộc tính
+   	thanh.name = "Thanh";
+   	thanh.email = "nguyenthanh.rise.88@gmail.com";
+   	thanh.address = "Hà Nội";
+    thanh.showInfo();
+
+   	// Bổ sung thuộc tính và phương thức vào Object Person
+   	Person.prototype.gender = "";
+   	Person.prototype.showGender = function(){
+   		return document.write('Giới tính là : ' + this.gender + '<br>');
+   	}
+   	thanh.gender = "Nam";
+   	thanh.showGender();
+</script>
+</body>
+</html>

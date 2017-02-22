@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Bài 35: BOM screen</title>
+</head>
+<body>
+	<script>
+	// Viết đầy đủ là window.screen.width => screen.width
+    // screen.width
+    // screen.height
+    // screen.availWidth
+    // screen.availHeight
+    // screen.colorDepth
+    // screen.pixelDepth
+
+
+
+    // 1. Lấy width và height của màn hình
+    document.write('Width screen :' + screen.width + '<br>');
+    document.write('Height screen :' + screen.height + '<br>');
+
+    // Ngoài ra để lấy chiều rộng và chiều cao mà không tính các tools tính năng của trình duyệt thì bạn sử dụng
+    document.write("With Available screen: " + screen.availWidth + "<br/>");
+	document.write("Height Available screen: " + screen.availHeight+ "<br/>");
+
+
+	// 2. lấy Color Depth của screen
+	document.write("Color Depth: " + screen.colorDepth +'<br />');
+
+	// 3. Lấy số Pixel depth của screen
+	document.write("Pixel Depth: " + screen.pixelDepth);
+	</script>
+</body>
+</html>

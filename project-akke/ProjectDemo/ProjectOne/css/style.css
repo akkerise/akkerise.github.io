@@ -1,0 +1,15 @@
+body {
+    font: "Georgia";
+    color: aqua;
+    font-size: 25px;
+}
+
+#head {
+    width: 50px;
+    height: 50px;
+    color: #9D6868;
+}
+
+p {
+    text-align: center;
+}

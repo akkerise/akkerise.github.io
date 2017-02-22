@@ -1,0 +1,60 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    font-size: 1.4em;
+    font-style: 'Georgia' ,serif;
+}
+
+#container {
+    border: 1px solid #686;
+    background-color: #e4e4e3;
+    float: left;
+    
+}
+
+#container ul {
+    list-style: none;
+    float: left;
+}
+
+#container ul li {
+    float: left;
+    position: relative;
+}
+
+#container ul li a {
+    display: block;
+    text-decoration: none;
+    font-weight: bold;
+    color: darkslategray;
+    padding: .3em 6px;
+    transition: color 1s , backgroud-color 1s;
+}
+
+#container ul li a:hover {
+    color: aliceblue;
+    border: 0.5px solid grey;
+    border-radius: 5px;
+    background-color: darkseagreen;
+}
+
+#container li ul {
+    display: none;
+    position: absolute;
+    width: 8em;
+}
+
+#container li:hover ul {
+    display: block;
+}
+
+#container ul li ul li {
+    width: 100%;
+    border: 1px solid #686;
+    border-radius: 5px;
+}
+
+

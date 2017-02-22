@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 21: Xây dựng MenuDropdown với JS</title>
+    <style>
+        #dropdown {
+            width: 200px
+        }
+        #dropdown li{
+            list-style:none;
+            line-height: 30px;
+            background: blue;
+            margin: 2px;
+        }
+
+        #dropdown li a{
+            margin-left: 10px;
+            color: #FFF;
+            text-decoration: none;
+        }
+
+        #dropdown ul{
+            display:none;
+            padding: 0px;
+            background: pink
+        }
+
+        #dropdown ul li{
+            background-color: pink
+        }
+    </style>
+</head>
+<body>
+<ul id="dropdown">
+    <li>
+        <a href="#">Trang Chủ</a>
+    </li>
+    <li>
+        <a href="#">Sản Phẩm</a>
+        <ul>
+            <li><a href="#">Gạch cao cấp</a></li>
+            <li><a href="#">Gạch thủ công</a></li>
+            <li><a href="#">Gạch mỹ nghệ</a></li>
+        </ul>
+    </li>
+    <li>
+        <a href="#">Tin Tức</a>
+        <ul>
+            <li><a href="#">Tin bóng đá</a></li>
+            <li><a href="#">Tin thể thao</a></li>
+            <li><a href="#">Tin kinh tế</a></li>
+        </ul>
+    </li>
+    <li>
+        <a href="#">Dịch Vụ</a>
+        <ul>
+            <li><a href="#">Thiết kế web</a></li>
+            <li><a href="#">Thiết kế đồ họa</a></li>
+            <li><a href="#">Thiết kế cao siêu </a></li>
+        </ul>
+    </li>
+</ul>
+<script>
+    var menu = document.querySelectorAll('#dropdown > li');
+    for (i=0;i<menu.length;i++){
+        var menuList = document.querySelectorAll('#dropdown > li > ul');
+        menu[i].addEventListener('click',function () {
+            // Ẩn tất cả các ul trực thuộc thẻ li ở trên
+            for (j=0;j<menuList.length;j++){
+                menuList[j].style.display = 'none';
+                console.log(menuList[j]);
+            }
+            // Phần tử con trực thuộc thứ children[0] => thẻ a
+            // Phần tử con trực thuộc thứ children[0] => thẻ ul chứa nhiều thẻ li
+            // Hiện ra khi được click vào
+            this.children[1].style.display = 'block';
+            console.log(this.children[0]);
+        });
+    }
+</script>
+</body>
+</html>

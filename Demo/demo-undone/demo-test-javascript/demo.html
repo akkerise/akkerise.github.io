@@ -1,0 +1,150 @@
+			<html>
+			<head>
+				<title>Demo Javascript - function</title>
+				<meta charset="utf-8" />
+				<link rel="stylesheet" type="text/css" href="css/demo.css">
+				<!-- 	<script src="js/script.js"></script> -->
+				<script>
+
+					// - Bài 1. Viết 1 function tính bình phương của 1 số.
+
+					// Tham số truyền vào là 1 số.
+					// Kết quả là bình phương của số đó.
+					document.write("<h1>Bài tập 1</h1>");
+					function bai1(a) {
+						return "bình phương của số là " + (a * a);
+					}
+
+
+			// - Bài 2. Cho 3 số a, b và c. Viết function tính bình phương của (3a + 2b - c)
+
+			// Tham số truyền vào là 3 số a, b, c.
+			// Kết quả là bình phương của (3a + 2b - c). Sử dụng hàm viết sẵn của Bài 1.
+
+			document.write("<h1>Bài tập 2</h1>");
+
+			function bai2(a, b, c) {
+				var x = (3 * a + 2 * b + c)
+				return "bình phương của chuỗi là " + (x * x);
+			}
+
+
+			// - Bài 3. Cho 1 chuỗi dài hơn 100 ký tự. Viết 1 function cắt chuỗi, lấy ra 10 ký tự đầu tiên và thêm vào dấu "..." ở cuối chuỗi.
+
+			// Tham số truyền vào là 1 chuỗi dài hơn 100 ký tự.
+			// Kết quả là chuỗi đó sau khi cắt đi còn 10 ký tự, cuối chuỗi có dấu "..." biểu thị là chuỗi bị cắt.
+
+			document.write("<h1>Bài tập 3</h1>");
+			var chuoi_1 = "trên là các hàm xử lý chuỗi thông dụng mà bạn nên biết để sử dụng khi cần thiết, các hàm này đang ở mức căn bản vì vẫn chưa đáp ứng được các yêu cầu xử lý phức tạp hơn, vấn đề này mình sẽ đề cập sau khi chúng ta tìm hiểu về Regex trong Javascript."
+
+			function bai3(a, b) {
+
+				return chuoi_1.slice(a, b) + " ... ";
+			}
+
+
+			// - Bài 4. Viết 1 function có tác dụng biến 1 chuỗi thành viết hoa từ đầu tiên.
+
+			// Tham số truyền vào là 1 chuỗi.
+			// Kết quả là 1 chuỗi mới chỉ viết hoa từ đầu tiên. Ví dụ "welcome to Techmaster" sẽ được convert thành "Welcome to techmaster".
+			document.write("<h1>Bài tập 4</h1>");
+
+			function bai4() {
+
+				return chuoi_1.charAt(0).toUpperCase() + bai3(1).toLowerCase();
+			}
+
+
+			// - Bài 5. Viết 1 function lấy ra 1 số nhỏ nhất trong 1 mảng các số.
+
+			// Tham số truyền vào là 1 mảng các số.
+			// Kết quả là số nhỏ nhất trong mảng.
+			// Gợi ý: có thể dùng phương thức sort().
+
+			document.write("<h1>Bài tập 5</h1>");
+			var number = [5, 2, 1, 15, 96, 69]
+
+			function bai5() {
+				number.sort(function(a, b) {
+					return (a - b)
+				});
+				return number.slice(0, 1);
+			}
+
+
+			// - Bài 6. Cho 1 mảng gồm tên của 5 học viên. Hãy viết function sắp xếp lại thứ tự các học viên theo bảng chữ cái và in ra màn hình danh sách học viên.
+
+			// Tham số truyền vào là 1 mảng gồm tên của 5 người.
+			// Kết quả: In ra màn hình danh sách các học viên theo thứ tự bảng chữ cái.
+
+			document.write("<h1>Bài tập 6</h1>");
+			var ten = ["Lương", "Tiên", "Thanh", "Huy", "Nghĩa", ]
+
+			function bai6() {
+				return ten.sort()
+			}
+
+
+			// - Bài 7. Tạo 3 đối tượng là teacher, student và parent. Mỗi đối tượng đều có các thuộc tính: firstName, lastName, age. Cả 3 đối tượng đều có chung 1 phương thức là say(). Hãy viết function aboutMe() in ra màn hình 1 câu giới thiệu bản thân và gán vào phương thức say() của các đối tượng trên.
+
+			// Function aboutMe() không có tham số truyền vào.
+			// Khi truy xuất đến phương thức say() của một đối tượng bất kỳ trong 3 đối tượng tạo sẵn teacher, student và parent thì phải in ra được giá trị các thuộc tính của đối tượng đó.
+			document.write("<h1>Bài tập 7</h1>");
+			var teacher = {
+				first_name: "Maria",
+				last_name: "mông nở hoa",
+				age: "27",
+				say: function() {}
+			}
+
+			var student = {
+				first_name: "Nghĩa",
+				last_name: "thích ngắm hoa",
+				age: "24",
+				say: function() {}
+
+			}
+
+			var parent = {
+				first_name: "some",
+				last_name: "one",
+				age: "18",
+				say: function() {}
+			}
+			var aboutMe = function() {
+				return "xin chào chao xìn, tôi là " + this.first_name + " " + this.last_name + " năm nay tôi " + this.age
+			}
+
+			teacher.say = aboutMe;
+			teacher.say();
+			student.say = aboutMe;
+			student.say();
+			parent.say = aboutMe;
+			parent.say();
+		</script>
+
+	</head>
+
+	<body>
+		<div class="wrap">
+
+			<div id="main-menu">
+
+				<a href="#">Bacsic static web</a>
+
+			</div>
+
+				
+			</div>
+			
+
+			<div id="main-content">
+				<div class="content">
+					<h1>Demo Javascript</h1>
+				</div>
+			</div>
+
+
+
+
+		</body>

@@ -1,0 +1,155 @@
+/*
+
+	******** Start Content ********
+
+ */
+
+#content-home {
+    margin: 50px auto;
+    float: left;
+    width: 100%;
+}
+
+#content-home .box {
+    padding: 15px;
+    width: 50%;
+    float: left;
+    transition: all 1.6s ease-in-out;
+    height: 400px;
+    overflow: hidden;
+    position: relative;
+}
+
+#content-home .box:hover {
+    box-shadow: 10px 10px 5px -6px rgba(20, 20, 20, 1);
+}
+
+#content-home .box h2 {
+    text-align: center;
+    color: dimgrey;
+    transition: all 1.6s linear;
+    border-radius: 5px;
+}
+
+#content-home .box h2:hover {
+    background-color: #ddd;
+    color: gray;
+}
+
+#content-home .box:hover h2 {
+    background-color: #ddd;
+}
+
+#content-home .box img {
+    width: 50%;
+    clear: both;
+    display: inline-block;
+    margin-left: 100px;
+    transition: all 1.6s ease;
+    border: none;
+    opacity: 1;
+}
+
+#content-home .box img:hover {
+    border-radius: 5px;
+    opacity: 0.6;
+}
+
+#content-home .box .dv p {
+    font-size: 0.8em;
+}
+
+#content-home .box .dv {
+    text-indent: 10px;
+    font-size: 0.9em;
+    overflow: hidden;
+}
+
+#content-home .box a {
+    float: right;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    text-decoration: none;
+}
+
+#content-home .box a:link,
+#content-home .box a:visited {
+    color: blue;
+}
+
+
+/* END #content-home */
+
+
+/************ START #footer ************/
+
+#footer {
+    clear: both;
+    border: 1px solid grey;
+    width: 100%;
+    height: 300px;
+    background-color: #222428;
+    border-radius: 5px;
+    float: left;
+}
+
+#footer-left {
+    width: 33.333333%;
+    height: 100%;
+    margin: auto 0px;
+    float: left;
+}
+
+
+
+#footer-left-seconds {
+    width: 80%;
+}
+#footer-right {
+    width: 66.666666%;
+    height: 100%;
+    float: right;
+}
+
+
+#footer-right-center {
+	width: 60%;
+    height: 100%;
+    float: left;
+}
+
+#footer-right-center-seconds {
+    width: 80%;
+    line-height: 1.2em;
+}
+
+#footer-right-right {
+    height: 100%;
+    width: 40%;
+    float: right;
+}
+
+.box-bottom {
+	padding: 50px 0px 50px 10px;
+}
+.box-bottom h4 {
+	color: white;
+    font-size: 1.4em;
+    margin-left: 10px;
+}
+.box-bottom h6 {
+	margin: 20px 0px 10px 50px;
+    font-size: 0.9em;
+    color: antiquewhite;
+    display: inline-block;
+}
+
+#copyright {
+    position: relative;
+	float: right;
+    bottom: 30px;
+    right: 20px;
+}
+
+

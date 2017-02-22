@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Index 2</title>
+	<link rel="stylesheet" href="">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<button id="ketqua">
+		Click Me
+	</button>
+
+</head>
+<body>
+	<p id="result">
+
+	</p>
+	<script>
+        var page = 1;
+        var item = 12;
+        load(page,item);
+        $('#ketqua').click(function () {
+            page++;
+            load(page,item);
+        })
+        function  load(page,item) {
+            $.post(
+                    "database.php",
+                    {
+                        page: page,
+                        items_per_page: item
+                    },
+                    function (data , status) {
+                        console.log(data);
+                        console.log(status);
+                        html = "";
+                        $.each(data , function(key , value){
+                            html += "<div class='col-md-3 col-sm-6 col-xs-12 products well'>" +
+                                    "<div class='info-product'>" +
+                                    "<div class='img-product img-img'>" +
+                                    "<a href='sp1.html'><img src='" + value.link_image + "' class='img-responsive' ></a>" +
+                                    "<span class='info-hover animated fadeInUp'></span></div>" +
+                                    "<div class=''hover-detail-img'><h4>" + value.product_name + "</h4><p>MSP: " + value.id + "</p></div>" +
+                                    "<div class='price-label - box' style='clear:both;'>" +
+                                    "<div class='label-prodlist left'>" +
+                                    "<span class='pic-label top-right'><img src='img/newtim.png' alt='New'/></span></div>" +
+                                    "<div class='price-box-right right'>" +
+                                    "<div class='price-box'><p class='only'><span>Only</span></p><span class='regular-price' id='product-price-15969'>" +
+                                    "<span class='price'>" + value.product_price + "đ</span></span></div></div></div></div>" +
+                                    "<div class='actions'><button type='button' title='AddtoCart' class='button btn-lg btn-cartprod list-btn' onclick='setLocation()'><a href='cartpage.html'><span class='ic-cart glyphicon glyphicon-shopping-cart'>Thêm vào giỏ</span></a></button></div></div></div>";
+
+                        });
+                        $("#result").append(html);
+                    }
+
+            );
+        }
+
+	</script>
+</body>
+</html>

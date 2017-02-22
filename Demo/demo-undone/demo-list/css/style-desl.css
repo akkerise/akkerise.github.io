@@ -1,0 +1,11 @@
+
+dt {
+    margin: 20px auto;
+    color: #ccc333;
+    display: inline;
+    border-bottom: 1px solid grey;
+}
+
+dd {
+    margin-top: 15px;
+}

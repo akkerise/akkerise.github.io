@@ -1,0 +1,43 @@
+.container {
+  font-family: Helvetica Neue , sans-serif;
+  padding: 20px;
+  border: 1px solid grey;
+  width: 35%;
+  margin: 100px auto;
+  border-radius: 10px; }
+  .container .calcww .row:first-child {
+    background-color: #ddd;
+    height: 30px; }
+    .container .calcww .row:first-child p {
+      text-align: right; }
+  .container .calcww .row {
+    margin: 0 auto;
+    width: 100%; }
+    .container .calcww .row .col-sm-4 {
+      width: 400px;
+      float: left;
+      display: inline;
+      font-weight: 600;
+      font-style: bold; }
+      .container .calcww .row .col-sm-4 button {
+        width: 25%;
+        border: none;
+        float: left;
+        padding: 10px;
+        margin-bottom: 2px;
+        font-weight: 600;
+        font-style: bold; }
+        .container .calcww .row .col-sm-4 button:hover {
+          color: green;
+          background: white;
+          border-radius: 5px; }
+      .container .calcww .row .col-sm-4 #result {
+        width: 73.5%;
+        padding: 5px 10px;
+        margin: 0px;
+        float: left;
+        margin-right: 2px; }
+        .container .calcww .row .col-sm-4 #result:focus {
+          background: #ccc; }
+      .container .calcww .row .col-sm-4 #clearOne {
+        float: right; }

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Bài 28 : DOM Nodes trong JavaScript</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="" />
+    </head>
+    <body>
+        <!-- <div id="content"> -->
+            <!-- <h5 id="first_h5">Hello Hell</h5> -->
+            <!-- <h5>What TF?</h5> -->
+        <!-- </div> -->
+        <input type="button" name="View" value="" id="btn-view">
+
+        <div id="content2">
+            <h5>chúc vui vẻ khi học bài</h5>
+        </div>
+
+        <input type="button" value="Remove" id="btn-remove"/><br>
+        <input type="button" value="Replace" id="btn-replace"/>
+        <script type="text/javascript">
+            var btn = document.getElementById('btn-view');
+            btn.addEventListener('click',function(){
+                var h1 = document.createElement('h1');
+                h1.innerHTML = "Đây là node được thêm vào trước thẻ h5 thứ 2 nhé";
+                var element = document.getElementById('content');
+                // var element_child = document.getElementsByTagName('h5')[1];
+                var element_child = element.children[1];
+
+                var first_h5 = document.getElementById('first_h5');
+                // var element_child = first_h5.nextSibling();
+                // document.write(element_child);
+                element.insertBefore(h1,element_child);
+            });
+            var btnRemove = document.getElementById('btn-remove');
+            btnRemove.addEventListener('click',() => {
+                var need_remove = document.getElementById('content2').children[0];
+                // console.log(need_remove);
+                document.getElementById('content2').removeChild(need_remove);
+            });
+
+            var btnReplace = document.getElementById('btn-replace');
+            btnReplace.addEventListener('click',() => {
+                var content2 = document.getElementById('content2');
+                var h5Replace = content2.children[0];
+                var h1Replace = document.createElement('h1');
+                h1Replace.innerHTML = "Replace h1 from h4";
+                // Tham số sau replaceChild(node đè , node bị ghi đè)
+                content2.replaceChild(h1Replace,h5Replace);
+            });
+
+            /*
+              // Lấy thẻ li đầu tiên trên trang
+              var listItem = $( 'li' ).first(); // also: .last()
+
+              // Lấy các thẻ cùng cấp với nó tính từ nó
+              var siblings = listItem.siblings();
+
+              // Lấy thằng tiếp theo sau nó
+              var nextSibling = listItem.next(); // also: .prev()
+
+              // Lấy thằng cha của nó
+              var list = listItem.parent();
+
+              // Lấy thằng con của nó
+              var listItems = list.children();
+
+              // Lấy tất cả các thẻ li con của nó
+              var allListItems = list.find( 'li' );
+
+              // Lấy tất cả các cấp trên của nó (ông, bà, tổ tiên...) mà có class là module
+              var modules = listItem.parents( '.module' );
+
+              // Lấy các cấp trên gần nhất có class module
+              var module = listItem.closest( '.module' );
+            */
+        </script>
+    </body>
+</html>

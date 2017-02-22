@@ -1,0 +1,13 @@
+Chú ý:
+Tham khảo thêm các thuộc tính, phương thức của đối tượng document tại đây: http://www.w3schools.com/js/js_htmldom_document.asp
+Các thuộc tính styles dùng để thay đổi CSS của element tra cứu tại đây : http://www.w3schools.com/jsref/dom_obj_style.asp
+Lorem Ipsum dùng cho việc demo text các bạn có thể xem và tạo tại đây: http://www.lipsum.com/
+Bài tập: 
+Tạo 1 trang HTML với nội dung là 3 đoạn văn. Hãy viết các function có tác dụng như sau:
+
+function changeFontSize(x): Thay đổi kích thước font chữ của cả 3 đoạn văn lên x pixels.
+function increaseFontSize(paragraph): Tăng kích thước font chữ của đoạn văn mong muốn (paragraph) lên 1 pixel so với kích thước hiện tại, kích thước tăng lên không được vượt quá 30 pixels (Sử dụng sau khi gọi hàm changeFontSize()).
+function decreaseFontSize(paragraph): Giảm kích thước font chữ của đoạn văn mong muốn (paragraph) xuống 1 pixels so với kích thước hiện tại, kích thước giảm xuống không vượt quá 10 pixels (Sử dụng sau khi gọi hàm changeFontSize()).
+function changeColor(): Đổi màu chữ của 3 đoạn văn theo thứ tự xanh, vàng, đỏ.
+function changeBgColor(color): Thay đổi màu nền của trang thành màu color.
+function copyContent(paragraph1, paragraph2): Thay đổi nội dung của đoạn văn paragraph1 thành giống nội dung của đoạn văn paragraph2.

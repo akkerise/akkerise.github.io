@@ -1,0 +1,64 @@
+@charset "UTF-8";
+body {
+  border: 1px solid #fefefe;
+  margin: 5px;
+  padding: 5px 5px 0 0;
+  font-family: 'Helvetica', sans-serif;
+  background-color: grey;
+  font-family: Futura, 'Trebuchet MS', sans-serif; }
+  body > h1 {
+    font-size: 3em;
+    margin: 5px 0 0 5px; }
+  body p {
+    column-count: 3;
+    -moz-column-count: 3;
+    column-rule: 2px solid #fefefe;
+    -moz-column-rule: 2px solid #fefefe;
+    column-gap: 30px;
+    -moz-column-gap: 30px; }
+
+body {
+  margin: 5px;
+  padding: 7.5px; }
+  body h1 {
+    font-size: 1.2em;
+    margin: 0xp; }
+  body .date {
+    font-size: 0.8em;
+    color: grey; }
+  body a {
+    color: #963;
+    text-decoration: none;
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 7.5px;
+    transition: all 1.5s linear;
+    margin-bottom: 5px; }
+    body a:hover {
+      color: #fff; }
+
+body.firefox .header:before {
+  content: "Hi, Firefox users!"; }
+
+/*
+
+** KHÔNG CÓ THAM SỐ
+@mixin someMixin {
+  #code...
+}
+// Cách sử dụng là chỉ cần @include func someMixin vào nơi cần dùng
+@include someMixin
+// @mixin someMinix giống kiểu func không có tham số truyền vào
+
+
+** CÓ THAM SỐ **
+@mixin someMixinPramenter($varOne , $varTwo){
+  color: $varOne;
+  background-color: $varTwo;
+}
+// Cách sử dụng là phải truyền tham số vào hàm và sử dụng như ở trên
+@include someMixinPramenter(#333333 , #444eee);
+// Ở ngay chỗ đó nó sẽ tự nhận những thuộc tính của hàm đã thêm vào tham số
+*/
+
+/*# sourceMappingURL=main.css.map */

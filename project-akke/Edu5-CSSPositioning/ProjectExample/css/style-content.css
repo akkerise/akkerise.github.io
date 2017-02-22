@@ -1,0 +1,99 @@
+.fullsite {
+	width: 1000px;
+	background-color: #dddddd;
+	margin: auto;
+}
+#banner {
+    display: inline-block;
+    width: 1000p;
+    align-content: center;
+}
+#logo {
+    display: inline-block;
+    width: 128px;
+}
+
+.content  {
+    margin: 5px;
+    border: 1px solid pink;
+    padding: 15px;
+    vertical-align: center;
+}
+
+a:hover , a:visited {
+    color: blank;
+}
+a {
+    margin: 25px;
+}
+.menu-info {
+    width: 1000px;
+    border 15px solid #dddddd;
+    text-align: center;
+    
+    padding: 15px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.box {
+    width: 1000px;
+    padding: 5px;
+    border: 1px solid green;
+    margin: 5px;
+    background: #e5e5e5;
+}
+.dv1 {
+    margin: 5px;
+    width: 500px;
+    padding: 5px;
+    height: auto;
+    display: inline;
+    border 1px solid red;
+    float: left;
+}
+.dv2 {
+    margin: 5px;
+    width: 500px;
+    height: auto;
+    padding: 5px;
+    border 1px solid red;
+    display: inline;
+}
+.dv3 {
+    margin: 5px;
+    width: 500px;
+    padding: 5px;
+    height: auto;
+    
+    border 1px solid red;
+    float: left;
+}
+.dv4 {
+    margin: 5px;
+    width: 500px;
+    padding: 5px;
+    height: auto;
+    display: block;
+    border 1px solid red;
+    
+}
+.line1 {
+    width: 1000px;
+}
+
+.line2 {
+    width: 1000px;
+}
+.dv1:hover , .dv2:hover , .dv3:hover ,.dv4:hover {
+    color: blue;
+}
+p {
+    width: 1000px;
+    margin: 35px;
+    padding: 15px;
+    border: 2px solid #ffffff;
+    line-height: 14px;
+}

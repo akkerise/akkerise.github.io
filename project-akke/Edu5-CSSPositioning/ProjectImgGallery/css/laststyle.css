@@ -1,0 +1,79 @@
+* {
+	box-sizing: border-box;
+}
+.fullsite {
+	position: relative;
+	width: 1000px;
+	margin: auto;
+	background-color: #dddddd;
+}
+img {
+	max-width: 100%;
+}
+#banner {
+	padding: 15px;
+	border: 1px solid;
+	border-bottom-color: green;
+	border-bottom-width: 5px;
+}
+.main-menu {
+	margin: 15px;
+	padding: 5px;
+	position: relative;
+	border: 1px solid #ffffff;
+	margin: 5px;
+	text-align: center;
+}
+.main-menu a {
+	
+	padding: 15px;
+	font-weight: bold;
+	font-size: 1.3em;
+
+}
+.main-menu a:link {
+	color: blue;
+}
+.main-menu a:hover , a:active {
+	color: black;
+}
+
+
+.main-menu a:hover{
+	font-size: 1.5em;
+	font-weight: lighter;
+}
+.box img {
+	width: 33%;
+	height: 188px;
+}
+
+.box {
+	width: 1000px;
+	margin: 1px;
+	padding: 8px;
+	float: left;
+}
+
+#logo {
+	width: 128px;
+	position: absolute;
+	top: -138px;
+	left: 88px;
+}
+
+.content {
+	position: relative;
+}
+#chat {
+	position: fixed;
+	width: 58px;
+	bottom: 0px;
+    right: 48px;
+}
+#backontop {
+	position: fixed;
+	width: 48px;
+	bottom: 0px;
+	left: 48px;
+}

@@ -1,0 +1,65 @@
+“Một lập trình viên giỏi là một người luôn luôn nhìn cả hai phía trước khi băng qua con đường một chiều.” ~ Doug Linder
+
+Là một lập trình viên phần mềm làm việc trong ngành công nghiệp IT, thì thứ tạo ra động lực để chúng ta đến nơi làm việc mỗi ngày là những niềm vui và đam mê trong công việc lập trình. Nhưng để cho công việc đó trở nên là một niềm vui thích và đam mê vĩnh cửu thì một trong những điều bạn cần phải học là bám sát vào những thứ căn bản để giúp bạn trở thành một lập trình viên giỏi.
+
+Không phải là tôi đang ghi ra một câu thần chú để bạn có thể theo đó mà trở thành một lập trình viên giỏi, mục đích của tôi là tạo ra một danh sách những bí quyết hữu ích, những điều mà tôi đã học và áp dụng trong ngành công nghiệp này để có thể đạt được khá nhiều kết quả tuyệt vời. Thực ra không có định nghĩa chính xác thế nào là một lập trình viên giỏi cả, nhưng ở đây chúng ta muốn nói đến những kiểu lập trình viên mà đã phát triển ra những giải pháp IT tuyệt vời và góp phần làm cho cả ngành công nghiệp này phát triển.
+
+Tôi phải làm gì để trở thành một lập trình viên xuất sắc?Những bí quyết nào giúp tôi trở thành một lập trình viên giỏi?
+1. Làm việc từ những thứ căn bản nhất
+
+
+Điều này thì đúng cho bất kỳ ngành công nghiệp cũng như là công việc nào, việc hiểu rõ mọi thứ ở mức khái niệm là chìa khóa để thành công. Nếu không có một nền tảng về khái niệm vững chắc, thì anh ta (hoặc cô ta) sẽ chẳng bao giờ có thể trở thành một lập trình viên giỏi được cả. Việc hiểu được những khái niệm cốt lõi sẽ giúp bạn trong việc thiết kế và thực thi những giải pháp theo cách tốt nhất có thể. Nếu bạn cảm thấy dường như mình đang bị hổng kiến thức nền tảng về khoa học máy tính và những khái niệm trong ngôn ngữ lập trình mà bạn đang sử dụng, thì không bao giờ là quá trễ để quay trở lại và học từ những điều căn bản nhất.
+
+2. Luôn đặt ra những câu hỏi (Tại sao? Như thế nào?) với mọi đoạn code mà bạn viết ra
+
+Có một thứ mà tôi thấy là từ đó nó sẽ tạo ra một ranh giới rõ ràng giữa những lập trình viên giỏi và phần còn lại, đó là sự khao khát muốn biết lý do tại sao và đoạn code đó sẽ chạy như thế nào? Một số ít lập trình viên sẽ chẳng bao giờ chịu chuyển sang tác vụ tiếp theo nếu vẫn chưa hiểu rõ đoạn code mà mình viết ra sẽ thực thi như thế nào. Tôi hiểu rằng trong sự giới hạn của thời gian kết thúc dự án thì không phải lúc nào chúng ta cũng có điều kiện để làm điều này, vì thế nhiều khi chúng ta phải viết ra những đoạn code mà chỉ biết láng máng rằng nó sẽ đáp ứng được yêu cầu công việc. Là một lập trình viên, bạn hãy luôn thử nghiên cứu ở mức sâu nhất có thể. Điều này dần dần sẽ trở thành một thói quen và sau đó bạn sẽ thực hiện nó một cách thường xuyên mà không biết.
+
+3. Bạn học được nhiều hơn bằng cách giúp đỡ những người khác
+
+Hầu hết ai trong chúng ta cũng đều có khuynh hướng là chỉ nhảy bổ vào các diễn đàn và các trang hỏi đáp trên mạng khi chúng ta cần sự giúp đỡ. Thêm một sự phân biệt rõ ràng giữa những lập trình viên giỏi và phần còn lại đó là họ ghé thăm những trang web này thường xuyên để giúp đỡ những người khác. Điều này giúp cho họ học được nhiều hơn sau khi giải quyết vấn đề của một ai đó. Cũng như trong một nhóm làm việc, bạn hãy giúp những người khác giải quyết những vấn đề của họ. Tin tôi đi, việc hiểu được những vấn đề của người khác trong ngữ cảnh của họ, tìm hiểu và cung cấp những giải pháp cho vấn đề đó sẽ giúp bạn học được rất nhiều.
+
+4. Viết những dòng code đơn giản, dễ hiểu và có logic
+
+Cũng như hầu hết mọi khía cạnh của cuộc sống, công thức KISS (Keep it simple and short – Giữ cho mọi thứ được ngắn gọn và đơn giản) cũng rất hiệu quả trong công việc lập trình. Hãy viết những đoạn code có logic và tránh sự phức tạp. Đôi khi người ta viết ra những đoạn code phức tạp chỉ để chứng tỏ khả năng của họ là có thể viết ra những đoạn code như vậy. Kinh nghiệm của tôi chỉ ra rằng chính những đoạn code đơn giản và có logic luôn luôn hoạt động rất tốt, kết quả thu được thường mắc rất ít lỗi và có nhiều khả năng mở rộng. Tôi nhớ một câu nói rất hay như sau:
+
+Đoạn code tốt thì chính bản thân nó đã là một tài liệu hoàn hảo rồi. Vì thế khi mà bạn chuẩn bị thêm một dòng chú thích, thì hãy tự hỏi bản thân mình rằng, “Làm cách nào mà tôi có thể cải tiến đoạn code đó để không cần phải bổ dung dòng chú thích này nữa nhỉ?” ~ Steve McConnell
+
+5. Hãy dành nhiều thời gian hơn để phân tích vấn đề, bạn sẽ cần ít thời gian hơn để sửa lỗi
+
+Bạn hãy dành nhiều thời gian hơn để hiểu, phân tích thấu đáo vấn đề và thiết kế giải pháp cho nó. Bạn sẽ nhận thấy phần việc còn lại chỉ bao gồm những thứ tương đối dễ làm. Việc thiết kế không phải lúc nào cũng là dùng những ngôn ngữ mô hình hóa hay công cụ gì cao siêu, đôi khi chỉ cần bạn ngẩng nhìn lên bầu trời xanh và suy nghĩ về giải pháp cho bài toán đó ở trong tâm trí. Những người có thói quen lao vào viết code hùng hục ngay khi vừa nhận được yêu cầu thì thường tạo ra kết quả là một cái gì đó khác xa so với yêu cầu thực tế.
+
+“Nếu bạn không thể hình dung ra toàn bộ cấu trúc của một chương trình trong khi đang tắm, thì bạn vẫn chưa sẵn sàng để code nó.” ~ Richard Pattis
+
+6. Hãy là người đầu tiên phân tích và xem xét những dòng code của chính mình
+
+Mặc dù điều này hơi khó, nhưng hãy thử “bẻ gãy” những đoạn code của bạn trước khi người khác làm điều đó và theo thời gian bạn sẽ học được cách viết ra những đoạn code mà hoàn toàn không có lỗi. Hãy thường xuyên xem lại các đoạn code của mình một cách chặt chẽ và không thiên vị. Ngoài ra cũng đừng bao giờ do dự để mời những người khác xem giúp những đoạn code của bạn. Làm việc với những lập trình viên giỏi và nhận được những nhận xét của họ sẽ đảm bảo giúp bạn cũng trở thành một lập trình viên giỏi.
+
+ide-techtalk
+
+7. Đừng hốt hoảng khi nhìn thấy sự thay đổi chóng mặt trong thế giới công nghệ
+
+Trải qua nhiều giai đoạn thăng trầm trong ngành công nghiệp phần mềm, tôi gặp vô số người hoặc là thất vọng về công việc của họ hoặc thậm chí rời bỏ nghề để đi tìm một công việc khác, và họ thường nói rằng muốn học và làm việc trong những công nghệ mới nhất. Tôi không nhận thấy vấn đề gì trong nguyện vọng đó của họ ngoại trừ cụm từ ‘những công nghệ mới nhất’. Cái mà chúng ta nghe thấy mỗi ngày thường là những công cụ mới, các API (giao diện lập trình ứng dụng), các framework và những phương tiện khác sinh ra liên tục để giúp cho công việc lập trình trở nên dễ dàng hơn và nhanh hơn. Điều này dù sao cũng sẽ tiếp tục trong thế giới công nghệ. Nhưng bạn cần phải hiểu là những công nghệ nền tảng và cốt lõi thì thay đổi với tốc độ chậm hơn các framework, API và các công cụ xung quanh nó rất nhiều.
+
+Điều này cũng giống như ngoài đại dương bao la kia, phía trên bề mặt thì sóng rất dữ dội nhưng ở mực nước sâu thì mọi thứ tương đối yên tĩnh, phẳng lặng và hầu hết các sinh vật sống và phát triển tại đây. Vì thế, hãy tự cảm nhận rằng mình đang ở mực nước sâu và tiến gần với những công nghệ cốt lõi. Ví dụ, trong thế giới Java Enterprise, có rất nhiều web framework tồn tại và hầu như mỗi tuần đều có thêm những framework mới. Thế nhưng các khái niệm cốt lõi thì đều dựa trên giao tiếp theo mô hình client-server, MVC pattern, filters/servlets/JSP, resource bundling, XML parsing v.v… và chúng đều hiếm khi thay đổi. Vì thế bạn hãy dành nhiều thời gian để học về những khái niệm cốt lõi hơn là cứ ngồi đó mà lo lắng về những framework và công cụ luôn thay đổi xoành xoạch xung quanh nó. Cùng với nền tảng vững chắc của những kiến thức cốt lõi, bạn sẽ luôn dễ dàng học được những framework, công cụ và các API mới.
+
+8. Giải pháp tạm thời sẽ không có giá trị lâu dài
+
+Rất nhiều lần các lập trình viên thực thi một công việc bằng những giải pháp tạm thời (có thể bởi vì do thiếu hụt thời gian, chưa hiểu rõ vấn đề hoặc không có kinh nghiệm về công nghệ đó). Nhưng khi thời gian trôi qua thì những công việc được làm bằng những giải pháp tạm thời này luôn luôn mang lại hậu quả từ những đoạn code mục nát đó, khiến cho nó không thể mở rộng hoặc bảo trì được và tốn rất nhiều thời gian để khắc phục. Vì thế bạn hãy chỉ thực thi một công việc khi đã nắm rõ đầu vào và đầu ra của giải pháp. Tôi biết là trong một số hoàn cảnh thì chúng ta cũng không thể tránh khỏi việc bắt buộc phải sử dụng một giải pháp tạm bợ, nhưng cũng giống như trong cuộc sống này thôi, bạn luôn luôn nên nói thật nhưng trong một số hoàn cảnh thì việc nói dối cũng có thể chấp nhận được.
+
+9. Hãy đọc thật nhiều tài liệu
+
+Một trong những thói quen thiết yếu của một lập trình viên giỏi là họ đọc rất nhiều tài liệu. Đó có thể là các bản đặc tả phần mềm, JSR, các tài liệu API, các bài hướng dẫn thực hành v.v… Việc đọc nhiều tài liệu giúp bạn tạo ra những nền tảng vững chắc và từ đó bạn sẽ lập trình theo cách tốt nhất có thể.
+
+10. Bạn có thể học từ những dòng code của người khác
+
+Tôi thường tiếp xúc và làm việc với rất nhiều lập trình viên tài năng, những người này luôn luôn có những dự án trong IDE của họ để có thể đọc/tham khảo trong công việc hàng ngày. Không chỉ nhằm mục đích đáp ứng khao khát biết về những thứ căn bản mà họ còn tìm những cách khác để viết ra những chương trình tốt. Việc đọc và tham khảo những dự án mã nguồn mở đáng tin cậy hoặc mã nguồn của những người có thâm niên trong ngành có thể cũng giúp cho bạn trở thành một lập trình viên giỏi hơn.
+
+Và cuối cùng: Đừng bao giờ so sánh mình với những người khác
+
+Nếu bạn so sánh bản thân mình với những người khác thì sẽ chỉ mang lại kết quả là tạo ra nhiều cảm xúc tiêu cực và những cạnh tranh không lành mạnh mà thôi. Ai trong chúng ta cũng có những điểm mạnh và điểm yếu của riêng mình. Điều quan trọng hơn là chúng ta hiểu mình và tập trung vào những lĩnh vực mà chúng ta có năng khiếu nhất. Tôi đã bắt gặp rất nhiều lần những lập trình viên được coi là “cao thủ” cũng phạm phải những sai lầm hết sức ngớ ngẩn. Vì thế, hãy phân tích bản thân, liệt kê ra danh sách những kỹ năng mà bạn cần phát triển và tập trung vào chúng. Lập trình là công việc thực sự mang lại rất nhiều niềm vui, bạn hãy tận hưởng nó!
+
+Tôi xin kết thúc bài viết bằng một câu nói của lập trình viên nổi tiếng Martin Fowler rằng:
+
+“Bất kỳ thằng ngốc nào cũng có thể viết code để một chiếc máy tính có thể hiểu được. Nhưng một lập trình viên giỏi thì viết code để những người khác có thể hiểu được.” ~ Martin Fowler
+
+Chúc bạn sớm trở thành một lập trình viên giỏi và hãy nhớ giúp đỡ những người khác để cùng tiến bộ nhé!

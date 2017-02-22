@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<script language="javascript" src="../../JQuery/jquery-1.8.1.js"></script>
+<script language="javascript" >
+function loadURL(filename)
+{
+	$('#content').load(filename);
+}
+
+</script>
+<body>
+
+<table align="center" width="1000" border="0">
+<tr>
+<td colspan="2" style="background-color:#FFA500;">
+<h1>Main Title of Web Page</h1>
+</td>
+</tr>
+
+<tr>
+<td style="background-color:#FFD700;width:100px;">
+<b>Menu</b><br>
+<a href="#" onClick="loadURL('layout1.html');">HTML</a><br>
+CSS<br>
+JavaScript
+</td>
+<td id="content" style="background-color:#eeeeee;height:200px;width:400px;">
+Content goes here</td>
+</tr>
+
+<tr>
+<td colspan="2" style="background-color:#FFA500;text-align:center;">
+Copyright &copy; botay.com</td>
+</tr>
+</table>
+
+</body>
+</html>

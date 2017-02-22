@@ -1,0 +1,36 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Ngày</title>
+<script language="javascript" type="text/javascript">
+	function getDayOfYear(date) { 
+		var offset = new Date(date.getFullYear(), date.getMonth(), date.getDate()).getTime() - new Date(date.getFullYear(), 0, 1).getTime(); 
+
+	return Math.ceil(offset / 1000 / 60 / 60 / 24); 
+
+} 
+function getWeekOfYear(date) { 
+
+var dayOfYear = getDayOfYear(date); 
+
+return Math.ceil(dayOfYear / 7); 
+
+} 
+
+var now = new Date(); 
+
+alert("Hôm nay là ngày thứ " + getDayOfYear(now) + " của năm."); 
+
+alert("Hôm nay là tuần thứ " + getWeekOfYear(now) + " của năm."); 
+
+ 
+ 
+</script>
+</head>
+
+
+<body>
+
+</body>
+</html>

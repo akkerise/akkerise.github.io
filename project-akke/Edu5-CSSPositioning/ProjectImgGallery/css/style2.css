@@ -1,0 +1,71 @@
+* {
+	box-sizing: border-box;
+}
+
+div.wrap {
+	
+	max-width: 1000px;
+	margin: auto;
+	background: #dddddd;
+}
+.main-menu {
+	margin: 15px;
+	padding: 15px;
+	border: 2px solid green;
+	background-color: #ffffff;
+	text-align: center;
+	position: relative;
+}
+.main-menu > a:first-child {
+	position: absolute;
+    top: -178px;
+    left: 58px;
+}
+.main-menu > .menu {
+	font-size: 22px;
+	font-color: pink;
+	margin: 8px;
+	padding: 15px;
+}
+}
+.box {
+	width: 1000px;
+	margin: auto;
+	
+}
+
+.one {
+	max-width: 1000px;
+	padding: 5px 5px 2.5px 5px;
+	margin: 
+}
+.two {
+	max-width: 1000px;
+	padding: 2.5px 5px 2.5px 5px;
+}
+.three {
+	max-width: 1000px;
+	padding: 2.5px 5px 2.5px 5px;
+}
+.four {
+	max-width: 1000px;
+	padding: 2.5px 5px 5px 5px;
+}
+.content img {
+	width: 33%;
+	max-height: 185.625px;
+}
+
+#banner {
+	max-width: 70%;
+}
+#banners {
+	width: 700px;
+	float: right;
+}
+#chat {
+	position: fixed;
+    bottom: 48px;
+    right: 28px;
+    width: 128px;
+}

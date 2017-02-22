@@ -1,0 +1,61 @@
+Mỗi một công ty có chuẩn mã hóa khác nhau dựa trên chuẩn thực tiễn của họ. Chuẩn mã hóa là cần thiết bởi vì có thể có nhiều lập trình viên làm việc trên những modun khác nhau, vì thế, nếu họ bắt đầu phát minh ra những chuẩn riêng, thì sau đó source code sẽ trở nên rất không dễ quản lý và nó sẽ trở nên khó khăn để duy trì source code trong tương lai.
+Dưới đây là các lý do tại sao mà phải sử dụng kỹ thuật mã hóa.
+Lâp trình viên khác và bạn phải hiểu được code mà bạn xây dựng. Một chuẩn mã hóa hoạt động với vai trò như là blueprint cho mọi thành viên tham gia dự án đó trong team.
+Tính đơn giản và rõ ràng có thể thực hiện được bởi cách mã hóa phù hợp sẽ giúp bạn giảm đi những sai lầm phổ biến.
+Đôi khi, nếu bạn duyệt lại code của bạn sau một thời gian, thì code của bạn trở nên dễ dàng để hiểu hơn.
+Tiêu chuẩn công nghiệp của nó tuân theo một tiêu chuẩn cụ thể để được chất lượng hơn trong phần mềm.
+Dưới đây là một vài guideline bạn nên theo khi viết code trong lập trình PHP:
+Tạo độ thụt đầu dòng và độ dài dòng code − sử dụng một độ thụt dòng của không gian 4 chiều và không sử dụng bất kỳ tab nào bởi vì các máy tính khác nhau sử dụng thiết lập khác nhau cho các tab. Về độ dài dòng code, bạn nên giữ dòng code có độ dài khoảng 75-85 ký tự, việc này giúp code của bạn trở nên dễ đọc hơn.
+Cấu trúc điều khiển − Nó bao gồm if, for, while, switch,… . Các lệnh điều khiển sẽ có một khoảng cách giữa từ khóa điều khiển và dấu mở ngoặc, để phân biệt chúng với các lời gọi hàm. Bạn được khuyến khích mạnh mẽ để luôn luôn sử dụng dấu ngoặc nhọn bất cứ khi nào có thể.
+Ví dụ
+if ((condition1) || (condition2)) {
+   action1;
+}
+
+elseif ((condition3) && (condition4)) {
+   action2;
+}
+
+else {
+   default action;
+}
+Bạn có thể viết các lệnh switch như sau:
+switch (condition) {
+   case 1:
+      action1;
+      break;
+
+   case 2:
+      action2;
+      break;
+
+   default:
+      defaultaction;
+      break;
+}
+Lời gọi hàm − Hàm nên được gọi với không có khoảng trắng giữa tên hàm, dấu ngoặc mở và biến đầu tiên; khoảng trắng giữa dấu phảy và từng tham số, và không có khoảng trắng giữa tham số cuối, dấu ngoặc đóng và dấu chấm phẩy. Dưới đây là một ví dụ:
+$var = foo($bar, $baz, $quux);
+
+
+Định nghĩa hàm − Khai báo hàm theo "BSD/Allman style".
+function fooFunction($arg1, $arg2 = '')
+{
+   if (condition) {
+      statement;
+   }
+   return $val;
+}
+Comment − Comment theo ngôn ngữ C (/ /) và theo chuẩn C++ (//) cả 2 đều OK. Cách sử dụng comment theo kiểu của Perl/shell (#) không khuyến khích.
+Thẻ PHP code − Luôn luôn sử dụng <?php ?> để xác định phạm vi PHP code, không dùng cách viết tắt <? ?>.
+Tên biến trong Thư viện C:
+Sử dụng tất cả là chữ thường
+Sử dụng dấu gạch dưới (_) như một kí tự phân cách.
+Biến toàn cục nên được thêm vào trước một chữ “g”.
+Hằng toàn cục nên là chữ hoa với ký tự phân tách là dấu gạch dưới (_).
+Biến tĩnh nên được thêm vào trước một chữ “s”.
+Tạo các hàm Reentrant (đồng dụng) − Các hàm không nên giữ biến tĩnh mà ngăn cản một hàm từ việc có thể đồng dụng (reentrant).
+Căn chỉnh các khối khai báo − Khối khai báo nên được căn chỉnh.
+1 lệnh trên 1 dòng − Nên có chỉ một câu lệnh trên mỗi dòng, trừ khi các câu lệnh có liên quan rất chặt chẽ.
+Hàm và phương thức ngắn − Các phương thức nên được giới hạn trong một trang code.
+Có thể có nhiều điều được nhắc đến khi viết mã bằng PHP. Mục đích tổng thể nên được đồng nhất trong việc lập trình và nó là có thể chỉ khi bạn làm theo chuẩn coding nào đó. Bạn có thể có chuẩn của riêng bạn nếu bạn thích điều gì đó khác biệt.
+

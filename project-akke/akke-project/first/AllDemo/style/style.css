@@ -1,0 +1,25 @@
+body {
+	border: 1px solid grey;
+	background-color: ;
+}
+ul {
+	margin: 5px auto;
+	padding: 5px;
+}
+h1 {
+	font-size: 22px;
+	font-family: "Georgia" , sans-serif;
+	font-weight: 800;
+	letter-spacing: 0.2em;
+	color: #883355;
+}
+
+h2 {
+	font-size: 18px;
+	font-weight: 8;
+	font-style: italic;display: block;
+}
+
+p {
+	font-weight: 1.1em;
+}

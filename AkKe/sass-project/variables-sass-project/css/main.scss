@@ -1,0 +1,93 @@
+$primary-color: grey;
+$text-color: lighten($primary-color, 60%);
+$margin: 5px;
+$padding: $margin * 1.5;
+@mixin attGeneral {
+    color: $primary-color;
+}
+
+@mixin green_links($color, $color-hover) {
+    color: $color;
+    text-decoration: none;
+    &:hover {
+        color: $color-hover;
+    }
+    border: 1px solid $text-color;
+    border-radius: 5px;
+    padding: $padding;
+    transition: all 1.5s linear;
+    margin-bottom: $margin;
+}
+
+@mixin general {
+    border: 1px solid mix($primary-color, $text-color, $weight: 0.5);
+    margin: 5px;
+    padding: 5px 5px 0 0;
+    font-family: 'Helvetica', sans-serif;
+}
+
+body {
+    @include general;
+    @extend %entry;
+    background-color: $primary-color;
+    font-family: Futura, 'Trebuchet MS', sans-serif;
+    > h1 {
+        font-size: 3em;
+        margin: $margin 0 0 $margin;
+    }
+    @extend %entry;
+    p {
+        column-count: 3;
+        -moz-column-count: 3;
+        column-rule: 2px solid mix($primary-color, $text-color, $weight: 0.5);
+        -moz-column-rule: 2px solid mix($primary-color, $text-color, $weight: 0.5);
+        column-gap: 30px;
+        -moz-column-gap: 30px;
+    }
+}
+
+%entry {
+    // background-color: opacity($primaryColor , 60%);
+    margin: $margin;
+    padding: $margin * 1.5;
+    h1 {
+        font-size: 1.2em;
+        margin: 0xp;
+    }
+    .date {
+        font-size: 0.8em;
+        @include attGeneral;
+    }
+    a {
+        @include green_links(#963, #fff);
+    }
+}
+
+@mixin firefox-message($selector) {
+    body.firefox #{$selector}:before {
+        content: "Hi, Firefox users!";
+    }
+}
+
+@include firefox-message(".header");
+
+/*
+
+** KHÔNG CÓ THAM SỐ
+@mixin someMixin {
+  #code...
+}
+// Cách sử dụng là chỉ cần @include func someMixin vào nơi cần dùng
+@include someMixin
+// @mixin someMinix giống kiểu func không có tham số truyền vào
+
+
+** CÓ THAM SỐ **
+@mixin someMixinPramenter($varOne , $varTwo){
+  color: $varOne;
+  background-color: $varTwo;
+}
+// Cách sử dụng là phải truyền tham số vào hàm và sử dụng như ở trên
+@include someMixinPramenter(#333333 , #444eee);
+// Ở ngay chỗ đó nó sẽ tự nhận những thuộc tính của hàm đã thêm vào tham số
+*/

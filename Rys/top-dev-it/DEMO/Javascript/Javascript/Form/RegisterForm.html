@@ -1,0 +1,117 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Registration Form</title>
+<script language="javascript" type="text/javascript" src="validate.js"></script>
+
+<script language="javascript">
+	function getRadioValue(){
+		result=false;
+		for (i=0;i<document.frmRegistration.rdoGender.length;i++){
+			if (document.frmRegistration.rdoGender[i].checked){
+				result= true;
+
+				break;
+			}
+		}
+		return result;
+			
+		
+	}
+	
+	function checkWholeForm() {
+	
+    
+	var why = "";
+	why += checkUsername(document.frmRegistration.txtUsername.value);
+	why += checkPassword(document.frmRegistration.txtPassword.value);
+	why += checkPhone(document.frmRegistration.txtPhone.value);
+	why += checkEmail(document.frmRegistration.txtEmail.value);
+	
+	why += checkRadio(getRadioValue());
+	
+	
+	why += checkDropdown(document.frmRegistration.lstNationality.selectedIndex);    
+	why += isEmpty(document.frmRegistration.txtComment.value);
+	why += isDifferent(document.frmRegistration.txtCode.value);
+	if (why != "") {
+       alert(why);
+       return false;
+    }
+return true;
+}
+</script> 
+</head>
+
+<body>
+<form name="frmRegistration" >
+  <table width="200" border="0" align="center">
+    <tr>
+      <td colspan="3" bordercolor="0"><div align="center">Registration form </div></td>
+    </tr>
+    <tr>
+      <td bordercolor="0">Username</td>
+      <td colspan="2">
+        <input name="txtUsername" type="text" id="txtUsername" />     </td>
+    </tr>
+    <tr>
+      <td bordercolor="0">Password</td>
+      <td colspan="2">
+        <input name="txtPassword" type="password" id="txtPassword" />      </td>
+    </tr>
+    <tr>
+      <td bordercolor="0">Phone</td>
+      <td colspan="2">
+        <input name="txtPhone" type="text" id="txtPhone" />      </td>
+    </tr>
+    <tr>
+      <td bordercolor="0">Email</td>
+      <td colspan="2">
+        <input name="txtEmail" type="text" id="txtEmail" />      </td>
+    </tr>
+    <tr>
+      <td bordercolor="0">Gender</td>
+      <td colspan="2">
+        <input name="rdoGender" type="radio" value="1" />
+      Male</td>
+    </tr>
+    <tr>
+      <td bordercolor="0">&nbsp;</td>
+      <td colspan="2">
+        <input name="rdoGender" type="radio" value="2" />
+      Female</td>
+    </tr>
+    <tr>
+      <td bordercolor="0">Nationality</td>
+      <td colspan="2">
+        <select name="lstNationality" id="lstNationality">
+          <option value="0">--Choose language--</option>
+          <option value="1">Vietnamese</option>
+          <option value="2">English</option>
+          <option value="3">French</option>
+      </select>      </td>
+    </tr>
+    <tr>
+      <td bordercolor="0">Comment</td>
+      <td colspan="2"><label>
+      <textarea name="txtComment" id="txtComment"></textarea>
+      </label></td>
+    </tr>
+    <tr>
+      <td bordercolor="0">Code</td>
+      <td colspan="2"><label>
+        <input name="txtCode" type="text" id="txtCode" />
+      </label></td>
+    </tr>
+    <tr>
+      <td bordercolor="0">&nbsp;</td>
+      <td>
+        <input name="btnOK"  type="button" id="btnOK" onclick="checkWholeForm();" value="OK" />     </td>
+      <td>
+        <input type="reset" name="Submit2" value="Reset" />      </td>
+    </tr>
+  </table>
+</form>
+</body>
+</html>

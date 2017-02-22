@@ -1,0 +1,4 @@
+﻿1. Học Ruby đọc book và khóa Teamtreehouse
+2. Học Rails theo cuốn Rails 3rd
+3. Xem khóa ở Tuần 1 CS50 Havard
+4. Xem lại vài video khóa C++ Techmaster

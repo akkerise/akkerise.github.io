@@ -1,0 +1,253 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>Chương trình bấm số xe</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.abc{
+	font-size:50;color:red;text-align:center;
+}
+.style1 {
+	color: #FF0000;
+	font-weight: bold;
+	font-size: 36px;
+}
+</style>
+<script language="JavaScript">
+function tron()
+{
+			if(f.t1.value=="")
+			{
+				alert("Mời bạn nhập họ tên");
+				f.t1.focus();
+			}
+			else if(f.t2.value=="")
+			{
+				alert("Mời bạn nhập địa chỉ");
+				f.t2.focus();
+			}
+			else if(f.t3.value=="")
+			{
+				alert("Mời bạn nhập số khung của xe");
+				f.t2.focus();
+			}
+			else if(f.t4.value=="")
+			{
+				alert("Mời bạn nhập số máy của xe");
+				f.t2.focus();
+			}
+			else
+			{
+				f.b1.disabled =true
+				f.b2.disabled = false
+				f.b3.disabled = true
+				a = Math.round(Math.random()*9);
+				f.t5.value=a;
+				b = Math.round(Math.random()*9);
+				f.t6.value=b;
+				c = Math.round(Math.random()*9);
+				f.t7.value=c;
+				d = Math.round(Math.random()*9);
+				f.t8.value=d;
+				e = Math.round(Math.random()*9);
+				f.t9.value=e;
+				
+			}
+		
+}
+function tronlap()
+{
+	id=setInterval("tron()",100);
+}
+function dung()
+{
+	clearInterval(id);
+	f.b1.disabled = false
+	f.b2.disabled = true
+	f.b3.disabled = false
+}
+function inthongtin()
+{
+	today = new Date();
+	ngay = today.getDate();
+	thang = (today.getMonth()+1);
+	nam = today.getYear();
+	disp = window.open("","");
+	disp.document.write("<title>Giấy hẹn</title>");
+	disp.document.write("<h4 align=center>CỘNG HÒA XÃ HỘI CHỦ NGHĨA VIỆT NAM<br></h4><h5 align=center>Độc lập - Tự do - Hạnh phúc</h5><pre>");
+	disp.document.write("<h2 align=center> GIẤY HẸN </h4>");
+	disp.document.write("\t\t\t\t\t\tCông an Q. Ninh Kiều, ngày "+ngay+" tháng "+thang+" năm "+nam);
+	disp.document.write("<br><br><br>CSGT đường bộ - Công an quận Ninh Kiều");
+	disp.document.write("\t\t<br>Đã tiếp nhận hồ sơ về việc đăng ký xe mô tô tư nhân từ 50cm<sup>3</sup> dến 175 cm<sup>3</sup>");
+	disp.document.write("\t\t<br>Biển kiểm soát: <b>65 - X2 - "+f.t5.value+f.t6.value+f.t7.value+"."+f.t8.value+f.t9.value+"</b>");
+	disp.document.write("\t\t<br>Của chủ xe: <b>"+f.t1.value+"</b>");
+	disp.document.write("\t\t<br>Nơi thường trú: "+f.t2.value);
+	disp.document.write("\t\t<br>Số khung: "+f.t3.value+"\t\tSố máy:"+f.t4.value);
+	disp.document.write("\t\t<br>Hẹn ông(bà) vào lúc 8 giờ ngày ");
+	if((thang == 1) || (thang ==3) || (thang == 5) || (thang ==7) || (thang == 8) || (thang ==10))
+	{
+		if(ngay==28)
+		{
+			ngay=1;
+			thang = thang + 1;
+		}
+		if(ngay==29)
+		{
+			ngay=2;
+			thang = thang + 1;
+		}
+		else if(ngay==30)
+		{
+			ngay=2;
+			thang = thang + 1;
+		}
+		else if(ngay==31)
+		{
+			ngay=3;
+			thang = thang + 1;
+		}
+		else
+		{
+			ngay=ngay+3;
+			
+		}
+	}
+	if((thang == 4) || (thang ==6) || (thang == 9) || (thang ==11))
+	{
+		if(ngay==29)
+		{
+			ngay=1;
+			thang = thang + 1;
+		}
+		if(ngay==30)
+		{
+			ngay=2;
+			thang = thang + 1;
+		}
+		else 
+		{
+			ngay=ngay+2;
+		}
+	}
+	
+	if(thang==2)
+	{
+		if(ngay==27)
+		{
+			ngay=1;
+			thang =1;
+			
+		}
+		if(ngay==28)
+		{
+			ngay=2;
+			thang =1;
+			
+		}
+		else
+		{
+			ngay=ngay+2;
+		}		
+	}
+	
+	if(thang==12)
+	{
+		if(ngay==28)
+		{
+			ngay=1;
+			thang =1;
+			nam=nam+1;
+		}
+		if(ngay==29)
+		{
+			ngay=2;
+			thang =1;
+			nam=nam+1;
+		}
+		else if(ngay==30)
+		{
+			ngay=2;
+			thang =1;
+			nam=nam+1;
+		}
+		else if(ngay==31)
+		{
+			ngay=3;
+			thang =1;
+			nam=nam+1;
+		}
+		else
+		{
+			ngay=ngay+2;
+		}
+	}
+		disp.document.write(ngay+"/"+thang+"/"+nam);
+		disp.document.write("<br>Đến nhận kết quả tại: CSGT đường bộ - Công an quận Ninh Kiều.");
+}
+
+function khoa()
+{
+	f.b2.disabled = true
+	f.b3.disabled = true
+}
+
+</script>
+</head>
+<body onLoad="khoa()">
+<form name="f" method="post" action="">
+  <table width="81%" border="0" align="center">
+    <tr> 
+      <td colspan="4"><div align="center"><font color="#0000FF"><strong><font size="5">CHƯƠNG 
+          TRÌNH NHẬN SỐ XE</font></strong></font></div></td>
+    </tr>
+    <tr> 
+      <td colspan="2">&nbsp;</td>
+      <td colspan="2">&nbsp;</td>
+    </tr>
+    <tr> 
+      <td colspan="2">Họ tên chủ sở hữu</td>
+      <td colspan="2"> 
+        <input name="t1" type="text" id="t1"></td>
+    </tr>
+    <tr> 
+      <td colspan="2">Địa chỉ</td>
+      <td colspan="2"><input name="t2" type="text" id="t2" size="70"></td>
+    </tr>
+    <tr> 
+      <td colspan="2">Số khung xe </td>
+      <td width="28%">
+        <input name="t3" type="text" id="t3">      </td>
+      <td width="50%">số máy xe 
+        <input name="t4" type="text" id="t4"></td>
+    </tr>
+    <tr> 
+      <td colspan="4"><div align="center"><font color="#FF0000" size="+7">65 - 
+          X2</font></div></td>
+    </tr>
+    <tr> 
+      <td colspan="5"><div align="center"> 
+          <input name="t5" type="text" id="t5" size="1" class="abc">
+          <input name="t6" type="text" id="t6" size="1" class="abc">
+          
+          <input name="t7" type="text" id="t7" size="1" class="abc">
+          <span class="style1">.</span>
+		  <input name="t8" type="text" id="t8" size="1" class="abc">
+		  <input name="t9" type="text" id="t9" size="1" class="abc">
+        </div></td>
+    </tr>
+    <tr> 
+      <td width="1%">&nbsp;</td>
+      <td width="21%">&nbsp;</td>
+      <td colspan="2">&nbsp;</td>
+    </tr>
+    <tr> 
+      <td colspan="4"><div align="center"> 
+          <input type="button" name="b1" value="Trộn số" style="font-weight:bold;color:blue" onClick="tronlap()">
+          <input type="button" name="b2" value="Dừng lại" style="font-weight:bold;color:blue" onClick="dung()">
+          <input type="button" name="b3" value="In thông tin" style="font-weight:bold;color:blue" onClick="inthongtin()">
+        </div></td>
+    </tr>
+  </table>
+</form>
+</body>
+</html>

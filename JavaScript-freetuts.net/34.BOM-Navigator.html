@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Bài 34: BOM Navigator</title>
+</head>
+<body>
+	<script type="text/javascript">
+		// Kiểm tra xem cookie đã được bật hay chưa?
+			// if (window.cookieEnabled) {
+			// 	alert('Cookie đã bật rồi');
+			// }else{
+			// 	alert('Cookie đã tắt');
+			// }
+
+		// Kiểm tra tên trình duyệt đang sử dụng
+		document.write('AppName: ' + window.navigator.appName + '<br>');
+		document.write('AppCodeName: ' + window.navigator.appCodeName + '<br>');
+
+		// Kiểm tra engine của trình duyệt
+		document.write('Engine : ' + navigator.engine + '<br>');
+
+		// Kiểm tra version của trình duyệt
+		document.write("Cách 1: " + navigator.appVersion + "<br/>");
+		document.write("Cách 1: " + navigator.userAgent + '<br>');
+
+		// Kiểm tra hệ điều hành của Client
+		document.write("Hệ điều hành: " + navigator.platform + '<br>');
+
+		// Kiểm tra ngôn ngữ của trình duyệt
+		document.write("Ngôn ngữ Browser: " + navigator.language);
+	</script>
+</body>
+</html>

@@ -1,0 +1,7 @@
+Tổng hợp những điều cần làm nốt với CSS
+- Selector của CSS
+File trong gooogle Docs
+- Animation keyframes
+http://www.w3schools.com/cssref/css3_pr_animation.asp
+- Thuộc tính Transform
+Bonus links : http://www.w3schools.com/cssref/css3_pr_transform.asp

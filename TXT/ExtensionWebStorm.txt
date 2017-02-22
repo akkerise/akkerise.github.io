@@ -1,0 +1,13 @@
+1. Emmet Everywhere
+2. Bootstrap 3
+3. CSS-X-Fire
+4. ESLint
+5. Git Flow Integration
+6. LESS CSS Compiler
+7. Lua
+8. Material Theme UI
+9. PHP composer.json support
+10. scss-lint
+11. String Manipulation
+12. Webmaster
+13. Vagrant

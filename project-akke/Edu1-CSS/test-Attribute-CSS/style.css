@@ -1,0 +1,14 @@
+.test-padding {
+	background-color: grey;
+	width: 500px;
+	height: 500px;
+	border: 1px solid ;
+
+}
+p{
+	width: 300px;
+	height: 300px;
+	background-color: red;
+	border: 2px dotted green;
+	padding: 50px 50px 50px 50px;
+}

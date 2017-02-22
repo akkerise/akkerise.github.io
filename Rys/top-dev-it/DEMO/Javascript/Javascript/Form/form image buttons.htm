@@ -1,0 +1,274 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<meta name="GENERATOR" content="Microsoft FrontPage 4.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<title>New Page 1</title>
+
+<!-- Notes on STYLE
+
+The <style> ... </style> below is optional.  However, you can
+use this effectively to produce a more attractive appearnce in IE 4
+and later and in NS6.  Modify the style to suit your layout.
+
+For more on style attributes, see:
+http://msdn.microsoft.com/workshop/author/css/reference/attributes.asp
+
+
+
+//-->
+
+<style>
+.TAS {background-color: #000044;
+      color: #EFE7DF;
+      border: 1 solid #6E6650;
+      scrollbar-base-color: #FF8000;}
+</style>
+
+<script>
+
+// ===== Set Up =========================================================
+// Preload the images to be used with the form
+// ======================================================================
+
+// (Don't touch the next line; it declares the image array.)
+var Pic = new Array
+
+// Place the names of the images into the array below. Watch how the
+// image 'buttons' perform to see which image is which.
+
+// The numbers in the array below will equate to the images  to be called
+// by the switchImage() function, further below.
+
+Pic[0] = 'reset_green.gif'
+Pic[1] = 'reset_orange.gif'
+Pic[2] = 'reset_red.gif'
+Pic[3] = 'submit_green.gif'
+Pic[4] = 'submit_orange.gif'
+Pic[5] = 'submit_red.gif'
+
+
+
+
+// ===== Main Program ===================================================
+// Read the comments within before editing anything below this line.
+// ======================================================================
+
+
+
+// ----------------------------------------------------------------------
+// This section of code preloads the images you named in the Pic[] array
+// above, so images will be ready as soon as the page opens.
+
+var p = Pic.length
+var preLoad = new Array()
+var i = 0;
+for (i = 0; i < p; i++){
+     preLoad[i] = new Image()
+     preLoad[i].src = Pic[i]
+}
+
+
+
+// ----------------------------------------------------------------------
+// The next very short function, switchImage(whichImage,imageNumber),
+// handles all image switching in response to mouseOver, mouseOut, and
+// mouseDown events.
+//
+// The variable whichImage carries the *name* of the image to be
+// switched (see the comments in the HTML below) -- in this case, either
+// 'resetImage' or 'submitImage'.
+//
+// The variable imageNumber carries the number of the image to be called,
+// as per the numbers in the Pic[] array up above.
+//
+// Read the HTML code comments below to see how to attach this function
+// to the images. Note that it's actually hooked to <a href> tags around
+// the images, rather than to the images themselves, since NS4 does not
+// allow attaching events to images.
+
+function switchImage(whichImage,imageNumber){
+   document.images[whichImage].src = preLoad[imageNumber].src
+}
+
+
+
+// ----------------------------------------------------------------------
+// The doSubmit() function fires whenever the submitImage is clicked.
+// You will wish to modify this function to perform the action you wish
+// to take place when the submitImage is clicked.  See the comments
+// within the function.
+
+function doSubmit(){
+
+   // message for the Submit alert box
+   // note how \n is used for line formatting
+   var S = "SUBMIT - look in the code, and replace this alert box \n"+
+           "with whatever action you wish to perform when the submit \n"+
+           "image 'button' is clicked.\n\n"+
+           "If you wish to call an html page, then you would use...\n\n"+
+           "window.location='http://www.address.com/page.html' \n\n"+
+           "If you wish to call a script, then use the address of the\n"+
+           "the script. Additional code would be required if you need\n"+
+           "to pass values from the form fields to the cgi script. \n"
+   
+   // call the alert box        
+   alert(S)
+   
+   // optional -- but it gets the lines off the image in IE
+   self.focus()
+   
+   // if you wanted to call an html page, this is where you would
+   // do it, in the format of the following example line...
+   // window.location='http://www.codebrain.com/java/index.html'
+}
+
+
+
+// ----------------------------------------------------------------------
+// The doReset() function fires whenever the resetImage is clicked.  You
+// will normally use this just to clear fields; but see the comments
+// below.
+
+function doReset(){
+
+   // message for the Reset alert box
+   // note how \n is used for line formatting
+   var R = "RESET - This is usually used to reset a form to a state \n"+
+           "where all the fields in the form are empty -- though in\n"+
+           "some cases, it can also be used to reset the form fields \n"+
+           "to certain preset values. \n\n"+
+           "In either case, you must *name* both the form itself and \n"+
+           "each of the fields in the form, so that the script can \n"+
+           "find them. \n\n"+
+           "In this case we'll just clear the fields. See the code for\n"+
+           "more on this."          
+           
+
+   // call the alert box           
+   alert(R)
+
+   // optional -- but it gets the lines off the image in IE
+   self.focus()
+
+   // clear the fields in the form...
+   // note the naming convention in the format of
+   // document.FORMNAME.FIELDNAME.value
+   // to add more fields, just follow the same format
+   
+   document.TheForm.FieldOne.value = ""
+   document.TheForm.FieldTwo.value = ""
+   
+   // if you want to have new values inserted in the field, then
+   // simply put the material between the "" in the lines
+   // immediately above.   
+}
+
+</script>
+
+</head>
+
+<body bgcolor="#000000">
+<!--
+====================================================================
+Script:  Active Tri-State Roll-Over Images on Form Submit and Reset
+         Script Boilerplate and Quick-Take Tutorial
+         
+Source:  (C) 2001 by CodeLifter.com at http://www.codelifter.com
+
+Author:  etLux
+
+Desc.:   This script shows how to use tri-state rollover images with
+         forms, instead of the usual rather unattractive 'gray
+         buttons' for Submit and Reset.
+         
+Use:     All version 4.x and later browsers
+
+====================================================================
+
+INSTRUCTIONS:
+
+Copy and paste this entire presentation into a blank page.  Detailed
+instructions and tutorial comments are included within the script.
+
+There is no extraneous code in the presentation, other than the
+comments.
+
+Don't let the length of this example throw you.  The real code is
+very short -- the comments and explanations make up the bulk of this
+presentation.
+
+//-->
+
+<!-- Setting Up The Form
+
+Be sure to *name* both the <form> and the fields in it,
+as shown below.  Note how these names are used in the
+doReset() function in the script above.
+
+The class="TAS" is used to attach the style (see above)
+to the textarea fields.  This is optional.
+
+//-->
+
+<form name="TheForm">
+<textarea name="FieldOne" class="TAS" rows="4"  cols="42" wrap="virtual">
+The form itself must be named; so must
+the fields in the form.
+The name of this form is "TheForm".
+The name of this field is "FieldOne".
+Yadda Yadda.
+Yadda Yadda.
+</textarea>
+<br>
+<textarea  name="FieldTwo" class="TAS" rows="4" cols="42" wrap="virtual">
+A seconde sample textarea field with, of
+course, still more sample stuff in it.
+The Name of this field is "FieldTwo".
+Yadda Yadda.
+Yadda Yadda.
+</textarea>
+</form>
+<br>
+
+<!-- Setting Up The Images
+
+The individual functions are attached by means of the  <a href> ... </a>
+tags surrounding the images.  See the explanations of the switchImage(),
+doReset(), and doSubmit() functions above.
+
+(Note that the html shown below is in open format for sake of clarity
+in this demo.  You may tighten up the code in your page per usual.  This
+will remove any leading / trailing spaces around the images.)
+
+In order for this to work correctly, you *must* properly *name* the
+images, as shown in the code below.
+
+//-->
+
+<a href="javascript:doReset()"
+   onMouseOut  = "switchImage('resetImage',0)"
+   onMouseOver = "switchImage('resetImage',1)"
+   onMouseDown = "switchImage('resetImage',2)"> 
+<img name="resetImage"
+   src="../JavaScript/reset_green.gif"
+   width="83"
+   height="30"
+   border="0">
+</a>
+<a href="javascript:doSubmit()"
+   onMouseOut  = "switchImage('submitImage',3)"
+   onMouseOver = "switchImage('submitImage',4)"
+   onMouseDown = "switchImage('submitImage',5)">
+<img name="submitImage" src="../JavaScript/submit_green.gif"
+   width="83"
+   height="30"
+   border="0">
+</a>
+
+</body>
+
+</html>
+
+

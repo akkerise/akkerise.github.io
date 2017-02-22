@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Document Object Model</title>
+</head>
+
+<body onload="changeBgColor('grey')">
+
+<script type="text/javascript">
+    /*** Bài 1 ***/
+    var x;
+
+    function changeFontSize(x) {
+        // document.getElementById('dv1').style.fontSize = x + 'px';
+        // document.getElementsByTagName('p')[0].style.fontSize = x + 'px';
+        var ps = document.getElementsByTagName('p');
+        i = 0;
+        while (i < ps.length) {
+            document.getElementsByTagName('p')[i].style.fontSize = x + 'px';
+            i++;
+        }
+    }
+
+    // Hàm tăng 1px sau khi sử dụng hàm changeFontSize(x);
+
+    /*
+     Lưu ý khi truyền giá trị vào biến là id ta sẽ để giá trị đó trong ngoặc kép !
+     VD : id ===> 'dv1' || 'dv2' || 'dv3'
+     */
+
+
+    /*** Bài 2 ***/
+    function increaseFontSize(id) {
+        var pa = document.getElementById(id).style.fontSize;
+
+        // Đổi giá trị từ 'string' ===> 'number'
+        pa = parseFloat(pa);
+
+        if (pa < 30) {
+            pa = (pa + 1) + 'px';
+
+            // Đổi giá trị ngược lại sau khi đã tính toán xong
+            document.getElementById(id).style.fontSize = pa;
+        } else {
+            return console.log("No display");
+        }
+    }
+
+
+    // Hàm giảm 1px sau khi sử dụng hàm changeFontSize(x);
+    /*
+     Lưu ý khi truyền giá trị vào biến là id ta sẽ để giá trị đó trong ngoặc kép !
+     VD : id ===> 'dv1' || 'dv2' || 'dv3'
+     */
+
+
+    /*** Bài 3 ***/
+    function decreaseFontSize(id) {
+        var pd = document.getElementById(id).style.fontSize;
+        // Đổi giá trị từ 'string' ===> 'number'
+        pd = parseFloat(pd);
+        if (pd < 10) {
+            return console.log("No display");
+        } else {
+            pd = (pd - 1) + "px";
+
+            // Đổi giá trị ngược lại sau khi đã tính toán xong
+            document.getElementById(id).style.fontSize = pd;
+        }
+    }
+
+
+    /*** Bài 4 ***/
+
+    function changeColor() {
+        document.getElementById('dv1').style.color = "blue";
+        document.getElementById('dv2').style.color = "yellow";
+        document.getElementById('dv3').style.color = "red";
+    }
+
+    /*** Bài 5 ***/
+
+    function changeBgColor(color) {
+        // Lưu ý thuộc tính backgroundColor hoàn toàn có thể dùng background 
+        document.body.style.backgroundColor = color;
+    }
+
+    // function copyContent(){
+    // 	var pa1 = document.getElementById('dv1').textContent;
+    // 	document.getElementById('dv3').innerHTML = pa1;
+    // }
+    // 
+    /*** Bài 6 ***/
+
+    function copyContent(param1, param2) {
+        document.getElementById(param1).value =
+                document.getElementById(param2).innerHTML;
+        // var testVariables = function testFuncCopyContent() {
+        //         copyContent('dv1', 'dv2');
+        //         var pa1 = document.getElementById('dv1').value;
+        //         var pa2 = document.getElementById('dv2').value;
+        //         if (pa1 == pa2) {
+        //             return "This is TRUE . And attribute value like same attribute textContent . But this attribute value so deep";
+        //         } else {
+        //             return "Nothing";
+        //         }
+        //     }
+        // console.log(testVariables);
+    }
+
+    // function testFuncCopyContent(){
+    // 	copyContent('dv1','dv2');
+    // 	var pa1 = document.getElementById('dv1').value;
+    // 	var pa2 = document.getElementById('dv2').value;
+    // 	if(pa1 == pa2){
+    // 		return "This is TRUE . And attribute value like same attribute textContent . But this attribute value so deep";
+    // 	}else{
+    // 		return "Nothing";
+    // 	}
+    // }
+</script>
+<p id="dv1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia odit omnis quisquam repellendus consequuntur
+    numquam molestiae ullam suscipit porro. Sapiente quam natus porro. Provident necessitatibus labore magni
+    perspiciatis aliquid repellendus!
+</p>
+<p id="dv2" class="dv">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia odit omnis quisquam repellendus
+    consequuntur numquam molestiae ullam suscipit porro. Sapiente quam natus porro. Provident necessitatibus labore
+    magni perspiciatis aliquid repellendus!</p>
+<p id="dv3" class="dv">Lorem ipsum dolor sit amet, consectetur adipisicae ullam suscipit porro. Sapiente quam natus
+    porro. Provident necessitatibus labore magni perspiciatis aliquid repellendus!
+</p>
+</body>
+
+</html>

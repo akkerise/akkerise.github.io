@@ -1,0 +1,50 @@
+*{
+margin: 0px;
+padding: 0px;
+}
+body {
+font-family: 'Georgia' , serif;
+font-size: 18px;
+}
+.wrapper {
+margin: 50px 0px 0px 50px;
+border: 1px solid grey;
+border-radius: 6px;
+padding: 5px 8px;
+float: left;
+color: #FD9E7D;
+background-color: #687582;
+}
+.wrapper ul {
+list-style-type: none;
+float:left;
+}
+.wrapper ul li {
+float:left;
+padding-right: 8px;
+position: relative;
+transition: color 1s, background 1s;
+}
+.wrapper ul li a {
+text-decoration: none;
+}
+.wrapper ul li:hover a {
+background-color: #00C2EA;
+color: white;
+}
+.wrapper ul li ul {
+display:none;
+position: absolute;
+width: 8em;
+}
+
+.wrapper ul li:hover ul {
+display:block;
+}
+
+.wrapper ul li ul li {
+width: 100%;
+border: 1px solid green;
+border-radius: 5px;
+background: #fff;
+}

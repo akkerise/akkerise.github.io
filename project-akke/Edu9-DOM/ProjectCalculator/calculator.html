@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Calculator</title>
+  <script src="js/script.js"></script>
+  <title> Project Calculator</title>
+  <script type="text/javascript"></script>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<body>
+  <!-- This is tag test on Brackets    -->
+  <div id="container">
+    <div class="box box-top">
+      <input id="inputVar" type="text" onclick="" name="" value="" placeholder="Enter code here ...">
+    </div>
+    <!--END .box-top  -->
+    <div class="box box-center">
+      <div id="box-center-left">
+
+        <form onclick="fetchForm()">
+          <div class="line">
+            <button onclick="pressButton(this)" class="inputNumber">1</button>
+            <button onclick="pressButton(this)" class="inputNumber">2</button>
+            <button onclick="pressButton(this)" class="inputNumber">3</button>
+          </div>
+          <div class="line">
+            <button onclick="pressButton(this)" class="inputNumber">4</button>
+            <button onclick="pressButton(this)" class="inputNumber">5</button>
+            <button onclick="pressButton(this)" class="inputNumber">6</button>
+          </div>
+          <div class="line">
+            <button onclick="pressButton(this)" class="inputNumber">7</button>
+            <button onclick="pressButton(this)" class="inputNumber">8</button>
+            <button onclick="pressButton(this)" class="inputNumber">9</button>
+          </div>
+          <div class="line">
+            <button onclick="pressButton(this)" class="inputNumber">0</button>
+            <button onclick="" id="buttonEqual" class="inputNumber" type="submit">Eval</button>
+          </div>
+        </form>
+      </div>
+      <!--END .#box-center-left -->
+
+      <div id="box-center-right">
+        <button class="inputNumber" type="submit">Remove</button>
+        <button class="inputNumber" type="submit">Delete</button>
+        <button class="inputNumber" type="submit">Add Play</button>
+        <button class="inputNumber" type="submit">Reset</button>
+
+      </div>
+      <!--END #box-center-right -->
+      <div id="clear"></div>
+      <h1 id="totalEqual"> TOTAL EVAL </h1>
+      <p id="pChanged"></p>
+    </div>
+    <!--END .box-center  -->
+
+
+
+    <div class="box-bottom">
+      <button class="inputNumber" type="submit">+</button>
+      <button class="inputNumber" type="submit">-</button>
+      <button class="inputNumber" type="submit">x</button>
+      <button class="inputNumber" type="submit">/</button>
+    </div>
+    <!--END .box-bottom  -->
+  </div>
+  <!--END #container  -->
+
+
+
+
+</body>
+</html>

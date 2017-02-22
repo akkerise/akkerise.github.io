@@ -1,0 +1,11 @@
+Bài tập:
+Một ông chủ quán ăn (quán cafe, quán bia ...) muốn mở một website để quảng cáo cho quán ăn và các món ăn trong quán. Nhiệm vụ của bạn là xây dựng một website về quán ăn sao cho thật đẹp và thu hút khách hàng.
+
+Yêu cầu: 
+- Trang chủ: Hiển thị một số thông tin quảng cáo, khuyến mãi, món ăn nổi bật, ... với các hình ảnh đẹp, kích thích thị giác.
+
+- Trang web sử dụng menu đa cấp là danh mục các món ăn. Khi bấm vào 1 danh mục thì sẽ chuyển qua trang danh sách món ăn, hiển thị các món ăn thuộc danh mục đó.
+
+- Tại trang Danh sách món ăn, khi bấm vào một món ăn sẽ chuyển qua trang chi tiết món ăn, hiển thị thông tin chi tiết của món ăn đó.
+
+- Một số trang thông tin thêm như: Thông tin về quán, liên hệ, tin tức, khuyến mãi, ...

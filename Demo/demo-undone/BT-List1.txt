@@ -1,0 +1,46 @@
+Hướng dẫn tạo menu 2 cấp cơ bản bằng thẻ <ul> (hoặc <ol>):
+
+1. Chuẩn bị 1 danh sách các menu cấp 1. Ví dụ:
+
+<ul id="menu">
+    <li><a href="/">Trang chủ</a></li>
+    <li><a href="/about.html">About</a></li>
+    <li><a href="/khoa-hoc.html">Khóa học</a></li>
+</ul>
+Bỏ dấu tròn trước mỗi thẻ <li> đi bằng thuộc tính CSS:
+
+#menu {
+    list-style-type: none;
+}
+Nếu sử dụng menu ngang, chúng ta phải dàn các item lên thành hàng ngang, khi đó chúng ta có thể biến <li> thành inline element hoặc inline-block, hoặc sử dụng thuộc tình float. Ví dụ tạo menu ngang sử dụng thuộc tính float: left; lên thẻ <li> nằm trực tiếp trong menu:
+
+#menu > li {
+    float: left;
+}
+2. Tạo menu cấp 2 bằng thẻ <ul> và đặt trong thẻ <li> của menu cấp 1. Ví dụ:
+
+<ul id="menu">
+    <li><a href="/">Trang chủ</a></li>
+    <li><a href="/about.html">About</a></li>
+    <li>
+        <a href="/khoa-hoc.html">Khóa học</a>
+        <ul>
+            <li><a href="#">HTML</a></li>
+            <li><a href="#">PHP</a></li>
+            <li><a href="#">NODEJS</a></li>
+        </ul>
+    </li>
+</ul>
+
+Sau đó ẩn menu cấp 2 đi:
+
+#menu > li > ul {
+    list-style-type: none;
+    display: none;
+}
+Và chỉ hiển thị khi di chuột qua menu item của menu cấp 1:
+
+#menu > li:hover > ul {
+    display: block;
+}
+Vậy là ta đã có một menu 2 cấp. Tuy nhiên các bạn cần chỉnh sửa margin, padding và thêm các hiệu ứng cho đẹp hơn.

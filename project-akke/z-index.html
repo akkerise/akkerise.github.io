@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Demo Z-Index</title>
+	<style type="text/css" media="screen">
+		body {
+			width: 1000px;
+			margin: 10px auto;
+			background-color: #ccc;
+		}
+
+		@keyframe title {
+			0%	{color: #ddd;}
+			25%	{color: #ccc;}
+			50%	{color: #fff;}
+			75%	{color: #333;}
+			100%{color: #3e3;}
+		}
+
+		h1 {
+			animation: title 5s ease-in-out;
+			background-color: grey;
+			color: #ffffff;
+		}
+		.blackbox {
+			width: 300px;
+			height: 100px;
+			background-color: black;
+			color: #ffffff;
+			z-index: 1;
+			position: relative;
+			float: left;
+		}
+
+		.redbox {
+			/* --** Thuộc tính z-index bắt buộc phải có chỉ số position: relative **--
+			Thuộc tính z-index : element có trị số z-index lớn sẽ đè lên element có trị số nhỏ hơn .
+			Và quan trọng nhất thuộc tính "position: relative;" dùng cho element có trị số cao hơn thì "z-index" mới có hiệu quả !*/
+			width: 200px;
+			height: 400px;
+			background-color: red;
+			position: relative;
+			z-index: 2;
+		}
+	</style>
+</head>
+<body>
+	<h1 style="text-align: center;">Test Z-Index </h1>
+	<div class="blackbox">
+		This is Black Box
+	</div>
+
+	<div class="redbox">
+		This is Red Box
+	</div>
+</body>
+</html>

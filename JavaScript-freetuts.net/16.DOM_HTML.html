@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> Bài 16 :  DOM HTML </title>
+    <script>
+        function set_content() {
+            document.getElementById('content').innerHTML = "<h1>Nội dung đã được thay đổi</h1>";
+        }
+
+        var setContentTo_getContent = () => {
+            // var setContent = set_content();
+            // document.write(setContent());
+            // return set_content();
+            document.write(a);
+            // console.log(b());
+        }
+
+        function get_content() {
+            var html = document.getElementById('content').innerHTML;
+            alert('Nội dung cần lấy là : ' + html);
+        }
+
+        function get_test(){
+            alert('I want fuck with you');
+        }
+
+        function changeButton() {
+            var object = document.getElementById('changeButtonToTextbox');
+            var type = object.type;
+            if (type == 'button'){
+                object.type = 'checkbox';
+            }else{
+                object.type ='button';
+            }
+        }
+        var a = () => {
+            return 1;
+        }
+        var b = () => {
+            return 2;
+        }
+    </script>
+</head>
+<body>
+    <div id="content">Nội dung của thẻ DIV</div>
+    <!-- <input type="button" value="Lấy nội dung" id="get_content" onclick="get_content()" /> -->
+    <!-- <input type="button" value="Thay đổi nội dung" id="set_content" onclick="set_content()" /> -->
+    <!-- <input type="button" value="Thay đổi button" id="changeButtonToTextbox" onclick="changeButton()"> -->
+    <input type="button" value="Abc" id="abc" onclick="setContentTo_getContent()">
+</body>
+</html>

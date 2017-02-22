@@ -1,0 +1,47 @@
+Power Shell
+Martial Theme
+Debugger Chrome
+Python
+Angular
+C++
+ESLint
+beautify
+JavaScript
+magicpython
+bootstrap 3
+bookmark
+html snippets
+
+Intellisense :
+IntelliSense là sự kết hợp giữa code auto-complete và trí tuệ nhân tạo (AI).
+Tính năng này cung cấp một loạt các đề nghị cùng với gợi ý hoặc mô tả ngắn khi ta đang viết code.
+Những gợi ý này được tính toán dựa theo các nhân tố bổi cảnh như ngôn ngữ lập trình, cú pháp, biến, hàm, cũng như các code trong file.
+IntelliSense hỗ trợ một số ngôn ngữ lập trình sáng tạo, bao gồm Sass, LESS, TypeScript, và PHP.
+Bạn cũng có thể cài thêm plugin vào IntelliSense để hổ trợ thêm nhiều ngôn ngữ khác. Đây là một tính năng cải thiện năng suất đáng kể.
+
+Peek :
+Khi code, sẽ có lúc bạn quên bén đi một hàm cụ thể, hàm được định nghĩa đầu tiên ở đâu, và các thông số cần thiết.
+Với Peek, bạn có thể lựa chọn một hàm rồi nhấn Shift + F12.
+Một inline window sẽ hiện ra cho thấy định nghĩa hoàn chỉnh của hàm.
+Tính năng hiện đang hoạt động với C, C#, JavaScript, TypeScript, .NET, và một vài ngôn ngữ lập trình khác.
+
+CLI :
+Tương tự như dòng lệnh subl trong SublimeText, Visual Studio Code được trang bị một CLI tên code và rất dễ cài đặt.
+Trong Windows, CLI sẽ được cài đặt đồng thời song song với ứng dụng.
+CLI có thể được truy cập thông qua Command Prompt (cmd.exe).
+Trong OS X, CLI có thể được cài đặt hoặc gỡ bỏ thông qua Command Palette.
+Bạn có thể dùng CLI để mở một đường dẫn nhất định đến Visual Studio Code,
+hoặc mở đường dẫn project hiện tại trong Terninal hoặc Command Prompt trực tếp từ editor.
+
+Built-in Git :
+Visual Studio Code có Git built-in ngay trong editor.
+Ở bên trái sidebar, bạn sẽ thấy biểu tượng Git. với icon bạn có thể:
+khởi chạy Git cũng như thực hiện một vài lệnh Git như commit, pull, push, rebase, publish, và xem các thay đổi trong file.
+Thêm đó, nếu bạn thực hiện thay đổi trong Git repository,
+Visual Studio sẽ hiện chỉ dẫn bằng màu trên lề code editor, chỉ rõ bạn đã thực hiện thay đổi khi nào.
+Ta sẽ tìm hiểu sâu hơn về Git trong Visual Studio Code trong bài viết kế tiếp.
+
+Task Runner :
+Cuối cùng, Visual Studio Code có tích hợp Task Runner khá tiện lợi.
+Để sử dụng tính năng, ta có thể thiết đặt một file tasks.json hoặc qua một số cài đặt Task phổ bến như Grunt, Gulp, hoặc MSBuild nếu được cung cấp.
+Sau khi đã thiết đặt cài đặt, ta có thể chạy Task Runner qua Command Palette bằng cách gõ Run Task. Gõ Task sẽ hiển thị tất cả các lệnh liên quan.

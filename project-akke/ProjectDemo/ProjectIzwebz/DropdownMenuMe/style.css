@@ -1,0 +1,49 @@
+* {margin:0;padding:0;}
+body {
+font-family: 'Tahoma', serif;
+font-size: 1.1em;
+}
+.wrapper {
+border: 1px solid grey;
+border-radius: 5px;
+float:left;
+}
+
+.wrapper ul {
+float:left;
+list-style-type: none;
+}
+
+.wrapper ul li {
+float:left;
+padding-right: 6px;
+position: relative;
+}
+
+.wrapper ul li a {
+text-decoration: none;
+display: block;
+}
+
+.wrapper ul li:hover a {
+color: #D4EFF9;
+background-color: #363636;
+width: 100%;
+}
+
+.wrapper ul li ul {
+position: absolute;
+display: none;
+width: 8em;
+}
+
+.wrapper li:hover ul {
+display: block;
+}
+
+.wrapper ul li ul li {
+border: 1px solid green;
+border-radius: 5px;
+width: 100%;
+}
+

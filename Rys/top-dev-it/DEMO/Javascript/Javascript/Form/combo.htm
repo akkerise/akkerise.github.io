@@ -1,0 +1,44 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>Untitled Document</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+
+<body>
+<div align="center">
+<form name="frmMain" method="post" action="">
+<select name="lstCanBo"></select>
+</form>
+<a href="javascript:add('A')">A</a> <a href="javascript:add('B')">B</a> <a href="javascript:add('C')">C</a> 
+<br>
+  <a href="javascript:clear();">Clear</a>
+<br>
+  <a href="javascript:getvalue();">Get Value</a>  
+<br>
+  <a href="javascript:getname();">Get Name</a>  
+</div>
+</body>
+
+<script language="JavaScript">
+		function add(phantu)
+		{
+			var len = document.frmMain.lstCanBo.length;
+			frmMain.lstCanBo.options[len] = new Option(phantu); 
+			frmMain.lstCanBo.options[len].value = phantu;
+		}
+		function clear()
+		{
+			document.frmMain.lstCanBo.length = 0;
+		}
+		function getvalue()
+		{
+			alert(document.frmMain.lstCanBo.value)
+		}
+		function getname()
+		{
+			alert(document.frmMain.lstCanBo.options[document.frmMain.lstCanBo.selectedIndex].text)
+		}
+</script>
+
+</html>

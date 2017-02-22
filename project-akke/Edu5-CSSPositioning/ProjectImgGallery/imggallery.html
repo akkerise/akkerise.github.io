@@ -1,0 +1,74 @@
+<!-- Bài tập:
+
+Tạo trang Image Gallery, hiển thị 1 danh sách 10 hình ảnh trở lên.
+
+Yêu cầu:
+
+Trang web phải có menu, banner (hoặc logo).
+Hiển thị 2 - 3 ảnh trên 1 hàng (Ảnh nên có title và alt đầy đủ).
+Layout không bị xô lệch, gióng hàng đều giữa các ảnh với nhau.
+Xem tốt trên các màn hình desktop, không xuất hiện thanh cuộn ngang. -->
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Image Gallery</title>
+	<meta charset="utf-8">
+	<!-- <link rel="stylesheet" type="style/css" href="css/style2.css"> -->
+	<link rel="stylesheet" type="style/css" href="css/laststyle.css">
+</head>
+<body>
+	<div class="fullsite">
+
+		<div class="wrap">
+			<div id="banner">
+				<img src="img/banner.jpg" alt="Banner">
+			</div>
+
+			<div class="main-menu">
+
+				<div id="logo">
+					<img src="img/logo.png" alt="Logo">
+				</div>
+				
+				<a class="menu" href="about.html" title="About">About</a>
+				<a class="menu" href="home.html" title="Home">Home</a>
+				<a class="menu" href="imggallery.html" class="active" title="Image Gallery">Image Gallery</a>
+				<a class="menu" href="post.html" title="Post">Post</a>
+			</div>
+		</div>
+
+		<div class="content">
+			<div class="box one">
+				<img src="img/anh-1.jpg" alt="">
+				<img src="img/anh-2.jpg" alt="">
+				<img src="img/anh-3.jpg" alt="">
+			</div>
+			
+			<div class="box two">
+				<img src="img/anh-4.jpg" alt="">
+				<img src="img/anh-5.jpg" alt="">
+				<img src="img/anh-6.jpg" alt="">
+			</div>
+			
+			<div class="box three">
+				<img src="img/anh-7.jpg" alt="">
+				<img src="img/anh-8.jpg" alt="">
+				<img src="img/anh-9.jpg" alt="">	
+			</div>
+			
+			<div class="box four">
+				<img src="img/anh-10.jpg" alt="">
+				<img src="img/anh-11.jpg" alt="">
+				<img src="img/anh-12.jpg" alt="">	
+			</div>
+		</div>
+
+		<div id="chat">
+			<a href="#"><img src="img/chat.png" alt="chat"></a>
+		</div>
+		<div id="backontop">
+			<a href="#" title=""><img src="img/backontop.png" alt="Back On Top"></a>
+		</div>
+	</div>
+</body>
+</html>

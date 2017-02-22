@@ -1,0 +1,193 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/bin/nodejs', '/usr/bin/npm', 'install', '-g', 'modernizr' ]
+2 info using npm@1.4.21
+3 info using node@v0.10.25
+4 verbose cache add [ 'modernizr', null ]
+5 verbose cache add name=undefined spec="modernizr" args=["modernizr",null]
+6 verbose parsed url { protocol: null,
+6 verbose parsed url   slashes: null,
+6 verbose parsed url   auth: null,
+6 verbose parsed url   host: null,
+6 verbose parsed url   port: null,
+6 verbose parsed url   hostname: null,
+6 verbose parsed url   hash: null,
+6 verbose parsed url   search: null,
+6 verbose parsed url   query: null,
+6 verbose parsed url   pathname: 'modernizr',
+6 verbose parsed url   path: 'modernizr',
+6 verbose parsed url   href: 'modernizr' }
+7 silly lockFile 269b9fca-modernizr modernizr
+8 verbose lock modernizr /home/zorin/.npm/269b9fca-modernizr.lock
+9 silly lockFile 269b9fca-modernizr modernizr
+10 silly lockFile 269b9fca-modernizr modernizr
+11 verbose addNamed [ 'modernizr', '' ]
+12 verbose addNamed [ null, '*' ]
+13 silly lockFile b4d6d153-modernizr modernizr@
+14 verbose lock modernizr@ /home/zorin/.npm/b4d6d153-modernizr.lock
+15 silly addNameRange { name: 'modernizr', range: '*', hasData: false }
+16 verbose request where is /modernizr
+17 verbose request registry https://registry.npmjs.org/
+18 verbose request id 012506f7d2a778a8
+19 verbose url raw /modernizr
+20 verbose url resolving [ 'https://registry.npmjs.org/', './modernizr' ]
+21 verbose url resolved https://registry.npmjs.org/modernizr
+22 verbose request where is https://registry.npmjs.org/modernizr
+23 info trying registry request attempt 1 at 09:56:17
+24 http GET https://registry.npmjs.org/modernizr
+25 http 200 https://registry.npmjs.org/modernizr
+26 silly registry.get cb [ 200,
+26 silly registry.get   { server: 'CouchDB/1.6.1 (Erlang OTP/R16B03)',
+26 silly registry.get     etag: '"637M8XPS1CABORKL3XDBNV3X4"',
+26 silly registry.get     'content-type': 'application/json',
+26 silly registry.get     'content-encoding': 'gzip',
+26 silly registry.get     'cache-control': 'max-age=300',
+26 silly registry.get     'content-length': '5400',
+26 silly registry.get     'accept-ranges': 'bytes',
+26 silly registry.get     date: 'Sun, 31 Jul 2016 02:56:18 GMT',
+26 silly registry.get     via: '1.1 varnish',
+26 silly registry.get     age: '0',
+26 silly registry.get     connection: 'keep-alive',
+26 silly registry.get     'x-served-by': 'cache-hkg6825-HKG',
+26 silly registry.get     'x-cache': 'MISS',
+26 silly registry.get     'x-cache-hits': '0',
+26 silly registry.get     'x-timer': 'S1469933777.978991,VS0,VE217',
+26 silly registry.get     vary: 'Accept-Encoding' } ]
+27 silly addNameRange number 2 { name: 'modernizr', range: '*', hasData: true }
+28 silly addNameRange versions [ 'modernizr',
+28 silly addNameRange   [ '3.0.0-pre',
+28 silly addNameRange     '3.0.0-alpha',
+28 silly addNameRange     '3.0.0-alpha.2',
+28 silly addNameRange     '3.0.0-alpha.3',
+28 silly addNameRange     '3.0.0-alpha.4',
+28 silly addNameRange     '3.0.0',
+28 silly addNameRange     '3.1.0',
+28 silly addNameRange     '3.2.0',
+28 silly addNameRange     '3.3.0',
+28 silly addNameRange     '3.3.1' ] ]
+29 verbose addNamed [ 'modernizr', '3.3.1' ]
+30 verbose addNamed [ '3.3.1', '3.3.1' ]
+31 silly lockFile 02ff921b-modernizr-3-3-1 modernizr@3.3.1
+32 verbose lock modernizr@3.3.1 /home/zorin/.npm/02ff921b-modernizr-3-3-1.lock
+33 silly lockFile 59444ee7-rg-modernizr-modernizr-3-3-1-tgz https://registry.npmjs.org/modernizr/-/modernizr-3.3.1.tgz
+34 verbose lock https://registry.npmjs.org/modernizr/-/modernizr-3.3.1.tgz /home/zorin/.npm/59444ee7-rg-modernizr-modernizr-3-3-1-tgz.lock
+35 verbose addRemoteTarball [ 'https://registry.npmjs.org/modernizr/-/modernizr-3.3.1.tgz',
+35 verbose addRemoteTarball   '2170b3438a7478c16654324f004802aae6a863e9' ]
+36 info retry fetch attempt 1 at 09:56:18
+37 verbose fetch to= /tmp/npm-4194-ANVKMazy/registry.npmjs.org/modernizr/-/modernizr-3.3.1.tgz
+38 http GET https://registry.npmjs.org/modernizr/-/modernizr-3.3.1.tgz
+39 http 200 https://registry.npmjs.org/modernizr/-/modernizr-3.3.1.tgz
+40 silly lockFile 59444ee7-rg-modernizr-modernizr-3-3-1-tgz https://registry.npmjs.org/modernizr/-/modernizr-3.3.1.tgz
+41 silly lockFile 59444ee7-rg-modernizr-modernizr-3-3-1-tgz https://registry.npmjs.org/modernizr/-/modernizr-3.3.1.tgz
+42 silly lockFile 02ff921b-modernizr-3-3-1 modernizr@3.3.1
+43 silly lockFile 02ff921b-modernizr-3-3-1 modernizr@3.3.1
+44 silly lockFile b4d6d153-modernizr modernizr@
+45 silly lockFile b4d6d153-modernizr modernizr@
+46 silly resolved [ { name: 'modernizr',
+46 silly resolved     version: '3.3.1',
+46 silly resolved     description: 'Modernizr is a JavaScript library that detects HTML5 and CSS3 features in the user’s browser.',
+46 silly resolved     directories: { test: 'test' },
+46 silly resolved     dependencies:
+46 silly resolved      { doctrine: '1.1.0',
+46 silly resolved        file: '0.2.2',
+46 silly resolved        'find-parent-dir': '0.3.0',
+46 silly resolved        lodash: '4.0.0',
+46 silly resolved        marked: '0.3.5',
+46 silly resolved        mkdirp: '0.5.1',
+46 silly resolved        requirejs: '2.1.22',
+46 silly resolved        yargs: '3.31.0' },
+46 silly resolved     devDependencies:
+46 silly resolved      { '@alrra/travis-scripts': '1.1.1',
+46 silly resolved        'expect.js': '0.3.1',
+46 silly resolved        grunt: '0.4.5',
+46 silly resolved        'grunt-contrib-clean': '0.7.0',
+46 silly resolved        'grunt-contrib-connect': '0.11.2',
+46 silly resolved        'grunt-contrib-copy': '0.8.2',
+46 silly resolved        'grunt-contrib-jade': '0.15.0',
+46 silly resolved        'grunt-contrib-jshint': '0.11.3',
+46 silly resolved        'grunt-coveralls': '1.0.0',
+46 silly resolved        'grunt-env': '0.4.4',
+46 silly resolved        'grunt-istanbul': '0.4.2',
+46 silly resolved        'grunt-jscs': '2.6.0',
+46 silly resolved        'grunt-mocha': '0.4.15',
+46 silly resolved        'grunt-mocha-test': '0.12.7',
+46 silly resolved        'grunt-saucelabs': '8.6.2',
+46 silly resolved        joi: '6.10.0',
+46 silly resolved        jquery: '1.12.0',
+46 silly resolved        json3: '3.3.2',
+46 silly resolved        'load-grunt-tasks': '3.4.0',
+46 silly resolved        proxyquire: '1.7.3',
+46 silly resolved        'serve-static': '^1.10.0' },
+46 silly resolved     scripts: { test: 'grunt test --stack' },
+46 silly resolved     main: './lib/cli',
+46 silly resolved     bin: { modernizr: './bin/modernizr' },
+46 silly resolved     repository: { type: 'git', url: 'git://github.com/Modernizr/Modernizr.git' },
+46 silly resolved     bugs: { url: 'https://github.com/Modernizr/Modernizr/issues' },
+46 silly resolved     inch: { files: [Object] },
+46 silly resolved     keywords: [ 'html5', 'css3', 'browser', 'feature detection' ],
+46 silly resolved     author: { name: 'Modernizr', url: 'http://modernizr.com/' },
+46 silly resolved     contributors:
+46 silly resolved      [ [Object],
+46 silly resolved        [Object],
+46 silly resolved        [Object],
+46 silly resolved        [Object],
+46 silly resolved        [Object],
+46 silly resolved        [Object],
+46 silly resolved        [Object] ],
+46 silly resolved     license: 'MIT',
+46 silly resolved     gitHead: 'f6ebbb887780c57deeb4af439609ebbc92a0241f',
+46 silly resolved     homepage: 'https://github.com/Modernizr/Modernizr#readme',
+46 silly resolved     _id: 'modernizr@3.3.1',
+46 silly resolved     _shasum: '2170b3438a7478c16654324f004802aae6a863e9',
+46 silly resolved     _from: 'modernizr@',
+46 silly resolved     _npmVersion: '3.5.3',
+46 silly resolved     _nodeVersion: '5.4.0',
+46 silly resolved     _npmUser: { name: 'patrickkettner', email: 'patrickkettner@gmail.com' },
+46 silly resolved     maintainers: [ [Object], [Object], [Object], [Object], [Object], [Object] ],
+46 silly resolved     dist:
+46 silly resolved      { shasum: '2170b3438a7478c16654324f004802aae6a863e9',
+46 silly resolved        tarball: 'https://registry.npmjs.org/modernizr/-/modernizr-3.3.1.tgz' },
+46 silly resolved     _resolved: 'https://registry.npmjs.org/modernizr/-/modernizr-3.3.1.tgz' } ]
+47 info install modernizr@3.3.1 into /usr/local/lib
+48 info installOne modernizr@3.3.1
+49 verbose lib/node_modules/modernizr unbuild
+50 verbose tar unpack /home/zorin/.npm/modernizr/3.3.1/package.tgz
+51 silly lockFile 13f03e92-local-lib-node-modules-modernizr tar:///usr/local/lib/node_modules/modernizr
+52 verbose lock tar:///usr/local/lib/node_modules/modernizr /home/zorin/.npm/13f03e92-local-lib-node-modules-modernizr.lock
+53 silly lockFile 8f1bb955--npm-modernizr-3-3-1-package-tgz tar:///home/zorin/.npm/modernizr/3.3.1/package.tgz
+54 verbose lock tar:///home/zorin/.npm/modernizr/3.3.1/package.tgz /home/zorin/.npm/8f1bb955--npm-modernizr-3-3-1-package-tgz.lock
+55 silly gunzTarPerm modes [ '775', '664' ]
+56 error tar.unpack untar error /home/zorin/.npm/modernizr/3.3.1/package.tgz
+57 silly lockFile 13f03e92-local-lib-node-modules-modernizr tar:///usr/local/lib/node_modules/modernizr
+58 silly lockFile 13f03e92-local-lib-node-modules-modernizr tar:///usr/local/lib/node_modules/modernizr
+59 silly lockFile 8f1bb955--npm-modernizr-3-3-1-package-tgz tar:///home/zorin/.npm/modernizr/3.3.1/package.tgz
+60 silly lockFile 8f1bb955--npm-modernizr-3-3-1-package-tgz tar:///home/zorin/.npm/modernizr/3.3.1/package.tgz
+61 verbose lib/node_modules/modernizr unbuild
+62 error Error: EACCES, mkdir '/usr/local/lib/node_modules'
+62 error  { [Error: EACCES, mkdir '/usr/local/lib/node_modules']
+62 error   errno: 3,
+62 error   code: 'EACCES',
+62 error   path: '/usr/local/lib/node_modules',
+62 error   fstream_type: 'Directory',
+62 error   fstream_path: '/usr/local/lib/node_modules/modernizr',
+62 error   fstream_class: 'DirWriter',
+62 error   fstream_stack:
+62 error    [ '/usr/lib/nodejs/fstream/lib/writer.js:171:23',
+62 error      '/usr/lib/nodejs/mkdirp/index.js:46:53',
+62 error      'Object.oncomplete (fs.js:107:15)' ] }
+63 error Please try running this command again as root/Administrator.
+64 error System Linux 4.2.0-42-generic
+65 error command "/usr/bin/nodejs" "/usr/bin/npm" "install" "-g" "modernizr"
+66 error cwd /media/zorin/End/akkerise.github.io/sass-project/css
+67 error node -v v0.10.25
+68 error npm -v 1.4.21
+69 error path /usr/local/lib/node_modules
+70 error fstream_path /usr/local/lib/node_modules/modernizr
+71 error fstream_type Directory
+72 error fstream_class DirWriter
+73 error code EACCES
+74 error errno 3
+75 error stack Error: EACCES, mkdir '/usr/local/lib/node_modules'
+76 error fstream_stack /usr/lib/nodejs/fstream/lib/writer.js:171:23
+76 error fstream_stack /usr/lib/nodejs/mkdirp/index.js:46:53
+76 error fstream_stack Object.oncomplete (fs.js:107:15)
+77 verbose exit [ 3, true ]

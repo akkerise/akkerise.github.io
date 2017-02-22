@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Add Event For HTML</title>
+</head>
+<body>
+<input type="button" value="Add Event For HTML" id="addEventForButton">
+<ul>
+    <li><a class="show" href="#">1</a></li>
+    <li><a href="#">2</a></li>
+    <li><a class="show" href="#">3</a></li>
+</ul>
+<script>
+    let eventButton = document.getElementById('addEventForButton');
+    eventButton.onclick = function(){
+        alert('You add event for HTML tag completed');
+    }
+
+    var addEventFor_a = document.getElementsByClassName('show');
+    for (var i = 0 ; i<addEventFor_a.length; i ++){
+        addEventFor_a[i].onclick = {
+            alert('Xin chào, bạn vừa click vào tôi');
+            return false;
+        }
+    }
+</script>
+</body>
+</html>

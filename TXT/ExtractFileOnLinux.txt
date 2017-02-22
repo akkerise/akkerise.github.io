@@ -1,0 +1,46 @@
+1. Nén và giải nén file có đuôi .gz
+1.1 Nén
+#gzip [tên file]
+
+1.2 Giải nén
+#gunzip [tên file]
+
+2. Gom và bung tập tin hoặc thư mục đuôi .tar
+2.1 Gom
+#tar -cvf [tênfile.tar] [file1] [file2] ...
+
+2.2 Bung
+#tar -xvf [file.tar]
+
+2.3 Nén và Gom
+#tar -zcvf [file.tar.gz] file1 file2 ...
+
+2.4 Giải nén và bung
+#tar -zxvf [file.tar.gz]
+
+3. Giải nén file có đuôi .bz2
+#tar xjvf [file.tar.bz2]
+
+Các định dạng khác :
+
+ZIP
+
+-Nén một thư mục, sử dụng:
+$ zip -r folder.zip folder
+-Giải nén, sử dụng:
+$ unzip file.zip
+
+TAR.GZ
+
+-Nén một thư mục dạng .gz, sử dụng:
+$ tar -zcf folder.tar.gz folder
+-Giải nén, sử dụng:
+$ tar -zxvf file.tar.gz
+
+TAR.BZ2
+
+-Nén một thư mục dạng .bz2, sử dụng:
+$ tar -jcf folder.tar.bz2 folder
+-Giải nén, sử dụng:
+$ tar -jxvf file.tar.bz2
+-Để biết thêm cách sử dụng hãy man.

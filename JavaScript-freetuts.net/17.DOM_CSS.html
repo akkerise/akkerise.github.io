@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 17 : DOM CSS</title>
+</head>
+<body>
+<script>
+    function changeBackground() {
+        document.getElementById('message').style.background = 'red';
+    }
+    function changeColor() {
+        document.getElementById('message').style.color = 'green';
+    }
+    function changeLineHeight() {
+        document.getElementById('message').style.lineHeight = '1.6em';
+    }
+    function changeFontSize() {
+        document.getElementById('message').style.fontSize = '20px';
+    }
+
+    function testLogin() {
+        let user = document.getElementById('username').value;
+        let pass = document.getElementById('password').value;
+//        let msg_success = "<div style='color:green'>Success</div>";
+//        let msg_danger = "<div style='color:red'>Danger</div>";
+        let msg = document.getElementById('msg');
+        if (user == 'username' || user == ''){
+            msg.style.color = 'red';
+            msg.innerHTML = 'Danger';
+        }else{
+            if(pass == 'password' || pass == ''){
+                msg.style.color = 'red';
+                msg.innerHTML = 'Danger';
+            }else{
+                msg.style.color = 'green';
+                msg.innerHTML = 'Success';
+            }
+        }
+    }
+</script>
+<input type="button" value="Change Background" onclick="changeBackground()">
+<input type="button" value="Change Color" onclick="changeColor()">
+<input type="button" value="Change lineHeight" onclick="changeLineHeight()">
+<input type="button" value="Change fontSize" onclick="changeFontSize()">
+<p id="message">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab expedita illum quam! Assumenda cupiditate dolor exercitationem, in, iste maiores nam officia quam, quidem quos rerum tempora ut vel velit voluptatum.</p>
+<br>
+Username : <input type="text" value="username" id="username"><br>
+Password : <input type="text" value="password" id="password"><br>
+<div id="msg"></div>
+<input type="button" value="Login" onclick="testLogin()">
+</body>
+</html>

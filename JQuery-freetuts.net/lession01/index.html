@@ -12,16 +12,24 @@
         /*color: red;*/
     /*}*/
 </style>
-    <div id="content">
-        <h1>Content h1</h1>
-    </div>
+    <!--<div id="content">-->
+        <!--<h1>Content h1</h1>-->
+    <!--</div>-->
+<form action="demo.php" method="post" id="myform">
+    <input type="text" value="This is a message" id="message">
+    <input type="button" value="Click Me" id="clickme">
+</form>
 <script>
 //    $('#content').css('color' , 'red');
 //    $('#content').css('background', 'blue');
-    var content = $('#content').text();
-    var content_html = $('#content').html();
-    document.write(content);
-    document.write(content_html);
+//    var content = $('#content').text();
+//    var content_html = $('#content').html();
+//    document.write(content);
+//    document.write(content_html);
+    $('#clickme').click(function () {
+        alert($('#message').val());
+        return false;
+    })
 </script>
 </body>
 </html>

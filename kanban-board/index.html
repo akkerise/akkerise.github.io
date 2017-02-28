@@ -36,9 +36,9 @@
 				<div class="col s12 m12">
 					<div class="card red">
 						<div class="card-content white-text">
-							<span class="card-title center">TODO (4)</span>
+							<span class="card-title center" onload="app.countTasks('todo')">TODO (<script></script>)</span>
 						</div>
-						<div class="collection sorted-list">
+						<div class="collection sorted-list" id="todo">
 							<a href="#!" class="collection-item">Do Something 
 								<i class="right material-icons" style="color: #ddd">not_interested</i>
 								<i class="right material-icons" style="color: #ddd">mode_edit</i>
@@ -49,8 +49,11 @@
 							<a href="#!" class="collection-item">Gem <i class="right material-icons" style="color: #ddd">not_interested</i>
 								<i class="right material-icons" style="color: #ddd">mode_edit</i>
 							</a>
-							<div class="center white">
-								<a class="btn-floating btn-medium waves-effect waves-light" id="plus_jobs" onclick="app.plusJobs(e,'todo',this)" style="background-color: #26a69a;"><i class="material-icons">add</i></a>
+							<div class="hidden">
+								
+							</div>
+							<div class="center white plus_jobs">
+								<a class="btn-floating btn-medium waves-effect waves-light" onclick="app.plusTasks('todo')" style="background-color: #26a69a;"><i class="material-icons">add</i></a>
 							</div>
 						</div>
 					</div>
@@ -60,12 +63,15 @@
 				<div class="col s12 m12">
 					<div class="card blue">
 						<div class="card-content white-text">
-							<span class="card-title center">IN PROGRESS (1)</span>
+							<span class="card-title center" onload="app.countTasks('inprogress')">IN PROGRESS (1)</span>
 						</div>
-						<div class="collection sorted-list">
+						<div class="collection sorted-list" id="inprogress">
 							<a href="#!" class="collection-item">Fixe <i class="right material-icons" style="color: #ddd">not_interested</i><i class="right material-icons" style="color: #ddd">mode_edit</i></a>
-							<div class="center white">
-								<a class="btn-floating btn-medium waves-effect waves-light" onclick="app.plusJobs(e,'inprogress',this)" style="background-color: #26a69a;"><i class="material-icons">add</i></a>
+							<div class="hidden">
+								
+							</div>
+							<div class="center white plus_jobs">
+								<a class="btn-floating btn-medium waves-effect waves-light" onclick="app.plusTasks('inprogress')" style="background-color: #26a69a;"><i class="material-icons">add</i></a>
 							</div>
 						</div>
 					</div>
@@ -75,14 +81,17 @@
 				<div class="col s12 m12">
 					<div class="card green">
 						<div class="card-content white-text">
-							<span class="card-title center">DONE (3)</span>
+							<span class="card-title center" onload="app.countTasks('done')">DONE (3)</span>
 						</div>
-						<div class="collection sorted-list">
+						<div class="collection sorted-list" id="done">
 							<a href="#!" class="collection-item">Fech <i class="right material-icons" style="color: #ddd">not_interested</i><i class="right material-icons" style="color: #ddd">mode_edit</i></a>
 							<a href="#!" class="collection-item">Fast <i class="right material-icons" style="color: #ddd">not_interested</i><i class="right material-icons" style="color: #ddd">mode_edit</i></a>
 							<a href="#!" class="collection-item">Get <i class="right material-icons" style="color: #ddd">not_interested</i><i class="right material-icons" style="color: #ddd">mode_edit</i></a>
-							<div class="center white">
-								<a class="btn-floating btn-medium waves-effect waves-light" onclick="app.plusJobs(e,'done',this)" style="background-color: #26a69a;"><i class="material-icons">add</i></a>
+							<div class="hidden">
+								
+							</div>
+							<div class="center white plus_jobs">
+								<a class="btn-floating btn-medium waves-effect waves-light" onclick="app.plusTasks('done')" style="background-color: #26a69a;"><i class="material-icons">add</i></a>
 							</div>
 						</div>
 					</div>

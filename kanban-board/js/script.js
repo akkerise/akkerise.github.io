@@ -44,8 +44,7 @@ var app = {
 
     deleteJobInList: function(span){
 		var itemRemove = $(span).parent();
-        var modal = $('#modal-confirm');
-        modal.openModal();
+        $('#modal-confirm').modal('show');
 		// window.confirm('Are you sure delete this job ?');
 		$('#btn-delete').on('click',function(){
 			itemRemove.remove();

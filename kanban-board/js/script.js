@@ -29,7 +29,7 @@ var app = {
 		
 		if(event.keyCode === 13 && jobName !== ''){
 			// 
-			element.append('<a href="#!" class="collection-item">'+ jobName + '<i class="right material-icons" style="color: #ddd">not_interested</i><i class="right material-icons" style="color: #ddd">mode_edit</i></a>')
+			element.append('<a href="#!" class="collection-item">'+ jobName + '<span onclick="app.deleteJobInList(this)"><i class="right material-icons" style="color: #ddd">not_interested</i></span><span><i class="right material-icons" style="color: #ddd">mode_edit</i></span></a>')
 			firstPlusJobs.remove();
 			hidden.remove();
 			// add Plus Button
@@ -38,16 +38,23 @@ var app = {
 	},
 
 	addJobsToList: function(type,jobName){
-		var item = '<a href="#!" class="collection-item">'+ jobName +'<i class="right material-icons" style="color: #ddd">not_interested</i><i class="right material-icons" style="color: #ddd">mode_edit</i></a>';
+		var item = '<a href="#!" class="collection-item">'+ jobName +'<span onclick="app.deleteJobInList(this)"><i class="right material-icons" style="color: #ddd">not_interested</i></span><span><i class="right material-icons" style="color: #ddd">mode_edit</i></span></a>';
 		$('#' + type).append(item);
 	},
 
-	countTasks: function(element){
-		let e = $('#' + element);
-		let a = e.find('a');
-		let last_a = a[a.length - 1];
+    deleteJobInList: function(span){
+		var itemRemove = $(span).parent();
+        var modal = $('#modal-confirm');
+        modal.openModal();
+		// window.confirm('Are you sure delete this job ?');
+        itemRemove.remove();
+	},
 
-		if (e == '#todo') {
+	countTasks: function(element){
+		var elm = $('#' + element);
+		var ahr = elm.find('a');
+		var last_a = ahr[ahr.length - 1];
+		if (elm == '#todo') {
 			console.log(1);
 		}
 	}

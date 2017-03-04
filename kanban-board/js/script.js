@@ -47,7 +47,13 @@ var app = {
         var modal = $('#modal-confirm');
         modal.openModal();
 		// window.confirm('Are you sure delete this job ?');
-        itemRemove.remove();
+		$('#btn-delete').on('click',function(){
+			itemRemove.remove();
+			modal.closeModal();
+		});
+		$('#btn-cancel').on('click',function(){
+			modal.closeModal();
+		});
 	},
 
 	countTasks: function(element){

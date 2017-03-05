@@ -29,7 +29,7 @@ var app = {
 		
 		if(event.keyCode === 13 && jobName !== ''){
 			// 
-			element.append('<a href="#!" class="collection-item">'+ jobName + '<span onclick="app.deleteJobInList(this)"><i class="right material-icons" style="color: #ddd">not_interested</i></span><span><i class="right material-icons" style="color: #ddd">mode_edit</i></span></a>')
+			element.append('<a href="#!" class="collection-item">'+ jobName + '<span onclick="app.deleteJobInList(this)"><i class="right material-icons" style="color: #ddd">not_interested</i></span><span onclick="app.editJobInList(this)"><i class="right material-icons" style="color: #ddd">mode_edit</i></span>')
 			firstPlusJobs.remove();
 			hidden.remove();
 			// add Plus Button
@@ -38,31 +38,55 @@ var app = {
 	},
 
 	addJobsToList: function(type,jobName){
-		var item = '<a href="#!" class="collection-item">'+ jobName +'<span onclick="app.deleteJobInList(this)"><i class="right material-icons" style="color: #ddd">not_interested</i></span><span><i class="right material-icons" style="color: #ddd">mode_edit</i></span></a>';
+		var item = '<a href="#!" class="collection-item">'+ jobName +'<span onclick="app.deleteJobInList(this)"><i class="right material-icons" style="color: #ddd">not_interested</i></span><span onclick="app.editJobInList(this)"><i class="right material-icons" style="color: #ddd">mode_edit</i></span>>';
 		$('#' + type).append(item);
 	},
 
     deleteJobInList: function(span){
-		var itemRemove = $(span).parent();
-        $('#modal-confirm').modal('show');
-		// window.confirm('Are you sure delete this job ?');
-		$('#btn-delete').on('click',function(){
-			itemRemove.remove();
-			modal.closeModal();
-		});
-		$('#btn-cancel').on('click',function(){
-			modal.closeModal();
+		$(document).ready(function(){
+			var itemRemove = $(span).parent();
+			$('.modal').modal();
+			$('#modal-confirm').modal('open');
+
+			// console.log($('#modal-confirm'));
+			// window.confirm('Are you sure delete this job ?');
+			// itemRemove.remove();
+
+			$('#btn-delete').on('click',function(){
+                itemRemove.remove();
+				// console.log(itemRemove.remove());
+				$('.modal').modal('close');
+			});
+			// $('#btn-cancel').on('click',function(){
+			// 	modal.closeModal();
+			// });
+
 		});
 	},
 
-	countTasks: function(element){
-		var elm = $('#' + element);
-		var ahr = elm.find('a');
-		var last_a = ahr[ahr.length - 1];
-		if (elm == '#todo') {
-			console.log(1);
-		}
-	}
+	editJobInList: function(span){
+    	var itemEdit = $(span).parent().parent();
+    	var valTag_a = itemEdit.children('a').contents().filter(function() {
+        return this.nodeType == 0;
+    });
+    	var valItemEdit = itemEdit.text();
+    	console.log(valTag_a);
+    	// itemEdit.replaceWith('1');
+		$(document).ready(function () {
 
+        });
+	},
+
+	countTasks: function(){
+		var count = $('.count');
+		count.each(function(i) {
+			var bindCount = $(this).parent().parent().next().find('a').length - 1;
+			console.log(this.parent());
+		});
+	}
 };
+
+$(window).load(function() {
+	app.countTasks();
+});
 

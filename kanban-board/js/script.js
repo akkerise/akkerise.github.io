@@ -59,6 +59,7 @@ var app = {
 	editJobInList: function(e,span){
 		var itemEdit = $(span).parent();
 		itemEdit.append('<div class="input-field" id="divtask" style="padding-left: 5px;"><input id="newtask" onkeydown="app.newTasksEdit(event,this)" type="text" class="validate"><label for="newtask">New Task</label></div>');
+
 	},
 
 	newTasksEdit: function (e,input) {
@@ -67,9 +68,14 @@ var app = {
 		var parentNewTaskEdit = $(input).parent().parent();
 		if(evenNewTasksEdit.keyCode == 13 && jobNewTaskEdit !== ''){
 			parentNewTaskEdit.after('<a href="#!" class="collection-item">'+ jobNewTaskEdit + '<span onclick="app.deleteJobInList(this)"><i class="right material-icons" style="color: #ddd">not_interested</i></span><span onclick="app.editJobInList(event,this)"><i class="right material-icons" style="color: #ddd">mode_edit</i></span>');
+            var positionItemEdit = parentNewTaskEdit.index();
+            var columnNewTaskEdit = parentNewTaskEdit.parent().attr('id');
+            list[columnNewTaskEdit][positionItemEdit] = jobNewTaskEdit;
+            DB.setData(list);
 			parentNewTaskEdit.slideUp(1000,function(){
 				parentNewTaskEdit.remove();
 			});
+
 		}
 	},
 
@@ -126,12 +132,30 @@ $( function() {
 	$( ".sorted-list" ).sortable({
 		connectWith: ".sorted-list",
 		placeholder: 'ui-state-highlight',
-		start: function(even , ui){
+		start: function(event , ui){
 			$(ui.item[0]).addClass('dragging');
+			ui.item.oldColumn = ui.item.context.parentElement.getAttribute('id');
+            ui.item.oldItemPosition = ui.item.index();
+            console.log(ui);
 		},
-		stop: function(even, ui){
+		stop: function(event, ui){
 			$(ui.item[0]).removeClass('dragging');
 			app.countTasks();
+            console.log(ui);
+			var item = ui.item;
+			var oldColumn = item.oldColumn;
+			var oldItemPosition = item.oldItemPosition;
+			var newColumn = item.context.parentElement.getAttribute('id');
+			var newItemPosition = item.index();
+
+			// Remove item old position
+			list[oldColumn].splice(oldItemPosition,1);
+
+			// Add item new position
+			list[newColumn].splice(newItemPosition,0,item[0].innerText.replace('not_interestedmode_edit',''));
+
+			// Store data to localStorage
+			DB.setData(list);
 		}
 	});
 

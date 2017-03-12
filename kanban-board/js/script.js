@@ -1,37 +1,30 @@
-$( function() {
-	$( ".sorted-list" ).sortable({
-		connectWith: ".sorted-list",
-		placeholder: 'ui-state-highlight',
-		start: function(even , ui){
-			$(ui.item[0]).addClass('dragging');
-		},
-		stop: function(even, ui){
-			$(ui.item[0]).removeClass('dragging');
-		}
-	});
-} );
-
 var app = {
 
 	plusTasks: function(element){
-		var e = $('#' + element).children();
 		var hidden = $('#' + element).find('.hidden');
-		var plus_jobs = $('#' + element).find('.hidden').children();
+		var taga = $('#' + element);
 		var plusHiddenNextRemove = hidden.next();
-		hidden.append('<div class="input-field" id="divtask" style="padding-left: 5px;"><input id="newtask" onkeydown="app.newTasks(event,this)" type="text" class="validate"><label for="newtask">New Task</label></div>');
+		hidden.append('<div class="input-field" id="divtask"><input id="newtask" onkeydown="app.newTasks(event,this)" type="text" class="validate"><label for="newtask">New Task</label></div>');
 		plusHiddenNextRemove.remove();
-		
-		
 	},
 
 	newTasks: function(e,input){
 		var event = window.event || e;
 		var jobName = $(input).val();
 		var element = $(input).parent().parent().parent();
+		var typeColumn = element.attr('id');
 		var hidden = element.find('.hidden');
-		
+
 		if(event.keyCode == 13 && jobName !== ''){
-			// 
+
+			// list[typeColumn] not found => []
+			if (!list[typeColumn]) {
+				list[typeColumn] = [];
+			}
+
+			list[typeColumn].push(jobName);
+			DB.setData(list);
+
 			element.append('<a href="#!" class="collection-item">'+ jobName + '<span onclick="app.deleteJobInList(this)"><i class="right material-icons" style="color: #ddd">not_interested</i></span><span onclick="app.editJobInList(event,this)"><i class="right material-icons" style="color: #ddd">mode_edit</i></span>')
 			hidden.remove();
 			// add Plus Button
@@ -40,10 +33,11 @@ var app = {
 		}
 	},
 
-	// addJobsToList: function(type,jobName){
-	// 	var item = '<a href="#!" class="collection-item">'+ jobName +'<span onclick="app.deleteJobInList(this)"><i class="right material-icons" style="color: #ddd">not_interested</i></span><span onclick="app.editJobInList(this)"><i class="right material-icons" style="color: #ddd">mode_edit</i></span>>';
-	// 	$('#' + type).append(item);
-	// },
+	addJobsToList: function(type,jobName){
+		var item = '<a href="#!" class="collection-item">'+ jobName + '<span onclick="app.deleteJobInList(this)"><i class="right material-icons" style="color: #ddd">not_interested</i></span><span onclick="app.editJobInList(event,this)"><i class="right material-icons" style="color: #ddd">mode_edit</i></span>';
+        $('#' + type).find('.hidden').before(item);
+        // console.log(type);
+	},
 
 	deleteJobInList: function(span){
 		var pointDelete = this;
@@ -73,13 +67,13 @@ var app = {
 				parentNewTaskEdit.remove();
 			});
 		}
-		
 	},
 
 	countTasks: function(){
 		var countTaskInColumn = $('.count').parent().parent().next();
 		var valCount = $('.count');
 		for (var i = 0 ; i < countTaskInColumn.length; i++){
+			// $(valCount[i]).html($(countTaskInColumn[i]).find('a').length - 1);
 			valCount[i].innerHTML = $(countTaskInColumn[i]).find('a').length - 1;
 		}
 		// this.countTasks();
@@ -89,5 +83,54 @@ var app = {
 };
 $(window).load(function() {
 	app.countTasks();
+
 });
+
+var DB = {
+	getData: function(){
+		if (typeof(Storage) !== 'undefined') {
+			var data;
+			try {
+				data = JSON.parse(localStorage.getItem('list')) || {};
+			} catch(e) {
+				console.log(e);
+				data = {};
+			}
+			return data;
+		}else{
+			console.log('Sorry ! Your browser not support HTML5 LocalStorage');
+			return {};
+		}
+	},
+
+	setData: function(data){
+		localStorage.setItem('list',JSON.stringify(data));
+	}
+};
+var list = DB.getData();
+var COLUMN_TYPE = ['todo','inprogress','done'];
+$( function() {
+
+    COLUMN_TYPE.forEach(function (type) {
+        var nameColumn = list[type] || [];
+        nameColumn.forEach(function (job) {
+			app.addJobsToList(type , job);
+        })
+	});
+
+
+	$( ".sorted-list" ).sortable({
+		connectWith: ".sorted-list",
+		placeholder: 'ui-state-highlight',
+		start: function(even , ui){
+			$(ui.item[0]).addClass('dragging');
+		},
+		stop: function(even, ui){
+			$(ui.item[0]).removeClass('dragging');
+			app.countTasks();
+		}
+	});
+
+} );
+
 

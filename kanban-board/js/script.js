@@ -2,7 +2,6 @@ var app = {
 
 	plusTasks: function(element){
 		var hidden = $('#' + element).find('.hidden');
-		var taga = $('#' + element);
 		var plusHiddenNextRemove = hidden.next();
 		hidden.append('<div class="input-field" id="divtask"><input id="newtask" onkeydown="app.newTasks(event,this)" type="text" class="validate"><label for="newtask">New Task</label></div>');
 		plusHiddenNextRemove.remove();
@@ -44,7 +43,12 @@ var app = {
 		var itemRemove = $(span).parent();
 		$('.modal').modal();
 		$('#modal-confirm').modal('open');
+		$('#btn-delete').off('click');
 		$('#btn-delete').on('click',function(){
+			var columnTYPE = itemRemove.parent().attr('id');
+			var itemPosition = $('#' + columnTYPE + ' .collection-item').index(itemRemove);
+			list[columnTYPE].splice(itemPosition,1);
+			DB.setData(list);
 			itemRemove.remove();
 			$('.modal').modal('close');
 			pointDelete.countTasks();

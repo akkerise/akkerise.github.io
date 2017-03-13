@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Learn Vue</title>
+	<link rel="stylesheet" href="">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.2.0/vue.js"></script>
+	<script src="js/script.js" type="text/javascript" charset="utf-8" async defer></script>
+</head>
+<body>
+	
+
+	<div id="app">
+		<!-- // v-once sẽ không bị ảnh hưởng nếu dữ liệu trong object data được định nghĩa lại bởi 1 hàm nào đó -->
+		<h1 v-once>{{ title }}</h1><br>
+
+		<!-- // v-on:input sẽ xử lý sự kiện render lại ngay khi nhận được giá trị từ changeTitle() -->
+		<input type="text" v-on:input="changeTitle"><br>
+
+		<!-- // v-bind:href khi bạn render lại link vào thẻ <a></a> -->
+		<p>{{ sayHello() }} - <a v-bind:href="link">Google</a></p><br>
+		<hr>
+
+		<!-- // render vào trong thẻ p nếu dữ liệu là html -->
+		<p v-html="finishedLink"></p><br>
+		<hr>
+		<!-- // v-on:click button -->
+		<button v-on:click="increase(2,$event)">Click</button><br>
+		<p>{{ counter }}</p><br>
+
+		<hr>
+		<p v-on:mousemove="updateCoordinates">Coordinates : {{ x }} / {{ y }} - <span v-on:mousemove="dummy">DEAD SPOT</span></p>
+	</div>
+</body>
+</html>

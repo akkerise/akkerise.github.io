@@ -4,7 +4,6 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title>Learn Vue</title>
-	<link rel="stylesheet" href="">
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.2.0/vue.js"></script>
 	<script src="js/script.js" type="text/javascript" charset="utf-8" async defer></script>
 </head>
@@ -32,6 +31,21 @@
 		<hr>
 		<!--<p v-on:mousemove="updateCoordinates">Coordinates : {{ x }} / {{ y }} - <span v-on:mousemove="dummy">DEAD SPOT</span></p>-->
 		<p v-on:mousemove="updateCoordinates">Coordinates : {{ x }} / {{ y }} - <span v-on:mousemove.stop="">DEAD SPOT</span></p>
+
+		<hr>
+		<input type="text" name="" v-model="name">
+		<p>{{ name }}</p>
+	</div>
+
+	<div id="id2">
+		
+		<input type="button" name="" @:click="counter++" value="Increase">
+		<input type="button" name="" v-on:click="counter--" value="Decrease">
+		<input type="button" name="" v-on:click="secondCounter++" value="Second Counter">
+		<p>{{counter}} | {{ secondCounter }}</p>
+		<p>{{ result() }} | {{ output }}</p>
+		<input type="button" name="" @click="gem" value="TestClick">
+		<a :href="tt" title="">Link</a>
 	</div>
 </body>
 </html>

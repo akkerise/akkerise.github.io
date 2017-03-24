@@ -34,11 +34,11 @@ new Vue({
 new Vue({
   el: '#id2',
   data: function(){
-      return {
-          counter: 0,
-          secondCounter: 0,
-          tt: 'http://www.gem.com'
-      }
+    return {
+      counter: 0,
+      secondCounter: 0,
+      tt: 'http://www.gem.com'
+    }
   },
   computed: {
     output: function(){
@@ -46,14 +46,14 @@ new Vue({
       return this.counter > 5 ? 'Greater 5' : 'Smaller than 5';
     }
   },
-    watch: {
-        counter: function(value){
-            var vm = this;
-            setTimeout(function(){
-                vm.counter = 0;
-            },2000);
-        }
-    },
+  watch: {
+    counter: function(value){
+      var vm = this;
+      setTimeout(function(){
+        vm.counter = 0;
+      },2000);
+    }
+  },
   methods: {
     increase: function(){
       this.counter++;
@@ -68,7 +68,18 @@ new Vue({
       return this.counter > 5 ? 'Greater 5' : 'Smaller than 5';
     },
     gem: function(){
-        this.tt = 'http://www.ccc.com';
+      this.tt = 'http://www.ccc.com';
     }
+  }
+});
+
+
+new Vue({
+  el: '#app3',
+  data: {
+    attachRed: false
+  },
+  methods: {
+
   }
 });

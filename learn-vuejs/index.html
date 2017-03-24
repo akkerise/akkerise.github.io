@@ -6,6 +6,7 @@
 	<title>Learn Vue</title>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.2.0/vue.js"></script>
 	<script src="js/script.js" type="text/javascript" charset="utf-8" async defer></script>
+	<!-- <link rel="stylesheet" type="text/css" href="css/style.css"> -->
 </head>
 <body>
 	
@@ -47,5 +48,37 @@
 		<input type="button" name="" @click="gem" value="TestClick">
 		<a :href="tt" title="">Link</a>
 	</div>
+
+
+
+
+	<div id="app3">
+		<div class="demo"
+		@click="attachRed = !attachRed"
+		:class="red: attachRed"
+		></div>
+		<div class="demo"></div>
+		<div class="demo"></div>
+	</div>
+	<style>
+		.demo {
+			width: 400px;
+			height: 400px;
+			border: 1px solid grey;
+			background-color: grey;
+			display: inline-block;
+			margin: 10px;
+		}
+
+		.red {
+			background-color: red;
+		}
+		.green {
+			background-color: green;
+		}
+		.blue {
+			background-color: blue;
+		}
+	</style>
 </body>
 </html>

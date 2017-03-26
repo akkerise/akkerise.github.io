@@ -1,84 +1,83 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>Learn Vue</title>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.2.0/vue.js"></script>
-	<script src="js/script.js" type="text/javascript" charset="utf-8" async defer></script>
-	<!-- <link rel="stylesheet" type="text/css" href="css/style.css"> -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Learn Vue</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.2.0/vue.js"></script>
+    <script src="js/script.js" type="text/javascript" charset="utf-8" async defer></script>
+    <!-- <link rel="stylesheet" type="text/css" href="css/style.css"> -->
 </head>
 <body>
-	
-
-	<div id="app">
-		<!-- // v-once sẽ không bị ảnh hưởng nếu dữ liệu trong object data được định nghĩa lại bởi 1 hàm nào đó -->
-		<h1 v-once>{{ title }}</h1><br>
-
-		<!-- // v-on:input sẽ xử lý sự kiện render lại ngay khi nhận được giá trị từ changeTitle() -->
-		<input type="text" v-on:input="changeTitle"><br>
-
-		<!-- // v-bind:href khi bạn render lại link vào thẻ <a></a> -->
-		<p>{{ sayHello() }} - <a v-bind:href="link">Google</a></p><br>
-		<hr>
-
-		<!-- // render vào trong thẻ p nếu dữ liệu là html -->
-		<p v-html="finishedLink"></p><br>
-		<hr>
-		<!-- // v-on:click button -->
-		<button v-on:click="increase(2,$event)">Click</button><br>
-		<p>{{ counter }}</p><br>
-
-		<hr>
-		<!--<p v-on:mousemove="updateCoordinates">Coordinates : {{ x }} / {{ y }} - <span v-on:mousemove="dummy">DEAD SPOT</span></p>-->
-		<p v-on:mousemove="updateCoordinates">Coordinates : {{ x }} / {{ y }} - <span v-on:mousemove.stop="">DEAD SPOT</span></p>
-
-		<hr>
-		<input type="text" name="" v-model="name">
-		<p>{{ name }}</p>
-	</div>
-
-	<div id="id2">
-		
-		<input type="button" name="" @:click="counter++" value="Increase">
-		<input type="button" name="" v-on:click="counter--" value="Decrease">
-		<input type="button" name="" v-on:click="secondCounter++" value="Second Counter">
-		<p>{{counter}} | {{ secondCounter }}</p>
-		<p>{{ result() }} | {{ output }}</p>
-		<input type="button" name="" @click="gem" value="TestClick">
-		<a :href="tt" title="">Link</a>
-	</div>
 
 
+<div id="app">
+    <!-- // v-once sẽ không bị ảnh hưởng nếu dữ liệu trong object data được định nghĩa lại bởi 1 hàm nào đó -->
+    <h1 v-once>{{ title }}</h1><br>
+
+    <!-- // v-on:input sẽ xử lý sự kiện render lại ngay khi nhận được giá trị từ changeTitle() -->
+    <input type="text" v-on:input="changeTitle"><br>
+
+    <!-- // v-bind:href khi bạn render lại link vào thẻ <a></a> -->
+    <p>{{ sayHello() }} - <a v-bind:href="link">Google</a></p><br>
+    <hr>
+
+    <!-- // render vào trong thẻ p nếu dữ liệu là html -->
+    <p v-html="finishedLink"></p><br>
+    <hr>
+    <!-- // v-on:click button -->
+    <button v-on:click="increase(2,$event)">Click</button>
+    <br>
+    <p>{{ counter }}</p><br>
+
+    <hr>
+    <!--<p v-on:mousemove="updateCoordinates">Coordinates : {{ x }} / {{ y }} - <span v-on:mousemove="dummy">DEAD SPOT</span></p>-->
+    <p v-on:mousemove="updateCoordinates">Coordinates : {{ x }} / {{ y }} - <span
+            v-on:mousemove.stop="">DEAD SPOT</span></p>
+
+    <hr>
+    <input type="text" name="" v-model="name">
+    <p>{{ name }}</p>
+</div>
+
+<div id="id2">
+
+    <input type="button" name="" @:click="counter++" value="Increase">
+    <input type="button" name="" v-on:click="counter--" value="Decrease">
+    <input type="button" name="" v-on:click="secondCounter++" value="Second Counter">
+    <p>{{counter}} | {{ secondCounter }}</p>
+    <p>{{ result() }} | {{ output }}</p>
+    <input type="button" name="" @click="gem" value="TestClick">
+    <a :href="tt" title="">Link</a>
+</div>
 
 
-	<div id="app3">
-		<div class="demo"
-		@click="attachRed = !attachRed"
-		:class="red: attachRed"
-		></div>
-		<div class="demo"></div>
-		<div class="demo"></div>
-	</div>
-	<style>
-		.demo {
-			width: 400px;
-			height: 400px;
-			border: 1px solid grey;
-			background-color: grey;
-			display: inline-block;
-			margin: 10px;
-		}
+<div id="app3">
+    <div class="demo" @click="attachRed = !attachRed" :class="red: attachRed" ></div>
+    <div class="demo"></div>
+    <div class="demo"></div>
+</div>
+<style>
+    .demo {
+        width: 400px;
+        height: 400px;
+        border: 1px solid grey;
+        background-color: grey;
+        display: inline-block;
+        margin: 10px;
+    }
 
-		.red {
-			background-color: red;
-		}
-		.green {
-			background-color: green;
-		}
-		.blue {
-			background-color: blue;
-		}
-	</style>
+    .red {
+        background-color: red;
+    }
+
+    .green {
+        background-color: green;
+    }
+
+    .blue {
+        background-color: blue;
+    }
+</style>
 </body>
 </html>

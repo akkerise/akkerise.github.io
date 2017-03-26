@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <title>Vue.js</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.2.0/vue.js"></script>
+    <script src="js/script2.js" type="text/javascript" charset="utf-8" async defer></script>
+    <link rel="stylesheet" type="text/css" href="css/style2.css">
+</head>
+<body>
+<div id="app">
+    <div class="demo" v-bind:class="{active: isActive, 'text-danger': hasError}">
+        <h1>CLGT</h1>
+    </div>
+    <div class="demo" v-bind:class="classObject">
+        <h1>CLGV</h1>
+    </div>
+    <div class="demo"></div>
+</div>
+</body>
+</html>

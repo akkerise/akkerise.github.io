@@ -1,0 +1,30 @@
+.demo {
+    width: 200px;
+    height: 200px;
+    border: 1px solid grey;
+    background-color: grey;
+    display: inline-block;
+    margin: 10px;
+    float: left;
+}
+
+.red {
+    background-color: red;
+}
+
+.green {
+    background-color: green;
+}
+
+.blue {
+    background-color: blue;
+}
+
+.active {
+    font-size: 20px;
+    background-color: red;
+}
+
+.text-danger {
+    color: green;
+}

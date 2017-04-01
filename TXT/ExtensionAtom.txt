@@ -24,3 +24,4 @@ pigments
 qolor
 script
 turbo-javascript
+vue

@@ -50,35 +50,14 @@
 </div>
 
 
-
-
 	<div id="app3">
 		<div class="demo"
 		@click="attachRed = !attachRed"
-		:class="red: attachRed"
+		:class="{red: attachRed , blue: !attachRed}"
 		></div>
-		<div class="demo"></div>
+		<div class="demo" :class="{red: attachRed}"></div>
 		<div class="demo"></div>
 	</div>
-	<style>
-		.demo {
-			width: 400px;
-			height: 400px;
-			border: 1px solid grey;
-			background-color: grey;
-			display: inline-block;
-			margin: 10px;
-		}
 
-		.red {
-			background-color: red;
-		}
-		.green {
-			background-color: green;
-		}
-		.blue {
-			background-color: blue;
-		}
-	</style>
 </body>
 </html>

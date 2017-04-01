@@ -10,11 +10,10 @@
 </head>
 <body>
 <div id="app">
-    <div class="demo" v-bind:class="{active: isActive, 'text-danger': hasError}">
+    <div class="demo" v-on:click="attachRed = !attachRed" v-bind:class="{red: attachRed, blue: !attachRed}">
         <h1>CLGT</h1>
     </div>
-    <div class="demo" v-bind:class="classObject">
-        <h1>CLGV</h1>
+    <div class="demo" v-bind:class="{red: attachRed}">
     </div>
     <div class="demo"></div>
 </div>

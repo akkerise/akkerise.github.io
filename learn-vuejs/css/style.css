@@ -1,7 +1,10 @@
 .demo {
-	width: 400px;
-	height: 400px;
+	width: 200px;
+	height: 200px;
 	border: 1px solid grey;
+	background-color: grey;
+	display: inline-block;
+	margin: 10px;
 }
 
 .red {

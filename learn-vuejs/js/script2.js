@@ -4,12 +4,15 @@
 new Vue({
     el: '#app',
     data: {
-        // attachRed: false
-        isActive: true,
-        hasError: true,
-        classObject: {
-            active: true,
-            'text-danger': true
+        color: 'grey',
+        width: 100,
+    },
+    computed: {
+        myStyle: function () {
+            return {
+                backgroundColor: this.color,
+                width: this.width + 'px'
+            };
         }
     }
 });

@@ -20,6 +20,10 @@
     background-color: blue;
 }
 
+.pink {
+    background-color: pink;
+}
+
 .active {
     font-size: 20px;
     background-color: red;

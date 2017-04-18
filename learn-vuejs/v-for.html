@@ -2,9 +2,36 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>V-FOR VueJS</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.2.0/vue.js"></script>
+    <script src="js/v-for.js" type="text/javascript" charset="utf-8" async defer></script>
 </head>
 <body>
+<div id="app">
+    <ul>
+        <li v-for="(ingredient,i) in ingredients">{{ i }}.{{ ingredient}}</li>
+    </ul>
+    <ul>
+        <li v-for="person in persons">
+            {{ person.name }} + {{ person.age }} + {{ person.color }}
+        </li>
+    </ul>
+    <template v-for="(ingredient,index) in ingredients">
+        <h1>{{ ingredient }}</h1>
+        <p>{{ index }}</p>
+    </template>
 
+    <template v-for="person in persons">
+        <ul>
+            <li v-for="(value, key, i) in person">{{ i }} {{ key }} : {{ value }}</li>
+        </ul>
+    </template>
+
+    <template v-for="(n,i) in 10">
+        <ul>
+            <li>({{i}}){{ n }}</li>
+        </ul>
+    </template>
+</div>
 </body>
 </html>

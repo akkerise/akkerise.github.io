@@ -17,21 +17,29 @@
         </li>
     </ul>
     <template v-for="(ingredient,index) in ingredients">
-        <h1>{{ ingredient }}</h1>
-        <p>{{ index }}</p>
+        <h1>{{ index }} : {{ ingredient }}</h1>
+        <!--{{ console.log(ingredients) }}-->
     </template>
+    <button @click="ingredients.push('spice')" :key="ingredients">Add New</button>
+
 
     <template v-for="person in persons">
         <ul>
-            <li v-for="(value, key, i) in person">{{ i }} {{ key }} : {{ value }}</li>
+            <li v-for="(value, key, i) in person" :key="value.i">{{ i }} {{ key }} : {{ value }}</li>
         </ul>
     </template>
 
-    <template v-for="(n,i) in 10">
-        <ul>
-            <li>({{i}}){{ n }}</li>
-        </ul>
-    </template>
+    <!--<template v-for="(n,i) in 10">-->
+        <!--<ul>-->
+            <!--<li>({{i}}){{ n }}</li>-->
+        <!--</ul>-->
+    <!--</template>-->
+
+    <!--<template>-->
+        <!--<ul>-->
+            <!--<li v-for="item in items" :key="item.id">{{ item }}</li>-->
+        <!--</ul>-->
+    <!--</template>-->
 </div>
 </body>
 </html>

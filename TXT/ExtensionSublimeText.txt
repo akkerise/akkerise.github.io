@@ -2,7 +2,6 @@ AdvancedNewFile
 Color Highlighter
 Color Picker
 Alignment
-Align A
 All Autocomplete
 DocBlockr
 Emmet

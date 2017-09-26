@@ -1,0 +1,22 @@
+{
+  "name": "akkerise.github.io",
+  "version": "0.0.1",
+  "description": "Version beta Portfolio",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/akkerise/akkerise.github.io.git"
+  },
+  "keywords": [
+    "Portfolio"
+  ],
+  "author": "AkKe",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/akkerise/akkerise.github.io/issues"
+  },
+  "homepage": "https://github.com/akkerise/akkerise.github.io#readme"
+}

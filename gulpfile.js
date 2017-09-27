@@ -23,7 +23,7 @@ gulp.task('server', [], function () {
     });
     gulp.watch(['*.html'], reload);
     gulp.watch(['assets/js/*.js'], reload);
-    gulp.watch(['assets/css/*.css'], reload);
+    // gulp.watch(['assets/css/*.css'], reload);
     gulp.watch(['assets/img/*'], reload);
     gulp.watch(['assets/**/*.scss'], ['sass']);
 });

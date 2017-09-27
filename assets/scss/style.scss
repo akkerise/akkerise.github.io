@@ -1,3 +1,115 @@
+@import "__color";
+@import "__font";
+
 * {
 	box-sizing: border-box;
+
+	body {
+		/***** NAV *****/
+		nav {
+			background-color: #ffffff;
+			border-bottom: 1px solid $colorTwo;
+			div.nav-wrapper {
+				font-family: $fontPrimary;
+				a {
+					display: inline-block;
+					font-size: 1.68rem;
+					color: $colorThree;
+					span {
+						font-size: 6rem;
+						font-weight: 200;
+					}
+				}
+			}
+		}
+
+
+		/***** BANNER *****/
+		div#index-banner {
+			.container {
+				h3 {
+					color: $colorTwo;
+					font-family: 'Helvetica Neue', 'Lato', 'Roboto Mono for Powerline', sans-serif;
+					span {
+						font-size: 1rem;
+						position: relative;
+						top: 0.5rem;
+						left: 0.2rem;
+					}
+				}
+
+				.row {
+					.collection {
+						border: none;
+						.collection-item {
+							font-family: 'Helvetica Neue', 'Lato', 'Roboto Mono for Powerline', sans-serif;
+							font-size: 1.2rem;
+							cursor: pointer;
+							border-bottom-right-radius: 16px;
+							&:hover{
+								background-color: $colorTwo;
+							}
+							transition: background-color 1.6s ease;
+						}
+					}
+					.col {
+						.s4 {
+
+						}
+						.s8 {
+							h5 {
+								font-size: 1.6rem;
+								font-weight: bold;
+								padding-bottom: 5px;
+								border: 1px solid $colorOne;
+								display: inline-block;
+								text-transform: uppercase;
+							}
+							z-index: -1;
+							#preloader1s {
+								display: fixed;
+								z-index: 1;
+							}
+							.s8 {
+
+							}
+						}
+					}
+				}
+
+				.center {
+
+				}
+			}
+		}
+
+		
+		/***** CONTAINER *****/
+		div.container {
+			
+		}
+
+
+
+		/***** PARALLAX-CONTAINER *****/
+		div.parallax-container {
+
+		}
+
+		
+		/***** FOOTER *****/
+		footer {
+			.container {
+
+			}
+
+			.footer-copyright {
+
+			}
+		}
+
+
+
+	}	
 }
+

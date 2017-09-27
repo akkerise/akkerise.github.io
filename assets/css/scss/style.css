@@ -1,2 +1,51 @@
+/***** ColorCombo36 *****/
 * {
   box-sizing: border-box; }
+  * body {
+    /***** NAV *****/
+    /***** BANNER *****/
+    /***** CONTAINER *****/
+    /***** PARALLAX-CONTAINER *****/
+    /***** FOOTER *****/ }
+    * body nav {
+      background-color: #ffffff;
+      border-bottom: 1px solid #999999; }
+      * body nav div.nav-wrapper {
+        font-family: Helvetica, sans-serif; }
+        * body nav div.nav-wrapper a {
+          display: inline-block;
+          font-size: 1.68rem;
+          color: #669999; }
+          * body nav div.nav-wrapper a span {
+            font-size: 6rem;
+            font-weight: 200; }
+    * body div#index-banner .container h3 {
+      color: #999999;
+      font-family: 'Helvetica Neue', 'Lato', 'Roboto Mono for Powerline', sans-serif; }
+      * body div#index-banner .container h3 span {
+        font-size: 1rem;
+        position: relative;
+        top: 0.5rem;
+        left: 0.2rem; }
+    * body div#index-banner .container .row .collection {
+      border: none; }
+      * body div#index-banner .container .row .collection .collection-item {
+        font-family: 'Helvetica Neue', 'Lato', 'Roboto Mono for Powerline', sans-serif;
+        font-size: 1.2rem;
+        cursor: pointer;
+        border-bottom-right-radius: 16px;
+        transition: background-color 1.6s ease; }
+        * body div#index-banner .container .row .collection .collection-item:hover {
+          background-color: #999999; }
+    * body div#index-banner .container .row .col .s8 {
+      z-index: -1; }
+      * body div#index-banner .container .row .col .s8 h5 {
+        font-size: 1.6rem;
+        font-weight: bold;
+        padding-bottom: 5px;
+        border: 1px solid #FF3333;
+        display: inline-block;
+        text-transform: uppercase; }
+      * body div#index-banner .container .row .col .s8 #preloader1s {
+        display: fixed;
+        z-index: 1; }

@@ -27,25 +27,24 @@
         position: relative;
         top: 0.5rem;
         left: 0.2rem; }
-    * body div#index-banner .container .row .collection {
+    * body div#index-banner .container .row .s4 .collection {
       border: none; }
-      * body div#index-banner .container .row .collection .collection-item {
+      * body div#index-banner .container .row .s4 .collection .collection-item {
         font-family: 'Helvetica Neue', 'Lato', 'Roboto Mono for Powerline', sans-serif;
-        font-size: 1.2rem;
+        font-size: 1.08rem;
         cursor: pointer;
         border-bottom-right-radius: 16px;
         transition: background-color 1.6s ease; }
-        * body div#index-banner .container .row .collection .collection-item:hover {
+        * body div#index-banner .container .row .s4 .collection .collection-item:hover {
           background-color: #999999; }
-    * body div#index-banner .container .row .col .s8 {
-      z-index: -1; }
-      * body div#index-banner .container .row .col .s8 h5 {
-        font-size: 1.6rem;
-        font-weight: bold;
-        padding-bottom: 5px;
-        border: 1px solid #FF3333;
-        display: inline-block;
-        text-transform: uppercase; }
-      * body div#index-banner .container .row .col .s8 #preloader1s {
-        display: fixed;
-        z-index: 1; }
+    * body div#index-banner .container .row #article .s6 h5 {
+      text-indent: 1.11rem;
+      font-family: 'Lato',sans-serif;
+      font-weight: bold;
+      text-align: center; }
+    * body div#index-banner .container .row #article .s6 p {
+      text-indent: 0.8rem;
+      font-size: 0.8rem; }
+    * body div#index-banner .container .row #article .s6 img {
+      width: 100%;
+      height: 120%; }

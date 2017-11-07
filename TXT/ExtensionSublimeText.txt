@@ -32,7 +32,7 @@ Nodejs
 Vuejs
 AngularJs
 Laravel
-
+VN Ime => VietNammese
 
 
 #remove

@@ -33,6 +33,8 @@ Vuejs
 AngularJs
 Laravel
 Yii2
+EJS
+
 VN Ime => VietNammese
 
 
